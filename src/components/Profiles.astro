@@ -1,0 +1,59 @@
+---
+import Icon from './Icon.astro';
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+
+const profiles = [
+  {
+    icon: 'code',
+    iconColor: 'text-blue-400',
+    iconBg: 'bg-blue-500/10',
+    title: t.profiles.developersTitle,
+    description: t.profiles.developersDesc,
+  },
+  {
+    icon: 'cloud',
+    iconColor: 'text-purple-400',
+    iconBg: 'bg-purple-500/10',
+    title: t.profiles.devopsTitle,
+    description: t.profiles.devopsDesc,
+  },
+  {
+    icon: 'edit_note',
+    iconColor: 'text-green-400',
+    iconBg: 'bg-green-500/10',
+    title: t.profiles.writersTitle,
+    description: t.profiles.writersDesc,
+  },
+  {
+    icon: 'ssid_chart',
+    iconColor: 'text-orange-400',
+    iconBg: 'bg-orange-500/10',
+    title: t.profiles.dataTitle,
+    description: t.profiles.dataDesc,
+  },
+];
+---
+
+<section class="py-24 bg-surface-dark/30" id="profiles" aria-labelledby="profiles-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 id="profiles-heading" class="text-3xl font-bold text-center text-white mb-12">{t.profiles.heading}</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {profiles.map((profile) => (
+        <div class="bg-surface-dark p-6 rounded-xl border border-slate-800 hover:border-slate-600 transition-colors">
+          <div class={`w-12 h-12 ${profile.iconBg} rounded-full flex items-center justify-center mb-4`}>
+            <Icon name={profile.icon} class={profile.iconColor} />
+          </div>
+          <h3 class="text-white font-bold mb-2">{profile.title}</h3>
+          <p class="text-slate-400 text-sm">{profile.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

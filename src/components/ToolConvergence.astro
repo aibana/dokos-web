@@ -1,0 +1,55 @@
+---
+import Icon from './Icon.astro';
+import logoDark from '../assets/logo-dark.svg';
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+
+const tools = [
+  { icon: 'code', color: 'text-blue-400', label: t.toolConvergence.editor },
+  { icon: 'picture_as_pdf', color: 'text-red-400', label: t.toolConvergence.pdf },
+  { icon: 'public', color: 'text-yellow-400', label: t.toolConvergence.browser },
+  { icon: 'table_view', color: 'text-green-500', label: t.toolConvergence.excel },
+  { icon: 'terminal', color: 'text-gray-400', label: t.toolConvergence.term },
+];
+---
+
+<section class="py-16 bg-background-dark border-y border-slate-800" aria-labelledby="convergence-heading">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 id="convergence-heading" class="text-3xl font-bold text-white mb-12">
+      {t.toolConvergence.heading} <span class="text-primary">{t.toolConvergence.headingHighlight}</span>
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 relative">
+      <div class="flex gap-4 md:gap-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
+        {tools.map((tool) => (
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-14 h-14 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 shadow-lg">
+              <Icon name={tool.icon} size="text-3xl" class={tool.color} />
+            </div>
+            <span class="text-xs text-slate-500">{tool.label}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="hidden md:flex items-center justify-center text-slate-600">
+        <Icon name="arrow_forward" size="text-4xl" class="animate-pulse" />
+      </div>
+      <div class="md:hidden flex items-center justify-center text-slate-600 my-4">
+        <Icon name="arrow_downward" size="text-4xl" class="animate-pulse" />
+      </div>
+
+      <div class="flex flex-col items-center gap-2 relative z-10 group">
+        <div class="absolute inset-0 bg-primary/40 blur-2xl rounded-full transform scale-110 group-hover:scale-125 transition-transform duration-500" aria-hidden="true"></div>
+        <div class="w-20 h-20 bg-gradient-to-br from-primary to-primary-dark hexagon flex items-center justify-center border-2 border-primary/50 shadow-glow relative z-10 p-3">
+          <img src={logoDark.src} alt="Dokos" class="w-full h-full object-contain" />
+        </div>
+        <span class="text-sm font-bold text-white mt-2">Dokos</span>
+      </div>
+    </div>
+  </div>
+</section>

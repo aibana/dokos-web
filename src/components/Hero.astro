@@ -1,0 +1,75 @@
+---
+import Icon from './Icon.astro';
+import AppMockup from './AppMockup.astro';
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="relative min-h-screen flex items-center overflow-hidden hero-mesh" aria-labelledby="hero-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold uppercase tracking-wider mb-6">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> {t.hero.badge}
+        </div>
+
+        <h1 id="hero-heading" class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+          {t.hero.titleLine1} <br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-neon">{t.hero.titleLine2}</span> <br />
+          {t.hero.titleLine3}
+        </h1>
+
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+          {t.hero.subtitle}
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <a
+            id="download-btn"
+            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark shadow-lg shadow-primary/25 transition-all"
+            href="#"
+            data-label-mac={t.hero.downloadForMac}
+            data-label-windows={t.hero.downloadForWindows}
+            data-label-linux={t.hero.downloadForLinux}
+          >
+            <Icon name="download" class="mr-2" />
+            <span id="download-label">{t.hero.downloadForMac}</span>
+          </a>
+          <a class="inline-flex items-center justify-center px-6 py-3 border border-slate-200 dark:border-slate-700 text-base font-medium rounded-lg text-slate-700 dark:text-slate-200 bg-white dark:bg-surface-dark hover:bg-slate-50 dark:hover:bg-slate-800 transition-all" href="#" rel="noopener noreferrer">
+            <Icon name="code" class="mr-2" />
+            {t.common.viewOnGithub}
+          </a>
+        </div>
+
+        <div class="mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm text-slate-500">
+          <span class="flex items-center"><Icon name="check_circle" size="text-sm" class="text-green-500 mr-1" /> macOS</span>
+          <span class="flex items-center"><Icon name="check_circle" size="text-sm" class="text-green-500 mr-1" /> Windows</span>
+          <span class="flex items-center"><Icon name="check_circle" size="text-sm" class="text-green-500 mr-1" /> Linux</span>
+        </div>
+      </div>
+
+      <div class="relative lg:h-[500px] flex items-center justify-center">
+        <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full transform scale-75" aria-hidden="true"></div>
+        <AppMockup />
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById('download-btn');
+  const label = document.getElementById('download-label');
+  if (btn && label) {
+    const ua = navigator.userAgent;
+    if (/Windows/.test(ua)) {
+      label.textContent = btn.dataset.labelWindows || label.textContent;
+    } else if (/Linux/.test(ua) && !/Android/.test(ua)) {
+      label.textContent = btn.dataset.labelLinux || label.textContent;
+    }
+  }
+</script>

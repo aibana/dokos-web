@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "Dokos — एक ऐप। 30+ फॉर्मेट। अनंत संभावनाएं।",
+    "description": "Dokos डेवलपर्स के लिए एक नेटिव डेस्कटॉप डॉक्यूमेंट रीडर है। 18+ फाइल फॉर्मेट सपोर्ट करता है: LaTeX और Mermaid के साथ Markdown, JSON, YAML, CSV, PDF, Jupyter Notebooks और भी बहुत कुछ। Tauri 2 और Rust से बनाया गया।"
+  },
+  "common": {
+    "downloadNow": "अभी डाउनलोड करें",
+    "downloadForFree": "मुफ्त डाउनलोड करें",
+    "viewOnGithub": "GitHub पर देखें",
+    "skipToContent": "सामग्री पर जाएं"
+  },
+  "navbar": {
+    "formats": "फॉर्मेट",
+    "visual": "विज़ुअल",
+    "project": "प्रोजेक्ट",
+    "profiles": "प्रोफाइल",
+    "languageLabel": "भाषा"
+  },
+  "hero": {
+    "badge": "v1.0 उपलब्ध है",
+    "titleLine1": "एक ऐप।",
+    "titleLine2": "60+ फॉर्मेट।",
+    "titleLine3": "अनंत संभावनाएं।",
+    "subtitle": "डेवलपर्स के लिए हाई-परफॉर्मेंस रीडर। IDE की भारीपन के बिना तुरंत Markdown एडिट करें, JSON विज़ुअलाइज़ करें और कोड डिफ करें।",
+    "downloadForMac": "Mac के लिए डाउनलोड करें",
+    "downloadForWindows": "Windows के लिए डाउनलोड करें",
+    "downloadForLinux": "Linux के लिए डाउनलोड करें"
+  },
+  "toolConvergence": {
+    "heading": "टूल्स के बीच कूदना बंद करें।",
+    "headingHighlight": "Dokos सब संभालता है।",
+    "editor": "एडिटर",
+    "pdf": "PDF",
+    "browser": "ब्राउज़र",
+    "excel": "Excel",
+    "term": "टर्मिनल"
+  },
+  "formats": {
+    "heading": "18+ फॉर्मेट के लिए नेटिव सपोर्ट",
+    "subheading": "कोई प्लगइन नहीं चाहिए। बस काम करता है।",
+    "documents": "डॉक्यूमेंट",
+    "dataConfig": "डेटा और कॉन्फिग",
+    "code": "कोड",
+    "markdownPro": "Markdown Pro",
+    "pdfViewer": "PDF व्यूअर",
+    "plainText": "प्लेन टेक्स्ट",
+    "restructuredText": "reStructuredText",
+    "jsonGraph": "JSON ग्राफ",
+    "interactiveTables": "इंटरैक्टिव टेबल",
+    "yamlTree": "YAML ट्री",
+    "logAnalyzer": "लॉग एनालाइज़र",
+    "jupyterNotebooks": "Jupyter Notebooks",
+    "xmlViewer": "XML व्यूअर",
+    "swaggerOpenapi": "Swagger/OpenAPI",
+    "sqlHighlighting": "SQL हाइलाइटिंग"
+  },
+  "visualFeatures": {
+    "srHeading": "उन्नत विज़ुअल अनुभव",
+    "markdownPro": "Markdown Pro",
+    "markdownProSub": "ऐसा डॉक्यूमेंटेशन लिखें जो जीवंत हो उठे।",
+    "mermaidDiagrams": "Mermaid डायग्राम",
+    "mermaidDesc": "फ्लोचार्ट और सीक्वेंस डायग्राम इनलाइन रेंडर करें।",
+    "latexSupport": "LaTeX सपोर्ट",
+    "latexDesc": "तकनीकी पेपर्स के लिए सुंदर गणित टाइपसेटिंग।",
+    "githubAlerts": "GitHub अलर्ट",
+    "githubAlertsDesc": "[!NOTE], [!TIP] और [!WARNING] के लिए नेटिव रेंडरिंग।",
+    "specializedViewers": "विशेष व्यूअर",
+    "specializedViewersSub": "जटिल डेटा को तुरंत समझें।",
+    "jsonGraph": "JSON ग्राफ",
+    "jsonGraphDesc": "नेस्टेड डेटा संरचनाओं के लिए इंटरैक्टिव नोड ग्राफ।",
+    "csvPowerTable": "CSV पावर टेबल",
+    "csvPowerTableDesc": "बड़े डेटासेट को आसानी से सॉर्ट, फिल्टर और सर्च करें।",
+    "swaggerUi": "Swagger UI",
+    "swaggerUiDesc": "अपने डॉक्यूमेंटेशन से सीधे API टेस्ट करें।"
+  },
+  "multitasking": {
+    "heading": "मल्टीटास्किंग के लिए बनाया गया",
+    "tabsTitle": "उन्नत टैब सिस्टम",
+    "tabsDesc": "संदर्भ खोए बिना 20+ फाइलें खुली रखें। क्षैतिज या लंबवत व्यू विभाजित करने के लिए ड्रैग और ड्रॉप करें।",
+    "searchTitle": "ग्लोबल सर्च (Ctrl+Shift+F)",
+    "searchDesc": "सभी खुली फाइलों और प्रोजेक्ट्स में तुरंत कोई भी स्ट्रिंग खोजें। Regex सपोर्टेड।",
+    "sessionsTitle": "परसिस्टेंट सेशन",
+    "sessionsDesc": "ऐप बंद करें और ठीक वहीं से शुरू करें जहां आपने छोड़ा था। आपका वर्कस्पेस हमेशा सेव रहता है।"
+  },
+  "profiles": {
+    "heading": "Dokos किसके लिए है?",
+    "developersTitle": "डेवलपर्स",
+    "developersDesc": "कोड स्निपेट तेज़ी से पढ़ें, PR लोकली रिव्यू करें और भारी IDE लॉन्च किए बिना कॉन्फिग फाइलें एडिट करें।",
+    "devopsTitle": "DevOps",
+    "devopsDesc": "Kubernetes YAML विज़ुअलाइज़ करें, सर्वर कॉन्फिग की तुलना करें और विशाल लॉग फाइलों को तुरंत पार्स करें।",
+    "writersTitle": "तकनीकी लेखक",
+    "writersDesc": "एक ध्यान-मुक्त Markdown एडिटर में लिखने पर ध्यान केंद्रित करें जो गणित और डायग्राम को पूरी तरह से संभालता है।",
+    "dataTitle": "डेटा साइंटिस्ट",
+    "dataDesc": "लोकल सर्वर शुरू किए बिना Jupyter notebooks, CSV डेटासेट और JSON आउटपुट प्रीव्यू करें।"
+  },
+  "performance": {
+    "startupBadge": "स्टार्टअप समय < 50ms",
+    "heading": "नेटिव परफॉर्मेंस।",
+    "headingHighlight": "Rust में बनाया गया।",
+    "description": "Tauri 2 और Rust से बनाया गया, Dokos Electron ऐप्स की तुलना में बहुत कम मेमोरी का उपयोग करता है। सुरक्षा-प्रथम, बेहद तेज़ और आपकी बैटरी का सम्मान करता है।"
+  },
+  "ctaFinal": {
+    "headingLine1": "Dokos — सब कुछ पढ़ें।",
+    "headingLine2": "एक ही जगह से।",
+    "availableFor": "macOS, Windows और Linux के लिए उपलब्ध।"
+  },
+  "footer": {
+    "privacy": "गोपनीयता",
+    "terms": "शर्तें"
+  }
+}

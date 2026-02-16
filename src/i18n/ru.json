@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "Dokos — Одно приложение. 30+ форматов. Бесконечные возможности.",
+    "description": "Dokos — нативное десктопное приложение для чтения документов, созданное для разработчиков. Поддерживает 18+ форматов файлов: Markdown с LaTeX и Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks и другие. Построено на Tauri 2 и Rust."
+  },
+  "common": {
+    "downloadNow": "Скачать",
+    "downloadForFree": "Скачать Бесплатно",
+    "viewOnGithub": "Смотреть на GitHub",
+    "skipToContent": "Перейти к содержимому"
+  },
+  "navbar": {
+    "formats": "Форматы",
+    "visual": "Визуал",
+    "project": "Проект",
+    "profiles": "Профили",
+    "languageLabel": "Язык"
+  },
+  "hero": {
+    "badge": "v1.0 доступна",
+    "titleLine1": "Одно приложение.",
+    "titleLine2": "60+ форматов.",
+    "titleLine3": "Бесконечные возможности.",
+    "subtitle": "Высокопроизводительный ридер для разработчиков. Редактируйте Markdown, визуализируйте JSON и сравнивайте код мгновенно — без громоздкости IDE.",
+    "downloadForMac": "Скачать для Mac",
+    "downloadForWindows": "Скачать для Windows",
+    "downloadForLinux": "Скачать для Linux"
+  },
+  "toolConvergence": {
+    "heading": "Хватит переключаться между инструментами.",
+    "headingHighlight": "Dokos справится со всем.",
+    "editor": "Редактор",
+    "pdf": "PDF",
+    "browser": "Браузер",
+    "excel": "Excel",
+    "term": "Терминал"
+  },
+  "formats": {
+    "heading": "Нативная поддержка 18+ форматов",
+    "subheading": "Без плагинов. Просто работает.",
+    "documents": "Документы",
+    "dataConfig": "Данные и Конфигурация",
+    "code": "Код",
+    "markdownPro": "Markdown Pro",
+    "pdfViewer": "PDF Просмотр",
+    "plainText": "Обычный текст",
+    "restructuredText": "reStructuredText",
+    "jsonGraph": "JSON Граф",
+    "interactiveTables": "Интерактивные таблицы",
+    "yamlTree": "YAML Дерево",
+    "logAnalyzer": "Анализатор логов",
+    "jupyterNotebooks": "Jupyter Notebooks",
+    "xmlViewer": "XML Просмотр",
+    "swaggerOpenapi": "Swagger/OpenAPI",
+    "sqlHighlighting": "SQL Подсветка"
+  },
+  "visualFeatures": {
+    "srHeading": "Расширенный визуальный опыт",
+    "markdownPro": "Markdown Pro",
+    "markdownProSub": "Пишите документацию, которая оживает.",
+    "mermaidDiagrams": "Диаграммы Mermaid",
+    "mermaidDesc": "Рендеринг блок-схем и диаграмм последовательностей прямо в тексте.",
+    "latexSupport": "Поддержка LaTeX",
+    "latexDesc": "Элегантная математическая вёрстка для технических статей.",
+    "githubAlerts": "GitHub Уведомления",
+    "githubAlertsDesc": "Нативный рендеринг [!NOTE], [!TIP] и [!WARNING].",
+    "specializedViewers": "Специализированные просмотрщики",
+    "specializedViewersSub": "Мгновенное понимание сложных данных.",
+    "jsonGraph": "JSON Граф",
+    "jsonGraphDesc": "Интерактивный граф узлов для вложенных структур данных.",
+    "csvPowerTable": "CSV Мощная таблица",
+    "csvPowerTableDesc": "Сортируйте, фильтруйте и ищите по большим наборам данных.",
+    "swaggerUi": "Swagger UI",
+    "swaggerUiDesc": "Тестируйте API прямо из документации."
+  },
+  "multitasking": {
+    "heading": "Создан для многозадачности",
+    "tabsTitle": "Продвинутая система вкладок",
+    "tabsDesc": "Держите открытыми 20+ файлов без потери контекста. Перетаскивайте для разделения видов горизонтально или вертикально.",
+    "searchTitle": "Глобальный поиск (Ctrl+Shift+F)",
+    "searchDesc": "Мгновенно находите любую строку во всех открытых файлах и проектах. Поддержка регулярных выражений.",
+    "sessionsTitle": "Постоянные сессии",
+    "sessionsDesc": "Закройте приложение и продолжите ровно с того места, где остановились. Ваше рабочее пространство всегда сохраняется."
+  },
+  "profiles": {
+    "heading": "Для кого создан Dokos?",
+    "developersTitle": "Разработчики",
+    "developersDesc": "Быстро читайте фрагменты кода, проверяйте PR локально и редактируйте конфигурационные файлы без запуска тяжёлой IDE.",
+    "devopsTitle": "DevOps",
+    "devopsDesc": "Визуализируйте Kubernetes YAML, сравнивайте конфигурации серверов и мгновенно анализируйте огромные файлы логов.",
+    "writersTitle": "Технические писатели",
+    "writersDesc": "Сосредоточьтесь на написании в Markdown-редакторе без отвлечений, который идеально работает с математикой и диаграммами.",
+    "dataTitle": "Data Scientists",
+    "dataDesc": "Просматривайте Jupyter notebooks, CSV-наборы данных и JSON-вывод без запуска локального сервера."
+  },
+  "performance": {
+    "startupBadge": "Время запуска < 50мс",
+    "heading": "Нативная производительность.",
+    "headingHighlight": "Построен на Rust.",
+    "description": "Построенный на Tauri 2 и Rust, Dokos использует лишь малую часть памяти приложений на Electron. Безопасность прежде всего, молниеносная скорость и бережное отношение к батарее."
+  },
+  "ctaFinal": {
+    "headingLine1": "Dokos — Читайте всё.",
+    "headingLine2": "Из одного места.",
+    "availableFor": "Доступен для macOS, Windows и Linux."
+  },
+  "footer": {
+    "privacy": "Конфиденциальность",
+    "terms": "Условия"
+  }
+}

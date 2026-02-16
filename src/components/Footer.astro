@@ -1,0 +1,36 @@
+---
+import logoDark from '../assets/logo-dark.svg';
+import type { Locale, Translations } from '../i18n/utils';
+import { getLocalePath } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+  locale: Locale;
+}
+
+const { t, locale } = Astro.props;
+const currentYear = new Date().getFullYear();
+const homePath = `${getLocalePath(locale)}/`;
+---
+
+<footer class="bg-background-dark border-t border-slate-800 py-12" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <a href={homePath} class="flex items-center gap-2 mb-4 md:mb-0" aria-label="Dokos - Home">
+        <img src={logoDark.src} alt="Dokos" class="h-6 w-6" />
+        <span class="font-bold text-white tracking-tight">Dokos</span>
+      </a>
+
+      <nav class="flex space-x-6" aria-label="Footer navigation">
+        <a class="text-slate-400 hover:text-white transition-colors" href="#">{t.footer.privacy}</a>
+        <a class="text-slate-400 hover:text-white transition-colors" href="#">{t.footer.terms}</a>
+        <a class="text-slate-400 hover:text-white transition-colors" href="#" rel="noopener noreferrer">GitHub</a>
+        <a class="text-slate-400 hover:text-white transition-colors" href="#" rel="noopener noreferrer">Twitter</a>
+      </nav>
+
+      <div class="mt-4 md:mt-0 text-slate-500 text-sm">
+        &copy; {currentYear} Dokos Inc.
+      </div>
+    </div>
+  </div>
+</footer>

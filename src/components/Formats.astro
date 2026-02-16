@@ -1,0 +1,82 @@
+---
+import Icon from './Icon.astro';
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+
+const categories = [
+  {
+    title: t.formats.documents,
+    icon: 'article',
+    iconColor: 'text-blue-400',
+    iconBg: 'bg-blue-500/10',
+    hoverBorder: 'hover:border-primary/40',
+    formats: [
+      { ext: '.md', label: t.formats.markdownPro, color: 'text-blue-300' },
+      { ext: '.pdf', label: t.formats.pdfViewer, color: 'text-red-300' },
+      { ext: '.txt', label: t.formats.plainText, color: 'text-orange-300' },
+      { ext: '.rst', label: t.formats.restructuredText, color: 'text-white' },
+    ],
+  },
+  {
+    title: t.formats.dataConfig,
+    icon: 'data_object',
+    iconColor: 'text-yellow-400',
+    iconBg: 'bg-yellow-500/10',
+    hoverBorder: 'hover:border-yellow-500/40',
+    formats: [
+      { ext: '.json', label: t.formats.jsonGraph, color: 'text-yellow-300' },
+      { ext: '.csv', label: t.formats.interactiveTables, color: 'text-green-300' },
+      { ext: '.yaml', label: t.formats.yamlTree, color: 'text-purple-300' },
+      { ext: '.log', label: t.formats.logAnalyzer, color: 'text-gray-300' },
+    ],
+  },
+  {
+    title: t.formats.code,
+    icon: 'code',
+    iconColor: 'text-green-400',
+    iconBg: 'bg-green-500/10',
+    hoverBorder: 'hover:border-green-500/40',
+    formats: [
+      { ext: '.ipynb', label: t.formats.jupyterNotebooks, color: 'text-orange-400' },
+      { ext: '.xml', label: t.formats.xmlViewer, color: 'text-blue-400' },
+      { ext: 'API', label: t.formats.swaggerOpenapi, color: 'text-green-400' },
+      { ext: '.sql', label: t.formats.sqlHighlighting, color: 'text-indigo-400' },
+    ],
+  },
+];
+---
+
+<section class="py-20 bg-surface-dark/30" id="formats" aria-labelledby="formats-heading">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 id="formats-heading" class="text-3xl font-bold text-white mb-4">{t.formats.heading}</h2>
+      <p class="text-slate-400">{t.formats.subheading}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {categories.map((cat) => (
+        <div class={`bg-surface-dark border border-slate-800 rounded-xl p-6 ${cat.hoverBorder} transition-colors`}>
+          <div class="flex items-center gap-3 mb-6">
+            <div class={`p-2 ${cat.iconBg} rounded-lg ${cat.iconColor}`}>
+              <Icon name={cat.icon} />
+            </div>
+            <h3 class="font-bold text-white">{cat.title}</h3>
+          </div>
+          <ul class="space-y-3">
+            {cat.formats.map((fmt) => (
+              <li class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
+                <span class={`text-xs font-mono bg-slate-800 px-1.5 py-0.5 rounded ${fmt.color} w-12 text-center`}>{fmt.ext}</span>
+                <span>{fmt.label}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

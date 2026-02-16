@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "Dokos — Una App. +30 Formatos. Posibilidades Infinitas.",
+    "description": "Dokos es un lector de documentos de escritorio nativo para desarrolladores. Soporta más de 18 formatos: Markdown con LaTeX y Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks y más. Construido con Tauri 2 y Rust."
+  },
+  "common": {
+    "downloadNow": "Descargar Ahora",
+    "downloadForFree": "Descargar Gratis",
+    "viewOnGithub": "Ver en GitHub",
+    "skipToContent": "Ir al contenido"
+  },
+  "navbar": {
+    "formats": "Formatos",
+    "visual": "Visual",
+    "project": "Proyecto",
+    "profiles": "Perfiles",
+    "languageLabel": "Idioma"
+  },
+  "hero": {
+    "badge": "v1.0 disponible",
+    "titleLine1": "Una App.",
+    "titleLine2": "+60 Formatos.",
+    "titleLine3": "Posibilidades Infinitas.",
+    "subtitle": "El lector de alto rendimiento para desarrolladores. Edita Markdown, visualiza JSON y compara código al instante sin la pesadez de un IDE.",
+    "downloadForMac": "Descargar para Mac",
+    "downloadForWindows": "Descargar para Windows",
+    "downloadForLinux": "Descargar para Linux"
+  },
+  "toolConvergence": {
+    "heading": "Deja de saltar entre herramientas.",
+    "headingHighlight": "Dokos lo maneja todo.",
+    "editor": "Editor",
+    "pdf": "PDF",
+    "browser": "Navegador",
+    "excel": "Excel",
+    "term": "Terminal"
+  },
+  "formats": {
+    "heading": "Soporte Nativo para +18 Formatos",
+    "subheading": "Sin plugins. Simplemente funciona.",
+    "documents": "Documentos",
+    "dataConfig": "Datos y Config",
+    "code": "Código",
+    "markdownPro": "Markdown Pro",
+    "pdfViewer": "Visor de PDF",
+    "plainText": "Texto Plano",
+    "restructuredText": "reStructuredText",
+    "jsonGraph": "Grafo JSON",
+    "interactiveTables": "Tablas Interactivas",
+    "yamlTree": "Árbol YAML",
+    "logAnalyzer": "Analizador de Logs",
+    "jupyterNotebooks": "Jupyter Notebooks",
+    "xmlViewer": "Visor XML",
+    "swaggerOpenapi": "Swagger/OpenAPI",
+    "sqlHighlighting": "Resaltado SQL"
+  },
+  "visualFeatures": {
+    "srHeading": "Experiencia Visual Avanzada",
+    "markdownPro": "Markdown Pro",
+    "markdownProSub": "Escribe documentación que cobra vida.",
+    "mermaidDiagrams": "Diagramas Mermaid",
+    "mermaidDesc": "Renderiza diagramas de flujo y de secuencia en línea.",
+    "latexSupport": "Soporte LaTeX",
+    "latexDesc": "Tipografía matemática elegante para artículos técnicos.",
+    "githubAlerts": "Alertas de GitHub",
+    "githubAlertsDesc": "Renderizado nativo para [!NOTE], [!TIP] y [!WARNING].",
+    "specializedViewers": "Visores Especializados",
+    "specializedViewersSub": "Comprende datos complejos al instante.",
+    "jsonGraph": "Grafo JSON",
+    "jsonGraphDesc": "Grafo de nodos interactivo para estructuras de datos anidadas.",
+    "csvPowerTable": "Tabla CSV Avanzada",
+    "csvPowerTableDesc": "Ordena, filtra y busca grandes conjuntos de datos fácilmente.",
+    "swaggerUi": "Swagger UI",
+    "swaggerUiDesc": "Prueba APIs directamente desde tu documentación."
+  },
+  "multitasking": {
+    "heading": "Diseñado para la Multitarea",
+    "tabsTitle": "Sistema de Pestañas Avanzado",
+    "tabsDesc": "Mantén más de 20 archivos abiertos sin perder el contexto. Arrastra y suelta para dividir vistas horizontal o verticalmente.",
+    "searchTitle": "Búsqueda Global (Ctrl+Shift+F)",
+    "searchDesc": "Encuentra cualquier cadena al instante en todos los archivos y proyectos abiertos. Compatible con Regex.",
+    "sessionsTitle": "Sesiones Persistentes",
+    "sessionsDesc": "Cierra la app y retoma exactamente donde lo dejaste. Tu espacio de trabajo siempre se guarda."
+  },
+  "profiles": {
+    "heading": "¿Para quién es Dokos?",
+    "developersTitle": "Desarrolladores",
+    "developersDesc": "Lee fragmentos de código rápidamente, revisa PRs localmente y edita archivos de configuración sin abrir un IDE pesado.",
+    "devopsTitle": "DevOps",
+    "devopsDesc": "Visualiza YAMLs de Kubernetes, compara configuraciones de servidores y analiza archivos de log masivos al instante.",
+    "writersTitle": "Escritores Técnicos",
+    "writersDesc": "Concéntrate en escribir con un editor Markdown libre de distracciones que maneja matemáticas y diagramas perfectamente.",
+    "dataTitle": "Científicos de Datos",
+    "dataDesc": "Previsualiza Jupyter notebooks, datasets CSV y salidas JSON sin necesidad de levantar un servidor local."
+  },
+  "performance": {
+    "startupBadge": "Tiempo de inicio < 50ms",
+    "heading": "Rendimiento Nativo.",
+    "headingHighlight": "Construido en Rust.",
+    "description": "Construido con Tauri 2 y Rust, Dokos usa una fracción de la memoria de las apps Electron. Es seguro por diseño, ultrarrápido y respetuoso con tu batería."
+  },
+  "ctaFinal": {
+    "headingLine1": "Dokos — Lee todo.",
+    "headingLine2": "Desde un solo lugar.",
+    "availableFor": "Disponible para macOS, Windows y Linux."
+  },
+  "footer": {
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  }
+}

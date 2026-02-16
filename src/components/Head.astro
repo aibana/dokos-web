@@ -1,0 +1,71 @@
+---
+import { SEO } from 'astro-seo';
+import type { Locale } from '../i18n/utils';
+
+interface AlternateLink {
+  locale: Locale;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  ogImage: string;
+  ogLocale: string;
+  alternateLinks: AlternateLink[];
+  locale: Locale;
+}
+
+const { title, description, canonicalUrl, ogImage, ogLocale, alternateLinks, locale } = Astro.props;
+---
+
+<SEO
+  title={title}
+  description={description}
+  canonical={canonicalUrl}
+  openGraph={{
+    basic: {
+      title: title,
+      type: 'website',
+      image: ogImage,
+    },
+    optional: {
+      description: description,
+      locale: ogLocale,
+      siteName: 'Dokos',
+    },
+  }}
+  twitter={{
+    card: 'summary_large_image',
+    title: title,
+    description: description,
+    image: ogImage,
+  }}
+/>
+
+{alternateLinks.map((alt) => (
+  <link rel="alternate" hreflang={alt.locale} href={alt.href} />
+))}
+<link rel="alternate" hreflang="x-default" href="https://dokos.app/" />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Dokos",
+  "description": description,
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows, macOS, Linux",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "softwareVersion": "2.0",
+  "author": {
+    "@type": "Organization",
+    "name": "Dokos"
+  },
+  "url": "https://dokos.app",
+  "inLanguage": locale
+})} />

@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "Dokos — 1つのアプリ。30+フォーマット。無限の可能性。",
+    "description": "Dokos は開発者向けのネイティブデスクトップドキュメントリーダーです。18以上のファイル形式をサポート：LaTeX・Mermaid対応の Markdown、JSON、YAML、CSV、PDF、Jupyter Notebooks など。Tauri 2 と Rust で構築。"
+  },
+  "common": {
+    "downloadNow": "今すぐダウンロード",
+    "downloadForFree": "無料ダウンロード",
+    "viewOnGithub": "GitHub で見る",
+    "skipToContent": "コンテンツへスキップ"
+  },
+  "navbar": {
+    "formats": "フォーマット",
+    "visual": "ビジュアル",
+    "project": "プロジェクト",
+    "profiles": "プロフィール",
+    "languageLabel": "言語"
+  },
+  "hero": {
+    "badge": "v1.0 リリース",
+    "titleLine1": "1つのアプリ。",
+    "titleLine2": "60+ フォーマット。",
+    "titleLine3": "無限の可能性。",
+    "subtitle": "開発者向け高性能リーダー。IDE の重さなしに、Markdown の編集、JSON の可視化、コードの差分比較を瞬時に。",
+    "downloadForMac": "Mac 版をダウンロード",
+    "downloadForWindows": "Windows 版をダウンロード",
+    "downloadForLinux": "Linux 版をダウンロード"
+  },
+  "toolConvergence": {
+    "heading": "ツール間の切り替えはもう不要。",
+    "headingHighlight": "Dokos がすべて対応。",
+    "editor": "エディタ",
+    "pdf": "PDF",
+    "browser": "ブラウザ",
+    "excel": "Excel",
+    "term": "ターミナル"
+  },
+  "formats": {
+    "heading": "18+ フォーマットをネイティブサポート",
+    "subheading": "プラグイン不要。そのまま動きます。",
+    "documents": "ドキュメント",
+    "dataConfig": "データ & 設定",
+    "code": "コード",
+    "markdownPro": "Markdown Pro",
+    "pdfViewer": "PDF ビューア",
+    "plainText": "プレーンテキスト",
+    "restructuredText": "reStructuredText",
+    "jsonGraph": "JSON グラフ",
+    "interactiveTables": "インタラクティブテーブル",
+    "yamlTree": "YAML ツリー",
+    "logAnalyzer": "ログアナライザー",
+    "jupyterNotebooks": "Jupyter Notebooks",
+    "xmlViewer": "XML ビューア",
+    "swaggerOpenapi": "Swagger/OpenAPI",
+    "sqlHighlighting": "SQL ハイライト"
+  },
+  "visualFeatures": {
+    "srHeading": "高度なビジュアル体験",
+    "markdownPro": "Markdown Pro",
+    "markdownProSub": "生き生きとしたドキュメントを作成。",
+    "mermaidDiagrams": "Mermaid ダイアグラム",
+    "mermaidDesc": "フローチャートとシーケンス図をインラインでレンダリング。",
+    "latexSupport": "LaTeX サポート",
+    "latexDesc": "技術論文向けの美しい数式組版。",
+    "githubAlerts": "GitHub アラート",
+    "githubAlertsDesc": "[!NOTE]、[!TIP]、[!WARNING] のネイティブレンダリング。",
+    "specializedViewers": "専門ビューア",
+    "specializedViewersSub": "複雑なデータを瞬時に理解。",
+    "jsonGraph": "JSON グラフ",
+    "jsonGraphDesc": "ネストされたデータ構造のインタラクティブノードグラフ。",
+    "csvPowerTable": "CSV パワーテーブル",
+    "csvPowerTableDesc": "大規模データセットを簡単にソート、フィルタ、検索。",
+    "swaggerUi": "Swagger UI",
+    "swaggerUiDesc": "ドキュメントから直接 API をテスト。"
+  },
+  "multitasking": {
+    "heading": "マルチタスクのために設計",
+    "tabsTitle": "高度なタブシステム",
+    "tabsDesc": "コンテキストを失わずに20以上のファイルを開いたまま。ドラッグ＆ドロップで水平・垂直にビューを分割。",
+    "searchTitle": "グローバル検索 (Ctrl+Shift+F)",
+    "searchDesc": "開いているすべてのファイルとプロジェクトから瞬時に文字列を検索。正規表現対応。",
+    "sessionsTitle": "永続セッション",
+    "sessionsDesc": "アプリを閉じても、前回の状態からそのまま再開。ワークスペースは常に保存されます。"
+  },
+  "profiles": {
+    "heading": "Dokos は誰のため？",
+    "developersTitle": "開発者",
+    "developersDesc": "コードスニペットをすばやく読み、PR をローカルでレビューし、重い IDE を起動せずに設定ファイルを編集。",
+    "devopsTitle": "DevOps",
+    "devopsDesc": "Kubernetes YAML の可視化、サーバー設定の比較、大量のログファイルの即時解析。",
+    "writersTitle": "テクニカルライター",
+    "writersDesc": "数式やダイアグラムを完璧に扱う、集中できる Markdown エディタで執筆に専念。",
+    "dataTitle": "データサイエンティスト",
+    "dataDesc": "ローカルサーバーを起動せずに、Jupyter notebooks、CSV データセット、JSON 出力をプレビュー。"
+  },
+  "performance": {
+    "startupBadge": "起動時間 < 50ms",
+    "heading": "ネイティブパフォーマンス。",
+    "headingHighlight": "Rust で構築。",
+    "description": "Tauri 2 と Rust で構築された Dokos は、Electron アプリのほんの一部のメモリしか使用しません。セキュリティファースト、超高速、バッテリーにも優しい。"
+  },
+  "ctaFinal": {
+    "headingLine1": "Dokos — すべてを読む。",
+    "headingLine2": "たった1つの場所から。",
+    "availableFor": "macOS、Windows、Linux で利用可能。"
+  },
+  "footer": {
+    "privacy": "プライバシー",
+    "terms": "利用規約"
+  }
+}

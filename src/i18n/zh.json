@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "Dokos — 一个应用。30+格式。无限可能。",
+    "description": "Dokos 是一款面向开发者的原生桌面文档阅读器。支持18+种文件格式：Markdown（含 LaTeX 和 Mermaid）、JSON、YAML、CSV、PDF、Jupyter Notebooks 等。基于 Tauri 2 和 Rust 构建。"
+  },
+  "common": {
+    "downloadNow": "立即下载",
+    "downloadForFree": "免费下载",
+    "viewOnGithub": "在 GitHub 上查看",
+    "skipToContent": "跳转到内容"
+  },
+  "navbar": {
+    "formats": "格式",
+    "visual": "可视化",
+    "project": "项目",
+    "profiles": "用户画像",
+    "languageLabel": "语言"
+  },
+  "hero": {
+    "badge": "v1.0 已发布",
+    "titleLine1": "一个应用。",
+    "titleLine2": "60+ 格式。",
+    "titleLine3": "无限可能。",
+    "subtitle": "面向开发者的高性能阅读器。即时编辑 Markdown、可视化 JSON、比较代码差异，无需 IDE 的臃肿。",
+    "downloadForMac": "下载 Mac 版",
+    "downloadForWindows": "下载 Windows 版",
+    "downloadForLinux": "下载 Linux 版"
+  },
+  "toolConvergence": {
+    "heading": "不再在工具间跳转。",
+    "headingHighlight": "Dokos 一站搞定。",
+    "editor": "编辑器",
+    "pdf": "PDF",
+    "browser": "浏览器",
+    "excel": "Excel",
+    "term": "终端"
+  },
+  "formats": {
+    "heading": "原生支持 18+ 种格式",
+    "subheading": "无需插件。开箱即用。",
+    "documents": "文档",
+    "dataConfig": "数据与配置",
+    "code": "代码",
+    "markdownPro": "Markdown Pro",
+    "pdfViewer": "PDF 查看器",
+    "plainText": "纯文本",
+    "restructuredText": "reStructuredText",
+    "jsonGraph": "JSON 图谱",
+    "interactiveTables": "交互式表格",
+    "yamlTree": "YAML 树",
+    "logAnalyzer": "日志分析器",
+    "jupyterNotebooks": "Jupyter Notebooks",
+    "xmlViewer": "XML 查看器",
+    "swaggerOpenapi": "Swagger/OpenAPI",
+    "sqlHighlighting": "SQL 高亮"
+  },
+  "visualFeatures": {
+    "srHeading": "高级可视化体验",
+    "markdownPro": "Markdown Pro",
+    "markdownProSub": "编写栩栩如生的文档。",
+    "mermaidDiagrams": "Mermaid 图表",
+    "mermaidDesc": "内联渲染流程图和时序图。",
+    "latexSupport": "LaTeX 支持",
+    "latexDesc": "为技术论文提供优美的数学排版。",
+    "githubAlerts": "GitHub 提示",
+    "githubAlertsDesc": "原生渲染 [!NOTE]、[!TIP] 和 [!WARNING]。",
+    "specializedViewers": "专业查看器",
+    "specializedViewersSub": "即时理解复杂数据。",
+    "jsonGraph": "JSON 图谱",
+    "jsonGraphDesc": "嵌套数据结构的交互式节点图。",
+    "csvPowerTable": "CSV 高级表格",
+    "csvPowerTableDesc": "轻松排序、筛选和搜索大型数据集。",
+    "swaggerUi": "Swagger UI",
+    "swaggerUiDesc": "直接从文档中测试 API。"
+  },
+  "multitasking": {
+    "heading": "为多任务而生",
+    "tabsTitle": "高级标签系统",
+    "tabsDesc": "同时打开 20+ 个文件而不丢失上下文。拖放即可水平或垂直分屏。",
+    "searchTitle": "全局搜索 (Ctrl+Shift+F)",
+    "searchDesc": "在所有打开的文件和项目中即时查找任意字符串。支持正则表达式。",
+    "sessionsTitle": "持久会话",
+    "sessionsDesc": "关闭应用后可从上次离开的位置继续。工作区始终自动保存。"
+  },
+  "profiles": {
+    "heading": "Dokos 适合谁？",
+    "developersTitle": "开发者",
+    "developersDesc": "快速阅读代码片段、本地审查 PR、编辑配置文件，无需启动笨重的 IDE。",
+    "devopsTitle": "DevOps",
+    "devopsDesc": "可视化 Kubernetes YAML、比较服务器配置、即时解析海量日志文件。",
+    "writersTitle": "技术写作者",
+    "writersDesc": "在无干扰的 Markdown 编辑器中专注写作，完美处理数学公式和图表。",
+    "dataTitle": "数据科学家",
+    "dataDesc": "预览 Jupyter notebooks、CSV 数据集和 JSON 输出，无需启动本地服务器。"
+  },
+  "performance": {
+    "startupBadge": "启动时间 < 50ms",
+    "heading": "原生性能。",
+    "headingHighlight": "Rust 构建。",
+    "description": "基于 Tauri 2 和 Rust 构建，Dokos 仅使用 Electron 应用的一小部分内存。安全优先、极速运行、节约电量。"
+  },
+  "ctaFinal": {
+    "headingLine1": "Dokos — 阅读一切。",
+    "headingLine2": "只需一个地方。",
+    "availableFor": "适用于 macOS、Windows 和 Linux。"
+  },
+  "footer": {
+    "privacy": "隐私政策",
+    "terms": "使用条款"
+  }
+}
