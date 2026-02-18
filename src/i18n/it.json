@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dokos — Un'App. 30+ Formati. Possibilità Infinite.",
-    "description": "Dokos è un lettore di documenti desktop nativo per sviluppatori. Supporta oltre 18 formati: Markdown con LaTeX e Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks e altro. Costruito con Tauri 2 e Rust."
+    "description": "Dokos è un lettore di documenti desktop nativo per sviluppatori. 24 visualizzatori specializzati per oltre 50 formati: Markdown con LaTeX e Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks e altro. Costruito con Tauri 2 e Rust."
   },
   "common": {
     "downloadNow": "Scarica Ora",
@@ -36,7 +36,7 @@
     "term": "Terminale"
   },
   "formats": {
-    "heading": "Supporto Nativo per 18+ Formati",
+    "heading": "Supporto Nativo per 50+ Formati",
     "subheading": "Nessun plugin necessario. Funziona e basta.",
     "documents": "Documenti",
     "dataConfig": "Dati e Config",
@@ -105,9 +105,9 @@
     "availableFor": "Disponibile per macOS, Windows e Linux."
   },
   "viewers": {
-    "heading": "17+ visualizzatori nativi specializzati",
+    "heading": "24 visualizzatori nativi specializzati",
     "subheading": "Ogni tipo di file ha il suo visualizzatore ottimizzato — non solo evidenziazione della sintassi, ma un'interfaccia progettata su misura.",
-    "countBadge": "17 visualizzatori integrati, zero plugin necessari",
+    "countBadge": "24 visualizzatori integrati, zero plugin necessari",
     "catDocuments": "Documenti",
     "catData": "Dati e Config",
     "catCode": "Codice e Tecnico",
@@ -140,7 +140,7 @@
     "tomlDesc": "Viste ad albero, grafo e raw per file di configurazione TOML con sezioni comprimibili.",
     "tomlHighlight": "Albero + Grafo + Raw",
     "iniName": "Visualizzatore INI",
-    "iniDesc": "Vista strutturata per file INI, .cfg e .conf con navigazione comprimibile per sezioni.",
+    "iniDesc": "Vista strutturata per file INI, .cfg, .conf e .ovpn con navigazione comprimibile per sezioni.",
     "iniHighlight": "Navigazione per sezioni",
     "csvName": "Visualizzatore CSV",
     "csvDesc": "Tabella interattiva con intestazioni fisse, colonne ordinabili e filtri per un'esplorazione efficiente dei dati.",
@@ -162,9 +162,30 @@
     "diffHighlight": "Affiancato + Inline",
     "diffFormats": "Qualsiasi coppia di file",
     "codeName": "Visualizzatore Codice",
-    "codeDesc": "Visualizzatore con Monaco ed evidenziazione della sintassi per 15+ linguaggi di programmazione e testo semplice.",
+    "codeDesc": "Visualizzatore con Monaco ed evidenziazione della sintassi per 15+ linguaggi di programmazione, DNS zones, Terraform e testo semplice.",
     "codeHighlight": "15+ linguaggi supportati",
-    "codeFormats": "15+ linguaggi"
+    "codeFormats": "15+ linguaggi",
+    "subtitleName": "Visualizzatore Sottotitoli",
+    "subtitleDesc": "Visualizzatore dedicato per file di sottotitoli con parser specifici per formato. Vista a tabella con indice, timestamp e testo per SRT, VTT, ASS/SSA e SUB.",
+    "subtitleHighlight": "4 formati + Vista a tabella",
+    "patchName": "Visualizzatore Patch",
+    "patchDesc": "Visualizzatore unified diff con codice colore: aggiunte in verde, eliminazioni in rosso, sezioni file comprimibili e numeri di riga per entrambi i file.",
+    "patchHighlight": "Codice colore + Comprimibile",
+    "texName": "Visualizzatore LaTeX",
+    "texDesc": "Rendering di documenti LaTeX con formule KaTeX (inline e blocco), titoli, formattazione del testo e risoluzione dei riferimenti.",
+    "texHighlight": "Rendering formule KaTeX",
+    "bibName": "Visualizzatore Bibliografia",
+    "bibDesc": "Visualizzatore BibTeX strutturato con tabella ordinabile che mostra tipo, chiave, titolo, autore e anno. Righe espandibili per tutti i campi.",
+    "bibHighlight": "Tabella strutturata + Espandibile",
+    "orgName": "Visualizzatore Org Mode",
+    "orgDesc": "Renderer Emacs Org-mode con titoli, stati TODO, priorità, blocchi di codice, tabelle, cassetti proprietà e formattazione inline.",
+    "orgHighlight": "Stati TODO + Blocchi di codice",
+    "asciidocName": "Visualizzatore AsciiDoc",
+    "asciidocDesc": "Renderer AsciiDoc con titoli, ammonimenti (NOTE, TIP, WARNING), blocchi di codice con etichette linguaggio, tabelle e citazioni.",
+    "asciidocHighlight": "Ammonimenti + Blocchi di codice",
+    "rstName": "Visualizzatore reStructuredText",
+    "rstDesc": "Renderer RST con rilevamento titoli, direttive (code-block, note, warning), ruoli, link e supporto immagini/figure.",
+    "rstHighlight": "Direttive + Ruoli"
   },
   "featuresSection": {
     "heading": "Funzionalità che Fanno la Differenza",
@@ -188,7 +209,7 @@
   },
   "comparison": {
     "headingBefore": "Sostituisci",
-    "headingStrike": "8 strumenti",
+    "headingStrike": "10 strumenti",
     "headingAfter": "con uno solo",
     "subheading": "Ogni attività che oggi richiede di aprire un'altra app, Dokos la gestisce nativamente.",
     "colTask": "Attività",
@@ -210,6 +231,12 @@
     "logsDokos": "Codice colore + Filtri per livello",
     "notebookTask": "Visualizzare un Notebook",
     "notebookDokos": "Rendering diretto, nessun server necessario",
+    "texTask": "Leggere un documento LaTeX",
+    "texOthers": "Compilare con pdflatex",
+    "texDokos": "Anteprima KaTeX, nessuna compilazione",
+    "subtitleTask": "Visualizzare sottotitoli",
+    "subtitleOthers": "Blocco note / editor di testo",
+    "subtitleDokos": "Tabella con timestamp analizzati",
     "summaryWithout": "app da aprire, installare e mantenere aggiornate",
     "summaryWith": "app nativa, leggera, tutto integrato, zero plugin"
   },

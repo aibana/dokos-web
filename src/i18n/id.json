@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dokos — Satu Aplikasi. 30+ Format. Kemungkinan Tak Terbatas.",
-    "description": "Dokos adalah pembaca dokumen desktop native untuk developer. Mendukung 18+ format: Markdown dengan LaTeX dan Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks dan lainnya. Dibangun dengan Tauri 2 dan Rust."
+    "description": "Dokos adalah pembaca dokumen desktop native untuk developer. 24 penampil khusus untuk 50+ format: Markdown dengan LaTeX dan Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks dan lainnya. Dibangun dengan Tauri 2 dan Rust."
   },
   "common": {
     "downloadNow": "Unduh Sekarang",
@@ -36,7 +36,7 @@
     "term": "Terminal"
   },
   "formats": {
-    "heading": "Dukungan Native untuk 18+ Format",
+    "heading": "Dukungan Native untuk 50+ Format",
     "subheading": "Tanpa plugin. Langsung berfungsi.",
     "documents": "Dokumen",
     "dataConfig": "Data & Konfigurasi",
@@ -105,9 +105,9 @@
     "availableFor": "Tersedia untuk macOS, Windows, dan Linux."
   },
   "viewers": {
-    "heading": "17+ Penampil Native Khusus",
+    "heading": "24 Penampil Native Khusus",
     "subheading": "Setiap jenis file memiliki penampil yang dioptimalkan — bukan sekadar penyorotan sintaks, melainkan antarmuka yang dirancang khusus.",
-    "countBadge": "17 penampil bawaan, tanpa plugin",
+    "countBadge": "24 penampil bawaan, tanpa plugin",
     "catDocuments": "Dokumen",
     "catData": "Data & Konfigurasi",
     "catCode": "Kode & Teknis",
@@ -140,7 +140,7 @@
     "tomlDesc": "Tampilan pohon, grafik, dan mentah untuk file konfigurasi TOML dengan bagian yang dapat dilipat.",
     "tomlHighlight": "Pohon + Grafik + Mentah",
     "iniName": "Penampil INI",
-    "iniDesc": "Tampilan terstruktur untuk file INI, .cfg, dan .conf dengan navigasi berbasis bagian yang dapat dilipat.",
+    "iniDesc": "Tampilan terstruktur untuk file INI, .cfg, .conf, dan .ovpn dengan navigasi berbasis bagian yang dapat dilipat.",
     "iniHighlight": "Navigasi berbasis bagian",
     "csvName": "Penampil CSV",
     "csvDesc": "Tabel interaktif dengan header tetap, kolom yang dapat diurutkan, dan filter untuk eksplorasi data yang efisien.",
@@ -162,9 +162,30 @@
     "diffHighlight": "Berdampingan + Inline",
     "diffFormats": "Dua file apa pun",
     "codeName": "Penampil Kode",
-    "codeDesc": "Penampil bertenaga Monaco dengan penyorotan sintaks untuk 15+ bahasa pemrograman dan teks polos.",
+    "codeDesc": "Penampil bertenaga Monaco dengan penyorotan sintaks untuk 15+ bahasa pemrograman, DNS zones, Terraform, dan teks polos.",
     "codeHighlight": "15+ bahasa didukung",
-    "codeFormats": "15+ bahasa"
+    "codeFormats": "15+ bahasa",
+    "subtitleName": "Penampil Subtitle",
+    "subtitleDesc": "Penampil khusus untuk file subtitle dengan parser spesifik format. Tampilan tabel dengan indeks, timestamp, dan teks untuk SRT, VTT, ASS/SSA, dan SUB.",
+    "subtitleHighlight": "4 format + Tampilan tabel",
+    "patchName": "Penampil Patch",
+    "patchDesc": "Penampil unified diff berkode warna dengan penambahan berwarna hijau, penghapusan berwarna merah, bagian file yang dapat dilipat, dan nomor baris untuk kedua file.",
+    "patchHighlight": "Berkode warna + Dapat dilipat",
+    "texName": "Penampil LaTeX",
+    "texDesc": "Render dokumen LaTeX dengan rumus matematika KaTeX (inline dan blok), heading, pemformatan teks, dan resolusi referensi.",
+    "texHighlight": "Rendering matematika KaTeX",
+    "bibName": "Penampil Bibliografi",
+    "bibDesc": "Penampil BibTeX terstruktur dengan tabel yang dapat diurutkan menampilkan tipe, kunci, judul, penulis, dan tahun. Baris yang dapat diperluas untuk semua field entri.",
+    "bibHighlight": "Tabel terstruktur + Dapat diperluas",
+    "orgName": "Penampil Org Mode",
+    "orgDesc": "Renderer Emacs Org-mode dengan heading, status TODO, prioritas, blok kode, tabel, property drawers, dan pemformatan inline.",
+    "orgHighlight": "Status TODO + Blok kode",
+    "asciidocName": "Penampil AsciiDoc",
+    "asciidocDesc": "Renderer AsciiDoc dengan heading, admonitions (NOTE, TIP, WARNING), blok kode dengan label bahasa, tabel, dan kutipan blok.",
+    "asciidocHighlight": "Admonitions + Blok kode",
+    "rstName": "Penampil reStructuredText",
+    "rstDesc": "Renderer RST dengan deteksi heading, directives (code-block, note, warning), roles, tautan, dan dukungan gambar/figure.",
+    "rstHighlight": "Directives + Roles"
   },
   "featuresSection": {
     "heading": "Fitur yang Membuat Perbedaan",
@@ -188,7 +209,7 @@
   },
   "comparison": {
     "headingBefore": "Gantikan",
-    "headingStrike": "8 alat",
+    "headingStrike": "10 alat",
     "headingAfter": "dengan satu",
     "subheading": "Setiap tugas yang saat ini memerlukan membuka aplikasi lain, Dokos menanganinya secara native.",
     "colTask": "Tugas",
@@ -210,6 +231,12 @@
     "logsDokos": "Kode warna + Filter level",
     "notebookTask": "Lihat Notebook",
     "notebookDokos": "Render langsung, tanpa server",
+    "texTask": "Baca dokumen LaTeX",
+    "texOthers": "Kompilasi dengan pdflatex",
+    "texDokos": "Pratinjau KaTeX, tanpa kompilasi",
+    "subtitleTask": "Lihat subtitle",
+    "subtitleOthers": "Notepad / editor teks",
+    "subtitleDokos": "Tabel terparse dengan timestamp",
     "summaryWithout": "aplikasi yang perlu Anda buka, instal, dan perbarui",
     "summaryWith": "aplikasi native, ringan, semua bawaan, tanpa plugin"
   },

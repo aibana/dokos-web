@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dokos — 1つのアプリ。30+フォーマット。無限の可能性。",
-    "description": "Dokos は開発者向けのネイティブデスクトップドキュメントリーダーです。18以上のファイル形式をサポート：LaTeX・Mermaid対応の Markdown、JSON、YAML、CSV、PDF、Jupyter Notebooks など。Tauri 2 と Rust で構築。"
+    "description": "Dokos は開発者向けのネイティブデスクトップドキュメントリーダーです。50以上のフォーマットに対応する24の専門ビューアを搭載：LaTeX・Mermaid対応の Markdown、JSON、YAML、CSV、PDF、Jupyter Notebooks など。Tauri 2 と Rust で構築。"
   },
   "common": {
     "downloadNow": "今すぐダウンロード",
@@ -36,7 +36,7 @@
     "term": "ターミナル"
   },
   "formats": {
-    "heading": "18+ フォーマットをネイティブサポート",
+    "heading": "50+ フォーマットをネイティブサポート",
     "subheading": "プラグイン不要。そのまま動きます。",
     "documents": "ドキュメント",
     "dataConfig": "データ & 設定",
@@ -105,9 +105,9 @@
     "availableFor": "macOS、Windows、Linux で利用可能。"
   },
   "viewers": {
-    "heading": "17以上の専門ネイティブビューア",
+    "heading": "24の専門ネイティブビューア",
     "subheading": "各ファイル形式には最適化された専用ビューアが用意されています — 単なるシンタックスハイライトではなく、目的に特化したインターフェースです。",
-    "countBadge": "17のビューアを内蔵、プラグイン不要",
+    "countBadge": "24のビューアを内蔵、プラグイン不要",
     "catDocuments": "ドキュメント",
     "catData": "データ & 設定",
     "catCode": "コード & テクニカル",
@@ -140,7 +140,7 @@
     "tomlDesc": "折りたたみ可能なセクション付きのTOML設定ファイル用ツリー、グラフ、ロービュー。",
     "tomlHighlight": "ツリー + グラフ + ロー",
     "iniName": "INI ビューア",
-    "iniDesc": "INI、.cfg、.confファイル用の構造化ビュー。セクションベースの折りたたみナビゲーション付き。",
+    "iniDesc": "INI、.cfg、.conf、.ovpnファイル用の構造化ビュー。セクションベースの折りたたみナビゲーション付き。",
     "iniHighlight": "セクションベースナビゲーション",
     "csvName": "CSV ビューア",
     "csvDesc": "固定ヘッダー、ソート可能な列、フィルター付きのインタラクティブテーブルで効率的なデータ探索。",
@@ -162,9 +162,30 @@
     "diffHighlight": "サイドバイサイド + インライン",
     "diffFormats": "任意の2ファイル",
     "codeName": "コードビューア",
-    "codeDesc": "15以上のプログラミング言語とプレーンテキストのシンタックスハイライト付きMonaco搭載ビューア。",
+    "codeDesc": "15以上のプログラミング言語、DNS zones、Terraform、プレーンテキストのシンタックスハイライト付きMonaco搭載ビューア。",
     "codeHighlight": "15以上の言語をサポート",
-    "codeFormats": "15以上の言語"
+    "codeFormats": "15以上の言語",
+    "subtitleName": "字幕ビューア",
+    "subtitleDesc": "形式別パーサーを備えた字幕ファイル専用ビューア。SRT、VTT、ASS/SSA、SUB形式のインデックス、タイムスタンプ、テキストをテーブル表示。",
+    "subtitleHighlight": "4形式 + テーブル表示",
+    "patchName": "Patch ビューア",
+    "patchDesc": "追加を緑、削除を赤で色分けしたunified diffビューア。折りたたみ可能なファイルセクションと両ファイルの行番号付き。",
+    "patchHighlight": "色分け + 折りたたみ可能",
+    "texName": "LaTeX ビューア",
+    "texDesc": "KaTeX数式（インライン・ブロック）、見出し、テキストフォーマット、参照解決付きでLaTeXドキュメントをレンダリング。",
+    "texHighlight": "KaTeX数式レンダリング",
+    "bibName": "参考文献ビューア",
+    "bibDesc": "タイプ、キー、タイトル、著者、年を表示するソート可能なテーブル付きの構造化BibTeXビューア。全フィールド展開可能。",
+    "bibHighlight": "構造化テーブル + 展開可能",
+    "orgName": "Org Mode ビューア",
+    "orgDesc": "見出し、TODO状態、優先度、コードブロック、テーブル、プロパティドロワー、インラインフォーマット対応のEmacs Org-modeレンダラー。",
+    "orgHighlight": "TODO状態 + コードブロック",
+    "asciidocName": "AsciiDoc ビューア",
+    "asciidocDesc": "見出し、注意書き（NOTE、TIP、WARNING）、言語ラベル付きコードブロック、テーブル、引用ブロック対応のAsciiDocレンダラー。",
+    "asciidocHighlight": "注意書き + コードブロック",
+    "rstName": "reStructuredText ビューア",
+    "rstDesc": "見出し検出、ディレクティブ（code-block、note、warning）、ロール、リンク、画像/図サポート付きRSTレンダラー。",
+    "rstHighlight": "ディレクティブ + ロール"
   },
   "featuresSection": {
     "heading": "違いを生む機能",
@@ -188,7 +209,7 @@
   },
   "comparison": {
     "headingBefore": "",
-    "headingStrike": "8つのツール",
+    "headingStrike": "10つのツール",
     "headingAfter": "を1つに置き換えよう",
     "subheading": "今日、別のアプリを開く必要があるすべてのタスクを、Dokos がネイティブに処理します。",
     "colTask": "タスク",
@@ -210,6 +231,12 @@
     "logsDokos": "色分け + レベルフィルタ",
     "notebookTask": "Notebook を表示",
     "notebookDokos": "直接レンダリング、サーバー不要",
+    "texTask": "LaTeX文書を読む",
+    "texOthers": "pdflatexでコンパイル",
+    "texDokos": "KaTeXプレビュー、コンパイル不要",
+    "subtitleTask": "字幕を表示",
+    "subtitleOthers": "メモ帳 / テキストエディタ",
+    "subtitleDokos": "タイムスタンプ付きパーステーブル",
     "summaryWithout": "個のアプリを開き、インストールし、更新し続ける必要があります",
     "summaryWith": "つのネイティブアプリ、軽量、すべて組み込み、プラグインゼロ"
   },

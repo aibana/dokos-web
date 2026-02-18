@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dokos — Tek Uygulama. 30+ Format. Sonsuz Olasılıklar.",
-    "description": "Dokos, geliştiriciler için yerel bir masaüstü belge okuyucusudur. 18'den fazla dosya formatını destekler: LaTeX ve Mermaid ile Markdown, JSON, YAML, CSV, PDF, Jupyter Notebooks ve daha fazlası. Tauri 2 ve Rust ile geliştirilmiştir."
+    "description": "Dokos, geliştiriciler için yerel bir masaüstü belge okuyucusudur. 50'den fazla format için 24 uzmanlaşmış görüntüleyici: LaTeX ve Mermaid ile Markdown, JSON, YAML, CSV, PDF, Jupyter Notebooks ve daha fazlası. Tauri 2 ve Rust ile geliştirilmiştir."
   },
   "common": {
     "downloadNow": "Şimdi İndir",
@@ -36,7 +36,7 @@
     "term": "Terminal"
   },
   "formats": {
-    "heading": "18+ Format için Yerel Destek",
+    "heading": "50+ Format için Yerel Destek",
     "subheading": "Eklenti gerekmez. Sadece çalışır.",
     "documents": "Belgeler",
     "dataConfig": "Veri ve Yapılandırma",
@@ -105,9 +105,9 @@
     "availableFor": "macOS, Windows ve Linux için kullanılabilir."
   },
   "viewers": {
-    "heading": "17+ Uzmanlaşmış Yerel Görüntüleyici",
+    "heading": "24 Uzmanlaşmış Yerel Görüntüleyici",
     "subheading": "Her dosya türü kendi optimize edilmiş görüntüleyicisine sahiptir — sadece söz dizimi vurgulama değil, amaca yönelik tasarlanmış bir arayüz.",
-    "countBadge": "17 yerleşik görüntüleyici, sıfır eklenti gerekli",
+    "countBadge": "24 yerleşik görüntüleyici, sıfır eklenti gerekli",
     "catDocuments": "Belgeler",
     "catData": "Veri ve Yapılandırma",
     "catCode": "Kod ve Teknik",
@@ -140,7 +140,7 @@
     "tomlDesc": "Katlanabilir bölümlerle TOML yapılandırma dosyaları için ağaç, grafik ve ham görünümler.",
     "tomlHighlight": "Ağaç + Grafik + Ham",
     "iniName": "INI Görüntüleyici",
-    "iniDesc": "INI, .cfg ve .conf dosyaları için bölüm tabanlı katlanabilir navigasyonlu yapılandırılmış görünüm.",
+    "iniDesc": "INI, .cfg, .conf ve .ovpn dosyaları için bölüm tabanlı katlanabilir navigasyonlu yapılandırılmış görünüm.",
     "iniHighlight": "Bölüm tabanlı navigasyon",
     "csvName": "CSV Görüntüleyici",
     "csvDesc": "Sabit başlıklar, sıralanabilir sütunlar ve verimli veri keşfi için filtreler içeren etkileşimli tablo.",
@@ -162,9 +162,30 @@
     "diffHighlight": "Yan yana + Satır içi",
     "diffFormats": "Herhangi iki dosya",
     "codeName": "Kod Görüntüleyici",
-    "codeDesc": "15+ programlama dili ve düz metin için söz dizimi vurgulama ile Monaco destekli görüntüleyici.",
+    "codeDesc": "15+ programlama dili, DNS zones, Terraform ve düz metin için söz dizimi vurgulama ile Monaco destekli görüntüleyici.",
     "codeHighlight": "15+ dil desteklenir",
-    "codeFormats": "15+ dil"
+    "codeFormats": "15+ dil",
+    "subtitleName": "Altyazı Görüntüleyici",
+    "subtitleDesc": "Formata özel ayrıştırıcılarla altyazı dosyaları için özel görüntüleyici. SRT, VTT, ASS/SSA ve SUB formatları için indeks, zaman damgaları ve metin içeren tablo görünümü.",
+    "subtitleHighlight": "4 format + Tablo görünümü",
+    "patchName": "Patch Görüntüleyici",
+    "patchDesc": "Eklemeler yeşil, silmeler kırmızı renk kodlu unified diff görüntüleyici. Katlanabilir dosya bölümleri ve her iki dosya için satır numaraları.",
+    "patchHighlight": "Renk kodlu + Katlanabilir",
+    "texName": "LaTeX Görüntüleyici",
+    "texDesc": "KaTeX formülleri (satır içi ve blok), başlıklar, metin biçimlendirme ve referans çözümleme ile LaTeX belgelerini oluşturun.",
+    "texHighlight": "KaTeX formül oluşturma",
+    "bibName": "Kaynakça Görüntüleyici",
+    "bibDesc": "Tür, anahtar, başlık, yazar ve yıl gösteren sıralanabilir tablolu yapılandırılmış BibTeX görüntüleyici. Tüm giriş alanları için genişletilebilir satırlar.",
+    "bibHighlight": "Yapılandırılmış tablo + Genişletilebilir",
+    "orgName": "Org Mode Görüntüleyici",
+    "orgDesc": "Başlıklar, TODO durumları, öncelikler, kod blokları, tablolar, özellik çekmeceleri ve satır içi biçimlendirme ile Emacs Org-mode oluşturucu.",
+    "orgHighlight": "TODO durumları + Kod blokları",
+    "asciidocName": "AsciiDoc Görüntüleyici",
+    "asciidocDesc": "Başlıklar, uyarılar (NOTE, TIP, WARNING), dil etiketli kod blokları, tablolar ve alıntı blokları ile AsciiDoc oluşturucu.",
+    "asciidocHighlight": "Uyarılar + Kod blokları",
+    "rstName": "reStructuredText Görüntüleyici",
+    "rstDesc": "Başlık algılama, yönergeler (code-block, note, warning), roller, bağlantılar ve resim/şekil desteğiyle RST oluşturucu.",
+    "rstHighlight": "Yönergeler + Roller"
   },
   "featuresSection": {
     "heading": "Fark Yaratan Özellikler",
@@ -188,7 +209,7 @@
   },
   "comparison": {
     "headingBefore": "",
-    "headingStrike": "8 aracı",
+    "headingStrike": "10 aracı",
     "headingAfter": "tek bir araçla değiştirin",
     "subheading": "Bugün başka bir uygulama açmayı gerektiren her görev, Dokos tarafından yerel olarak halledilir.",
     "colTask": "Görev",
@@ -210,6 +231,12 @@
     "logsDokos": "Renk kodlu + Seviye filtreleri",
     "notebookTask": "Notebook görüntüle",
     "notebookDokos": "Doğrudan render, sunucu gerekmez",
+    "texTask": "LaTeX belgesi oku",
+    "texOthers": "pdflatex ile derle",
+    "texDokos": "KaTeX önizleme, derleme gereksiz",
+    "subtitleTask": "Altyazıları görüntüle",
+    "subtitleOthers": "Not Defteri / metin düzenleyici",
+    "subtitleDokos": "Zaman damgalı ayrıştırılmış tablo",
     "summaryWithout": "açmanız, kurmanız ve güncel tutmanız gereken uygulama",
     "summaryWith": "yerel uygulama, hafif, hepsi dahili, sıfır eklenti"
   },

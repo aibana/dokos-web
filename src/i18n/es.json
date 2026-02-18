@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dokos — Una App. +30 Formatos. Posibilidades Infinitas.",
-    "description": "Dokos es un lector de documentos de escritorio nativo para desarrolladores. Soporta más de 18 formatos: Markdown con LaTeX y Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks y más. Construido con Tauri 2 y Rust."
+    "description": "Dokos es un lector de documentos de escritorio nativo para desarrolladores. 24 visores especializados para 50+ formatos: Markdown con LaTeX y Mermaid, JSON, YAML, CSV, PDF, LaTeX, Org, AsciiDoc, Jupyter Notebooks y más. Construido con Tauri 2 y Rust."
   },
   "common": {
     "downloadNow": "Descargar Ahora",
@@ -36,7 +36,7 @@
     "term": "Terminal"
   },
   "formats": {
-    "heading": "Soporte Nativo para +18 Formatos",
+    "heading": "Soporte Nativo para +50 Formatos",
     "subheading": "Sin plugins. Simplemente funciona.",
     "documents": "Documentos",
     "dataConfig": "Datos y Config",
@@ -105,9 +105,9 @@
     "availableFor": "Disponible para macOS, Windows y Linux."
   },
   "viewers": {
-    "heading": "17+ visores nativos especializados",
+    "heading": "24 visores nativos especializados",
     "subheading": "Cada tipo de archivo tiene su propio visor optimizado — no solo resaltado de sintaxis, sino una interfaz diseñada a medida.",
-    "countBadge": "17 visores integrados, cero plugins necesarios",
+    "countBadge": "24 visores integrados, cero plugins necesarios",
     "catDocuments": "Documentos",
     "catData": "Datos y Config",
     "catCode": "Código y Técnico",
@@ -140,7 +140,7 @@
     "tomlDesc": "Vistas de árbol, grafo y raw para archivos de configuración TOML con secciones colapsables.",
     "tomlHighlight": "Árbol + Grafo + Raw",
     "iniName": "Visor INI",
-    "iniDesc": "Vista estructurada para archivos INI, .cfg y .conf con navegación colapsable por secciones.",
+    "iniDesc": "Vista estructurada para archivos INI, .cfg, .conf y .ovpn con navegación colapsable por secciones.",
     "iniHighlight": "Navegación por secciones",
     "csvName": "Visor CSV",
     "csvDesc": "Tabla interactiva con encabezados fijos, columnas ordenables y filtros para exploración eficiente de datos.",
@@ -162,9 +162,30 @@
     "diffHighlight": "Lado a lado + Inline",
     "diffFormats": "Cualquier par de archivos",
     "codeName": "Visor de Código",
-    "codeDesc": "Visor con Monaco y resaltado de sintaxis para 15+ lenguajes de programación y texto plano.",
+    "codeDesc": "Visor con Monaco y resaltado de sintaxis para 15+ lenguajes de programación, zonas DNS, Terraform y texto plano.",
     "codeHighlight": "15+ lenguajes soportados",
-    "codeFormats": "15+ lenguajes"
+    "codeFormats": "15+ lenguajes",
+    "subtitleName": "Visor de Subtítulos",
+    "subtitleDesc": "Visor dedicado para archivos de subtítulos con parsers por formato. Vista en tabla con índice, timestamps y texto para SRT, VTT, ASS/SSA y SUB.",
+    "subtitleHighlight": "4 formatos + Vista tabla",
+    "patchName": "Visor de Patches",
+    "patchDesc": "Visor de diff unificado con colores: adiciones en verde, eliminaciones en rojo, secciones colapsables por archivo y números de línea.",
+    "patchHighlight": "Coloreado + Colapsable",
+    "texName": "Visor LaTeX",
+    "texDesc": "Renderiza documentos LaTeX con fórmulas matemáticas KaTeX (inline y bloque), headings, formateo de texto y resolución de referencias.",
+    "texHighlight": "Renderizado KaTeX",
+    "bibName": "Visor de Bibliografía",
+    "bibDesc": "Visor BibTeX estructurado con tabla ordenable mostrando tipo, clave, título, autor y año. Filas expandibles con todos los campos.",
+    "bibHighlight": "Tabla estructurada + Expandible",
+    "orgName": "Visor Org Mode",
+    "orgDesc": "Renderizador de Emacs Org-mode con headings, estados TODO, prioridades, bloques de código, tablas, property drawers y formateo inline.",
+    "orgHighlight": "Estados TODO + Bloques de código",
+    "asciidocName": "Visor AsciiDoc",
+    "asciidocDesc": "Renderizador AsciiDoc con headings, admonitions (NOTE, TIP, WARNING), bloques de código con etiqueta de lenguaje, tablas y blockquotes.",
+    "asciidocHighlight": "Admonitions + Bloques de código",
+    "rstName": "Visor reStructuredText",
+    "rstDesc": "Renderizador RST con detección de headings, directivas (code-block, note, warning), roles, links y soporte de imágenes/figuras.",
+    "rstHighlight": "Directivas + Roles"
   },
   "featuresSection": {
     "heading": "Funcionalidades que Marcan la Diferencia",
@@ -188,7 +209,7 @@
   },
   "comparison": {
     "headingBefore": "Reemplaza",
-    "headingStrike": "8 herramientas",
+    "headingStrike": "10 herramientas",
     "headingAfter": "con una",
     "subheading": "Cada tarea que hoy requiere abrir otra app, Dokos la resuelve nativamente.",
     "colTask": "Tarea",
@@ -210,6 +231,12 @@
     "logsDokos": "Coloreado + Filtros por nivel",
     "notebookTask": "Ver un Notebook",
     "notebookDokos": "Render directo sin servidor",
+    "texTask": "Leer un LaTeX",
+    "texOthers": "Compilar con pdflatex",
+    "texDokos": "Preview con KaTeX, sin compilar",
+    "subtitleTask": "Ver subtítulos",
+    "subtitleOthers": "Bloc de notas / editor de texto",
+    "subtitleDokos": "Tabla parseada con timestamps",
     "summaryWithout": "apps que necesitas abrir, instalar y mantener actualizadas",
     "summaryWith": "app nativa, ligera, con todo integrado y sin plugins"
   },

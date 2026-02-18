@@ -17,6 +17,8 @@ const tasks = [
   { task: t.comparison.diffTask, others: 'diff CLI / VS Code', icon: 'difference', dokosFeature: t.comparison.diffDokos },
   { task: t.comparison.logsTask, others: 'Terminal + grep', icon: 'terminal', dokosFeature: t.comparison.logsDokos },
   { task: t.comparison.notebookTask, others: 'Jupyter Server', icon: 'science', dokosFeature: t.comparison.notebookDokos },
+  { task: t.comparison.texTask, others: t.comparison.texOthers, icon: 'functions', dokosFeature: t.comparison.texDokos },
+  { task: t.comparison.subtitleTask, others: t.comparison.subtitleOthers, icon: 'subtitles', dokosFeature: t.comparison.subtitleDokos },
 ];
 ---
 
@@ -70,7 +72,7 @@ const tasks = [
       <div class="mt-10 flex flex-col sm:flex-row items-center gap-0 max-w-3xl mx-auto">
         <!-- Before -->
         <div class="flex-1 w-full bg-red-500/5 border border-red-500/15 rounded-xl sm:rounded-r-none p-5 text-center">
-          <div class="text-3xl font-bold text-red-400 mb-2">8+</div>
+          <div class="text-3xl font-bold text-red-400 mb-2">10+</div>
           <p class="text-sm text-slate-500">{t.comparison.summaryWithout}</p>
         </div>
 

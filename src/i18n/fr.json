@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dokos — Une App. +30 Formats. Possibilités Infinies.",
-    "description": "Dokos est un lecteur de documents de bureau natif pour les développeurs. Prend en charge plus de 18 formats : Markdown avec LaTeX et Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks et plus. Construit avec Tauri 2 et Rust."
+    "description": "Dokos est un lecteur de documents de bureau natif pour les développeurs avec 24 visionneuses spécialisées pour plus de 50 formats : Markdown avec LaTeX et Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks et plus. Construit avec Tauri 2 et Rust."
   },
   "common": {
     "downloadNow": "Télécharger",
@@ -36,7 +36,7 @@
     "term": "Terminal"
   },
   "formats": {
-    "heading": "Support Natif pour +18 Formats",
+    "heading": "Support Natif pour +50 Formats",
     "subheading": "Sans plugins. Ça fonctionne, tout simplement.",
     "documents": "Documents",
     "dataConfig": "Données & Config",
@@ -105,9 +105,9 @@
     "availableFor": "Disponible pour macOS, Windows et Linux."
   },
   "viewers": {
-    "heading": "17+ visionneuses natives spécialisées",
+    "heading": "24 visionneuses natives spécialisées",
     "subheading": "Chaque type de fichier dispose de sa propre visionneuse optimisee — pas seulement de la coloration syntaxique, mais une interface dediee.",
-    "countBadge": "17 visionneuses integrees, zero plugin necessaire",
+    "countBadge": "24 visionneuses integrees, zero plugin necessaire",
     "catDocuments": "Documents",
     "catData": "Donnees et Config",
     "catCode": "Code et Technique",
@@ -140,7 +140,7 @@
     "tomlDesc": "Vues en arbre, graphe et brut pour les fichiers de configuration TOML avec sections repliables.",
     "tomlHighlight": "Arbre + Graphe + Brut",
     "iniName": "Visionneuse INI",
-    "iniDesc": "Vue structuree pour les fichiers INI, .cfg et .conf avec navigation repliable par sections.",
+    "iniDesc": "Vue structuree pour les fichiers INI, .cfg, .conf et .ovpn avec navigation repliable par sections.",
     "iniHighlight": "Navigation par sections",
     "csvName": "Visionneuse CSV",
     "csvDesc": "Tableau interactif avec en-tetes fixes, colonnes triables et filtres pour une exploration efficace des donnees.",
@@ -162,9 +162,30 @@
     "diffHighlight": "Cote a cote + En ligne",
     "diffFormats": "Deux fichiers quelconques",
     "codeName": "Visionneuse de Code",
-    "codeDesc": "Visionneuse basee sur Monaco avec coloration syntaxique pour 15+ langages de programmation et texte brut.",
+    "codeDesc": "Visionneuse basee sur Monaco avec coloration syntaxique pour 15+ langages de programmation, zones DNS, Terraform et texte brut.",
     "codeHighlight": "15+ langages supportes",
-    "codeFormats": "15+ langages"
+    "codeFormats": "15+ langages",
+    "subtitleName": "Visionneuse de Sous-titres",
+    "subtitleDesc": "Visionneuse dediee pour les fichiers de sous-titres avec des parseurs specifiques par format. Vue en tableau avec index, horodatages et texte pour les formats SRT, VTT, ASS/SSA et SUB.",
+    "subtitleHighlight": "4 formats + Vue en tableau",
+    "patchName": "Visionneuse de Patches",
+    "patchDesc": "Visionneuse de diff unifie avec code couleur : ajouts en vert, suppressions en rouge, sections de fichiers repliables et numeros de ligne pour les deux fichiers.",
+    "patchHighlight": "Code couleur + Repliable",
+    "texName": "Visionneuse LaTeX",
+    "texDesc": "Rendez des documents LaTeX avec des formules mathematiques KaTeX (en ligne et en bloc), des titres, la mise en forme du texte et la resolution des references.",
+    "texHighlight": "Rendu mathematique KaTeX",
+    "bibName": "Visionneuse de Bibliographie",
+    "bibDesc": "Visionneuse BibTeX structuree avec tableau triable affichant le type, la cle, le titre, l'auteur et l'annee. Lignes extensibles pour tous les champs.",
+    "bibHighlight": "Tableau structure + Extensible",
+    "orgName": "Visionneuse Org Mode",
+    "orgDesc": "Moteur de rendu Emacs Org-mode avec titres, etats TODO, priorites, blocs de code, tableaux, tiroirs de proprietes et mise en forme en ligne.",
+    "orgHighlight": "Etats TODO + Blocs de code",
+    "asciidocName": "Visionneuse AsciiDoc",
+    "asciidocDesc": "Moteur de rendu AsciiDoc avec titres, admonitions (NOTE, TIP, WARNING), blocs de code avec etiquettes de langage, tableaux et citations.",
+    "asciidocHighlight": "Admonitions + Blocs de code",
+    "rstName": "Visionneuse reStructuredText",
+    "rstDesc": "Moteur de rendu RST avec detection de titres, directives (code-block, note, warning), roles, liens et support d'images/figures.",
+    "rstHighlight": "Directives + Roles"
   },
   "featuresSection": {
     "heading": "Des fonctionnalites qui font la difference",
@@ -188,7 +209,7 @@
   },
   "comparison": {
     "headingBefore": "Remplacez",
-    "headingStrike": "8 outils",
+    "headingStrike": "10 outils",
     "headingAfter": "par un seul",
     "subheading": "Chaque tâche qui nécessite d'ouvrir une autre application aujourd'hui, Dokos la gère nativement.",
     "colTask": "Tâche",
@@ -210,6 +231,12 @@
     "logsDokos": "Code couleur + Filtres par niveau",
     "notebookTask": "Visualiser un Notebook",
     "notebookDokos": "Rendu direct, sans serveur",
+    "texTask": "Lire un document LaTeX",
+    "texOthers": "Compiler avec pdflatex",
+    "texDokos": "Apercu KaTeX, sans compilation",
+    "subtitleTask": "Visualiser des sous-titres",
+    "subtitleOthers": "Bloc-notes / editeur de texte",
+    "subtitleDokos": "Tableau formate avec horodatages",
     "summaryWithout": "applications à ouvrir, installer et maintenir à jour",
     "summaryWith": "application native, légère, tout intégré, zéro plugin"
   },

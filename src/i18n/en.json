@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dokos — One App. 30+ Formats. Infinite Possibilities.",
-    "description": "Dokos is a native desktop document reader for developers. Supports 18+ file formats: Markdown with LaTeX and Mermaid, JSON, YAML, CSV, PDF, Jupyter Notebooks and more. Built with Tauri 2 and Rust."
+    "description": "Dokos is a native desktop document reader for developers. 24 specialized viewers for 50+ formats: Markdown with LaTeX and Mermaid, JSON, YAML, CSV, PDF, LaTeX, Org, AsciiDoc, Jupyter Notebooks and more. Built with Tauri 2 and Rust."
   },
   "common": {
     "downloadNow": "Download Now",
@@ -36,7 +36,7 @@
     "term": "Term"
   },
   "formats": {
-    "heading": "Native Support for 18+ Formats",
+    "heading": "Native Support for 50+ Formats",
     "subheading": "No plugins required. It just works.",
     "documents": "Documents",
     "dataConfig": "Data & Config",
@@ -105,9 +105,9 @@
     "availableFor": "Available for macOS, Windows, and Linux."
   },
   "viewers": {
-    "heading": "17+ Specialized Native Viewers",
+    "heading": "24 Specialized Native Viewers",
     "subheading": "Each file type gets its own optimized viewer — not just syntax highlighting, but a purpose-built interface.",
-    "countBadge": "17 viewers built-in, zero plugins needed",
+    "countBadge": "24 viewers built-in, zero plugins needed",
     "catDocuments": "Documents",
     "catData": "Data & Config",
     "catCode": "Code & Technical",
@@ -140,7 +140,7 @@
     "tomlDesc": "Tree, graph, and raw views for TOML configuration files with collapsible sections.",
     "tomlHighlight": "Tree + Graph + Raw",
     "iniName": "INI Viewer",
-    "iniDesc": "Structured view for INI, .cfg, and .conf files with section-based collapsible navigation.",
+    "iniDesc": "Structured view for INI, .cfg, .conf, and .ovpn files with section-based collapsible navigation.",
     "iniHighlight": "Section-based navigation",
     "csvName": "CSV Viewer",
     "csvDesc": "Interactive table with fixed headers, sortable columns, and filters for efficient data exploration.",
@@ -162,9 +162,30 @@
     "diffHighlight": "Side-by-side + Inline",
     "diffFormats": "Any two files",
     "codeName": "Code Viewer",
-    "codeDesc": "Monaco-powered viewer with syntax highlighting for 15+ programming languages and plain text.",
+    "codeDesc": "Monaco-powered viewer with syntax highlighting for 15+ programming languages, DNS zones, Terraform, and plain text.",
     "codeHighlight": "15+ languages supported",
-    "codeFormats": "15+ languages"
+    "codeFormats": "15+ languages",
+    "subtitleName": "Subtitle Viewer",
+    "subtitleDesc": "Dedicated viewer for subtitle files with format-specific parsers. Table view with index, timestamps, and text for SRT, VTT, ASS/SSA, and SUB formats.",
+    "subtitleHighlight": "4 formats + Table view",
+    "patchName": "Patch Viewer",
+    "patchDesc": "Color-coded unified diff viewer with additions in green, deletions in red, collapsible file sections, and line numbers for both files.",
+    "patchHighlight": "Color-coded + Collapsible",
+    "texName": "LaTeX Viewer",
+    "texDesc": "Render LaTeX documents with KaTeX math formulas (inline and block), headings, text formatting, and reference resolution.",
+    "texHighlight": "KaTeX math rendering",
+    "bibName": "Bibliography Viewer",
+    "bibDesc": "Structured BibTeX viewer with sortable table showing type, key, title, author, and year. Expandable rows for all entry fields.",
+    "bibHighlight": "Structured table + Expandable",
+    "orgName": "Org Mode Viewer",
+    "orgDesc": "Emacs Org-mode renderer with headings, TODO states, priorities, code blocks, tables, property drawers, and inline formatting.",
+    "orgHighlight": "TODO states + Code blocks",
+    "asciidocName": "AsciiDoc Viewer",
+    "asciidocDesc": "AsciiDoc renderer with headings, admonitions (NOTE, TIP, WARNING), code blocks with language labels, tables, and blockquotes.",
+    "asciidocHighlight": "Admonitions + Code blocks",
+    "rstName": "reStructuredText Viewer",
+    "rstDesc": "RST renderer with heading detection, directives (code-block, note, warning), roles, links, and image/figure support.",
+    "rstHighlight": "Directives + Roles"
   },
   "featuresSection": {
     "heading": "Features That Make the Difference",
@@ -188,7 +209,7 @@
   },
   "comparison": {
     "headingBefore": "Replace",
-    "headingStrike": "8 tools",
+    "headingStrike": "10 tools",
     "headingAfter": "with one",
     "subheading": "Every task that requires opening another app today, Dokos handles natively.",
     "colTask": "Task",
@@ -210,6 +231,12 @@
     "logsDokos": "Color-coded + Level filters",
     "notebookTask": "View a Notebook",
     "notebookDokos": "Direct render, no server needed",
+    "texTask": "Read a LaTeX doc",
+    "texOthers": "Compile with pdflatex",
+    "texDokos": "KaTeX preview, no compilation",
+    "subtitleTask": "View subtitles",
+    "subtitleOthers": "Notepad / text editor",
+    "subtitleDokos": "Parsed table with timestamps",
     "summaryWithout": "apps you need to open, install, and keep updated",
     "summaryWith": "native app, lightweight, all built-in, zero plugins"
   },

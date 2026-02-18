@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dokos — 一个应用。30+格式。无限可能。",
-    "description": "Dokos 是一款面向开发者的原生桌面文档阅读器。支持18+种文件格式：Markdown（含 LaTeX 和 Mermaid）、JSON、YAML、CSV、PDF、Jupyter Notebooks 等。基于 Tauri 2 和 Rust 构建。"
+    "description": "Dokos 是一款面向开发者的原生桌面文档阅读器，拥有24个专业查看器，支持50+种文件格式：Markdown（含 LaTeX 和 Mermaid）、JSON、YAML、CSV、PDF、Jupyter Notebooks 等。基于 Tauri 2 和 Rust 构建。"
   },
   "common": {
     "downloadNow": "立即下载",
@@ -36,7 +36,7 @@
     "term": "终端"
   },
   "formats": {
-    "heading": "原生支持 18+ 种格式",
+    "heading": "原生支持 50+ 种格式",
     "subheading": "无需插件。开箱即用。",
     "documents": "文档",
     "dataConfig": "数据与配置",
@@ -105,9 +105,9 @@
     "availableFor": "适用于 macOS、Windows 和 Linux。"
   },
   "viewers": {
-    "heading": "17+ 专业原生查看器",
+    "heading": "24 个专业原生查看器",
     "subheading": "每种文件类型都有专属的优化查看器——不仅仅是语法高亮，而是专门构建的界面。",
-    "countBadge": "内置 17 个查看器，零插件需求",
+    "countBadge": "内置 24 个查看器，零插件需求",
     "catDocuments": "文档",
     "catData": "数据与配置",
     "catCode": "代码与技术",
@@ -140,7 +140,7 @@
     "tomlDesc": "TOML 配置文件的树、图谱和原始视图，支持可折叠章节。",
     "tomlHighlight": "树 + 图谱 + 原始",
     "iniName": "INI 查看器",
-    "iniDesc": "INI、.cfg 和 .conf 文件的结构化视图，支持基于节的可折叠导航。",
+    "iniDesc": "INI、.cfg、.conf 和 .ovpn 文件的结构化视图，支持基于节的可折叠导航。",
     "iniHighlight": "基于节的导航",
     "csvName": "CSV 查看器",
     "csvDesc": "交互式表格，固定表头、可排序列和过滤器，高效探索数据。",
@@ -162,9 +162,30 @@
     "diffHighlight": "并排 + 内联",
     "diffFormats": "任意两个文件",
     "codeName": "代码查看器",
-    "codeDesc": "基于 Monaco 的查看器，支持 15+ 种编程语言和纯文本的语法高亮。",
+    "codeDesc": "基于 Monaco 的查看器，支持 15+ 种编程语言、DNS 区域文件、Terraform 和纯文本的语法高亮。",
     "codeHighlight": "支持 15+ 种语言",
-    "codeFormats": "15+ 种语言"
+    "codeFormats": "15+ 种语言",
+    "subtitleName": "字幕查看器",
+    "subtitleDesc": "专用字幕文件查看器，具有格式特定的解析器。表格视图包含索引、时间戳和文本，支持 SRT、VTT、ASS/SSA 和 SUB 格式。",
+    "subtitleHighlight": "4 种格式 + 表格视图",
+    "patchName": "补丁查看器",
+    "patchDesc": "颜色编码的统一 diff 查看器，新增内容为绿色、删除内容为红色，可折叠文件区域，并显示两个文件的行号。",
+    "patchHighlight": "颜色编码 + 可折叠",
+    "texName": "LaTeX 查看器",
+    "texDesc": "使用 KaTeX 渲染 LaTeX 文档的数学公式（行内和块级）、标题、文本格式和引用解析。",
+    "texHighlight": "KaTeX 数学渲染",
+    "bibName": "参考文献查看器",
+    "bibDesc": "结构化 BibTeX 查看器，可排序表格显示类型、键、标题、作者和年份。可展开行查看所有条目字段。",
+    "bibHighlight": "结构化表格 + 可展开",
+    "orgName": "Org Mode 查看器",
+    "orgDesc": "Emacs Org-mode 渲染器，支持标题、TODO 状态、优先级、代码块、表格、属性抽屉和行内格式。",
+    "orgHighlight": "TODO 状态 + 代码块",
+    "asciidocName": "AsciiDoc 查看器",
+    "asciidocDesc": "AsciiDoc 渲染器，支持标题、提示框（NOTE、TIP、WARNING）、带语言标签的代码块、表格和引用块。",
+    "asciidocHighlight": "提示框 + 代码块",
+    "rstName": "reStructuredText 查看器",
+    "rstDesc": "RST 渲染器，支持标题检测、指令（code-block、note、warning）、角色、链接和图片/图形支持。",
+    "rstHighlight": "指令 + 角色"
   },
   "featuresSection": {
     "heading": "与众不同的功能",
@@ -188,7 +209,7 @@
   },
   "comparison": {
     "headingBefore": "用一个应用",
-    "headingStrike": "替代 8 个工具",
+    "headingStrike": "替代 10 个工具",
     "headingAfter": "",
     "subheading": "今天每项需要打开其他应用的任务，Dokos 都能原生处理。",
     "colTask": "任务",
@@ -210,6 +231,12 @@
     "logsDokos": "颜色编码 + 级别筛选",
     "notebookTask": "查看 Notebook",
     "notebookDokos": "直接渲染，无需服务器",
+    "texTask": "阅读 LaTeX 文档",
+    "texOthers": "使用 pdflatex 编译",
+    "texDokos": "KaTeX 预览，无需编译",
+    "subtitleTask": "查看字幕",
+    "subtitleOthers": "记事本 / 文本编辑器",
+    "subtitleDokos": "带时间戳的解析表格",
     "summaryWithout": "个应用需要打开、安装和保持更新",
     "summaryWith": "个原生应用，轻量级，全部内置，零插件"
   },
