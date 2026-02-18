@@ -372,12 +372,14 @@ const slides = [
     startTimer();
   }
 
-  // Preload image 2 after page load for smooth first transition
+  // Preload all carousel slides after page load for smooth transitions
   window.addEventListener("load", () => {
-    const img2 = document.getElementById("slide-2") as HTMLImageElement | null;
-    if (img2 && !img2.complete) {
-      const preloader = new Image();
-      preloader.src = img2.src;
+    for (let i = 2; i <= TOTAL; i++) {
+      const img = document.getElementById(`slide-${i}`) as HTMLImageElement | null;
+      if (img && !img.complete) {
+        const preloader = new Image();
+        preloader.src = img.src;
+      }
     }
   });
 

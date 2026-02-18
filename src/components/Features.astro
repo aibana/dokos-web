@@ -184,10 +184,11 @@ const features = [
                 <div class="lg:w-1/2 relative overflow-hidden rounded-r-2xl">
                   <div class="h-64 lg:h-full min-h-[280px] relative">
                     <img
-                      src={feat.image}
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src={feat.image}
+                      data-load-priority="on-scroll"
                       alt={feat.title}
                       class={`absolute inset-0 w-full h-full object-cover ${feat.imgClass || 'feature-img'}`}
-                      loading="lazy"
                     />
                     {/* Fade edges for seamless blend */}
                     <div class="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-surface-dark to-transparent pointer-events-none" aria-hidden="true"></div>

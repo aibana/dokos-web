@@ -4,6 +4,12 @@ import MarkdownShowcase from "../components/MarkdownShowcase.astro";
 import WorkflowTimeline from "../components/WorkflowTimeline.astro";
 import ComparisonTable from "../components/ComparisonTable.astro";
 import ScreenshotTour from "../components/ScreenshotTour.astro";
+import ViewersVariant1 from "../components/ViewersVariant1.astro";
+import ViewersVariant2 from "../components/ViewersVariant2.astro";
+import Multitasking from "../components/Multitasking.astro";
+import AppMockup from "../components/AppMockup.astro";
+import Formats from "../components/Formats.astro";
+import Viewers from "../components/Viewers.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
@@ -12,25 +18,41 @@ import { getTranslations } from "../i18n/utils";
 
 // Solo accesible en desarrollo — en producción retorna 404
 if (!import.meta.env.DEV) {
-  return Astro.redirect('/404');
+  return Astro.redirect("/404");
 }
 
-const t = getTranslations('es');
+const t = getTranslations("es");
 ---
 
 <BaseLayout locale="es" t={t}>
-  <Head slot="head" title="Test — Variantes de secciones" description="Página de pruebas" canonicalUrl="" ogImage="" ogLocale="es_ES" alternateLinks={[]} locale="es" />
+  <Head
+    slot="head"
+    title="Test — Variantes de secciones"
+    description="Página de pruebas"
+    canonicalUrl=""
+    ogImage=""
+    ogLocale="es_ES"
+    alternateLinks={[]}
+    locale="es"
+  />
   <Navbar slot="navbar" t={t} locale="es" />
 
   <!-- Banner de advertencia -->
-  <div class="bg-yellow-500/10 border-b border-yellow-500/30 py-3 text-center sticky top-0 z-50">
-    <span class="text-yellow-400 text-sm font-medium">Página de pruebas — Solo visible en desarrollo local</span>
+  <div
+    class="bg-yellow-500/10 border-b border-yellow-500/30 py-3 text-center sticky top-0 z-50"
+  >
+    <span class="text-yellow-400 text-sm font-medium"
+      >Página de pruebas — Solo visible en desarrollo local</span
+    >
   </div>
 
   <!-- Sección original (actual) -->
   <div class="border-b-2 border-dashed border-slate-700">
     <div class="max-w-7xl mx-auto px-4 pt-8">
-      <span class="inline-block bg-slate-700 text-slate-300 rounded-full px-4 py-1 text-sm font-bold tracking-wider uppercase mb-4">Original — VisualFeatures</span>
+      <span
+        class="inline-block bg-slate-700 text-slate-300 rounded-full px-4 py-1 text-sm font-bold tracking-wider uppercase mb-4"
+        >Original — VisualFeatures</span
+      >
     </div>
     <VisualFeatures t={t} />
   </div>
@@ -46,9 +68,14 @@ const t = getTranslations('es');
   </div>
 
   <!-- Opción 3: Comparison Table (ELEGIDA) -->
-  <div class="border-b-2 border-dashed border-slate-700 ring-2 ring-green-500/30 ring-offset-2 ring-offset-surface-dark relative">
+  <div
+    class="border-b-2 border-dashed border-slate-700 ring-2 ring-green-500/30 ring-offset-2 ring-offset-surface-dark relative"
+  >
     <div class="absolute top-4 right-4 z-10">
-      <span class="bg-green-500/20 text-green-400 border border-green-500/30 rounded-full px-3 py-1 text-xs font-bold">ELEGIDA</span>
+      <span
+        class="bg-green-500/20 text-green-400 border border-green-500/30 rounded-full px-3 py-1 text-xs font-bold"
+        >ELEGIDA</span
+      >
     </div>
     <ComparisonTable t={t} />
   </div>
@@ -56,6 +83,72 @@ const t = getTranslations('es');
   <!-- Opción 4: Screenshot Tour -->
   <div class="border-b-2 border-dashed border-slate-700">
     <ScreenshotTour />
+  </div>
+
+  <!-- Formats -->
+  <div class="border-b-2 border-dashed border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 pt-8">
+      <span
+        class="inline-block bg-slate-700 text-slate-300 rounded-full px-4 py-1 text-sm font-bold tracking-wider uppercase mb-4"
+        >Formats</span
+      >
+    </div>
+    <Formats t={t} />
+  </div>
+
+  <!-- Multitasking -->
+  <div class="border-b-2 border-dashed border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 pt-8">
+      <span
+        class="inline-block bg-slate-700 text-slate-300 rounded-full px-4 py-1 text-sm font-bold tracking-wider uppercase mb-4"
+        >Multitasking</span
+      >
+    </div>
+    <Multitasking t={t} />
+  </div>
+
+  <!-- AppMockup -->
+  <div class="border-b-2 border-dashed border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 pt-8">
+      <span
+        class="inline-block bg-slate-700 text-slate-300 rounded-full px-4 py-1 text-sm font-bold tracking-wider uppercase mb-4"
+        >AppMockup</span
+      >
+    </div>
+    <AppMockup />
+  </div>
+
+  <!-- Viewers (original) -->
+  <div class="border-b-2 border-dashed border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 pt-8">
+      <span
+        class="inline-block bg-slate-700 text-slate-300 rounded-full px-4 py-1 text-sm font-bold tracking-wider uppercase mb-4"
+        >Viewers (original)</span
+      >
+    </div>
+    <Viewers t={t} />
+  </div>
+
+  <!-- ViewersVariant1 -->
+  <div class="border-b-2 border-dashed border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 pt-8">
+      <span
+        class="inline-block bg-slate-700 text-slate-300 rounded-full px-4 py-1 text-sm font-bold tracking-wider uppercase mb-4"
+        >ViewersVariant1</span
+      >
+    </div>
+    <ViewersVariant1 t={t} />
+  </div>
+
+  <!-- ViewersVariant2 -->
+  <div class="border-b-2 border-dashed border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 pt-8">
+      <span
+        class="inline-block bg-slate-700 text-slate-300 rounded-full px-4 py-1 text-sm font-bold tracking-wider uppercase mb-4"
+        >ViewersVariant2</span
+      >
+    </div>
+    <ViewersVariant2 t={t} />
   </div>
 
   <Footer slot="footer" t={t} locale="es" />

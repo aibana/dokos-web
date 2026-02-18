@@ -1,4 +1,5 @@
 ---
+import ViewersWithImages from "../../components/ViewersWithImages.astro";
 import ToolConvergence from "../../components/ToolConvergence.astro";
 import ComparisonTable from "../../components/ComparisonTable.astro";
 import Performance from "../../components/Performance.astro";
@@ -6,8 +7,6 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Features from "../../components/Features.astro";
 import Profiles from "../../components/Profiles.astro";
 import CtaFinal from "../../components/CtaFinal.astro";
-import Viewers from "../../components/Viewers.astro";
-import ViewersWithImages from "../../components/ViewersWithImages.astro";
 import Footer from "../../components/Footer.astro";
 import Navbar from "../../components/Navbar.astro";
 import Hero from "../../components/Hero.astro";
@@ -17,22 +16,15 @@ import {
   getLocalePath,
   getAlternateLinks,
   ogLocales,
-  type Locale,
+  locales,
+  defaultLocale,
 } from "../../i18n/utils";
 
 export function getStaticPaths() {
-  return [
-    { params: { lang: undefined }, props: { locale: "en" as Locale } },
-    { params: { lang: "es" }, props: { locale: "es" as Locale } },
-    { params: { lang: "pt" }, props: { locale: "pt" as Locale } },
-    { params: { lang: "zh" }, props: { locale: "zh" as Locale } },
-    { params: { lang: "fr" }, props: { locale: "fr" as Locale } },
-    { params: { lang: "hi" }, props: { locale: "hi" as Locale } },
-    { params: { lang: "de" }, props: { locale: "de" as Locale } },
-    { params: { lang: "ja" }, props: { locale: "ja" as Locale } },
-    { params: { lang: "ru" }, props: { locale: "ru" as Locale } },
-    { params: { lang: "ko" }, props: { locale: "ko" as Locale } },
-  ];
+  return locales.map((locale) => ({
+    params: { lang: locale === defaultLocale ? undefined : locale },
+    props: { locale },
+  }));
 }
 
 const { locale } = Astro.props;
@@ -57,7 +49,6 @@ const seo = {
 
   <Hero t={t} />
   <ToolConvergence t={t} />
-  <Viewers t={t} />
   <ViewersWithImages t={t} />
   <Features t={t} />
   <ComparisonTable t={t} />
