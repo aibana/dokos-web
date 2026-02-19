@@ -417,7 +417,17 @@ const tabs = [
       }
     });
 
-    // Nivel 3: cargar feat-#/viewer-# con IntersectionObserver (rootMargin amplio)
+    // Nivel 3: feat-#/viewer-# — cargar con IntersectionObserver + fallback por timeout
+    function loadRemainingImages() {
+      document.querySelectorAll<HTMLImageElement>('img[data-load-priority="on-scroll"]').forEach(img => {
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+          img.removeAttribute('data-load-priority');
+        }
+      });
+      observer.disconnect();
+    }
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -434,5 +444,8 @@ const tabs = [
     document.querySelectorAll<HTMLImageElement>('img[data-load-priority="on-scroll"]').forEach(img => {
       observer.observe(img);
     });
+
+    // Fallback: si no hubo scroll en 500ms, precargar todo igualmente
+    setTimeout(loadRemainingImages, 500);
   });
 </script>

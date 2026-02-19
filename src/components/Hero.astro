@@ -12,7 +12,7 @@ const { t } = Astro.props;
 
 <section class="relative min-h-screen flex items-center overflow-hidden hero-mesh" aria-labelledby="hero-heading">
   <!-- Ambient orbs -->
-  <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+  <div id="hero-orbs" class="absolute inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
@@ -168,5 +168,17 @@ const { t } = Astro.props;
     } else if (/Linux/.test(ua) && !/Android/.test(ua)) {
       label.textContent = btn.dataset.labelLinux || label.textContent;
     }
+  }
+
+  // Pause orb animations when Hero is out of viewport
+  const orbs = document.getElementById('hero-orbs');
+  if (orbs) {
+    const obs = new IntersectionObserver(([entry]) => {
+      orbs.style.animationPlayState = entry.isIntersecting ? 'running' : 'paused';
+      for (const child of orbs.children) {
+        (child as HTMLElement).style.animationPlayState = entry.isIntersecting ? 'running' : 'paused';
+      }
+    });
+    obs.observe(orbs);
   }
 </script>

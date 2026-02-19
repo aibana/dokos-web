@@ -116,3 +116,16 @@ const profiles = [
     }
   }
 </style>
+
+<script>
+  // Pause particle and glow animations when Profiles section is out of viewport
+  const section = document.getElementById('profiles');
+  if (section) {
+    const animated = section.querySelectorAll<HTMLElement>('.particle, .icon-glow-ring');
+    const obs = new IntersectionObserver(([entry]) => {
+      const state = entry.isIntersecting ? 'running' : 'paused';
+      animated.forEach(el => el.style.animationPlayState = state);
+    });
+    obs.observe(section);
+  }
+</script>
