@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Tải Ngay",
     "downloadForFree": "Tải Miễn Phí",
-    "viewOnGithub": "Xem trên GitHub",
+    "getOnWindowsStore": "Tải từ Microsoft Store",
+    "getOnAppStore": "Tải từ App Store",
     "skipToContent": "Chuyển đến nội dung"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "Trình đọc hiệu suất cao dành cho nhà phát triển. Chỉnh sửa Markdown, trực quan hóa JSON và so sánh code ngay lập tức mà không cần IDE nặng nề.",
     "downloadForMac": "Tải cho Mac",
     "downloadForWindows": "Tải cho Windows",
-    "downloadForLinux": "Tải cho Linux"
+    "downloadForLinux": "Tải cho Linux",
+    "allDownloads": "Tất cả tùy chọn tải xuống",
+    "downloadsModalTitle": "Tải Dokos",
+    "directDownload": "Tải trực tiếp",
+    "store": "Cửa hàng",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Ngừng chuyển đổi giữa các công cụ.",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Bảng phân tích với dấu thời gian",
     "summaryWithout": "ứng dụng bạn cần mở, cài đặt và cập nhật",
     "summaryWith": "ứng dụng gốc, nhẹ, tất cả tích hợp, không cần plugin"
+  },
+  "downloadModal": {
+    "title": "Tải Dokos",
+    "chooseOS": "Chọn nền tảng của bạn",
+    "detected": "Đã phát hiện",
+    "back": "Quay lại",
+    "standaloneDownload": "Tải Standalone",
+    "microsoftStore": "Tải từ Microsoft Store",
+    "appStore": "Tải từ App Store",
+    "comingSoon": "Sắp ra mắt",
+    "dontWantToWait": "Không muốn đợi?",
+    "downloadStandalone": "Tải phiên bản standalone",
+    "macWarning": "Phiên bản này chưa được Apple chứng nhận. Bạn cần cho phép thủ công trong Cài đặt Hệ thống > Quyền riêng tư & Bảo mật sau lần khởi chạy đầu tiên.",
+    "installViaTerminal": "Cài đặt qua terminal",
+    "copyCommand": "Sao chép",
+    "copied": "Đã sao chép!"
   },
   "footer": {
     "privacy": "Quyền riêng tư",

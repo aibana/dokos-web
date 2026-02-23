@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Скачать",
     "downloadForFree": "Скачать Бесплатно",
-    "viewOnGithub": "Смотреть на GitHub",
+    "getOnWindowsStore": "Скачать в Microsoft Store",
+    "getOnAppStore": "Скачать в App Store",
     "skipToContent": "Перейти к содержимому"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "Высокопроизводительный ридер для разработчиков. Редактируйте Markdown, визуализируйте JSON и сравнивайте код мгновенно — без громоздкости IDE.",
     "downloadForMac": "Скачать для Mac",
     "downloadForWindows": "Скачать для Windows",
-    "downloadForLinux": "Скачать для Linux"
+    "downloadForLinux": "Скачать для Linux",
+    "allDownloads": "Все варианты загрузки",
+    "downloadsModalTitle": "Скачать Dokos",
+    "directDownload": "Прямая загрузка",
+    "store": "Магазин",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Хватит переключаться между инструментами.",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Таблица с временными метками",
     "summaryWithout": "приложений, которые нужно открывать, устанавливать и обновлять",
     "summaryWith": "нативное приложение, лёгкое, всё встроено, ноль плагинов"
+  },
+  "downloadModal": {
+    "title": "Скачать Dokos",
+    "chooseOS": "Выберите вашу платформу",
+    "detected": "Обнаружена",
+    "back": "Назад",
+    "standaloneDownload": "Автономная загрузка",
+    "microsoftStore": "Скачать в Microsoft Store",
+    "appStore": "Скачать в App Store",
+    "comingSoon": "Скоро",
+    "dontWantToWait": "Не хотите ждать?",
+    "downloadStandalone": "Скачать автономную версию",
+    "macWarning": "Эта версия не сертифицирована Apple. После первого запуска вам потребуется разрешить её вручную в Системных настройках > Конфиденциальность и безопасность.",
+    "installViaTerminal": "Установить через терминал",
+    "copyCommand": "Копировать",
+    "copied": "Скопировано!"
   },
   "footer": {
     "privacy": "Конфиденциальность",

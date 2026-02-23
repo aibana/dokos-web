@@ -38,27 +38,37 @@ const { t } = Astro.props;
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <a
-            id="download-btn"
-            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark shadow-lg shadow-primary/25 transition-all"
-            href="#"
+          <button
+            id="hero-download-btn"
+            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark shadow-lg shadow-primary/25 transition-all cursor-pointer"
             data-label-mac={t.hero.downloadForMac}
             data-label-windows={t.hero.downloadForWindows}
             data-label-linux={t.hero.downloadForLinux}
           >
             <Icon name="download" class="mr-2" />
             <span id="download-label">{t.hero.downloadForMac}</span>
-          </a>
-          <a class="inline-flex items-center justify-center px-6 py-3 border border-slate-200 dark:border-slate-700 text-base font-medium rounded-lg text-slate-700 dark:text-slate-200 bg-white dark:bg-surface-dark hover:bg-slate-50 dark:hover:bg-slate-800 transition-all" href="#" rel="noopener noreferrer">
-            <Icon name="code" class="mr-2" />
-            {t.common.viewOnGithub}
-          </a>
+          </button>
+          <button
+            id="hero-store-btn"
+            class="inline-flex items-center justify-center px-6 py-3 border border-slate-200 dark:border-slate-700 text-base font-medium rounded-lg text-slate-700 dark:text-slate-200 bg-white dark:bg-surface-dark hover:bg-slate-50 dark:hover:bg-slate-800 transition-all cursor-pointer"
+            data-label-windows={t.common.getOnWindowsStore}
+            data-label-apple={t.common.getOnAppStore}
+          >
+            <Icon name="storefront" class="mr-2" />
+            <span id="store-label">{t.common.getOnWindowsStore}</span>
+          </button>
         </div>
 
-        <div class="mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm text-slate-500">
-          <span class="flex items-center"><Icon name="check_circle" size="text-sm" class="text-green-500 mr-1" /> macOS</span>
-          <span class="flex items-center"><Icon name="check_circle" size="text-sm" class="text-green-500 mr-1" /> Windows</span>
-          <span class="flex items-center"><Icon name="check_circle" size="text-sm" class="text-green-500 mr-1" /> Linux</span>
+        <div class="mt-6 flex items-center justify-center lg:justify-start gap-4 text-slate-400 dark:text-slate-500">
+          <div class="flex items-center gap-1.5 text-xs font-medium">
+            <Icon name="desktop_windows" size="text-base" /> {t.hero.windows}
+          </div>
+          <div class="flex items-center gap-1.5 text-xs font-medium">
+            <Icon name="laptop_mac" size="text-base" /> {t.hero.macOS}
+          </div>
+          <div class="flex items-center gap-1.5 text-xs font-medium">
+            <Icon name="terminal" size="text-base" /> {t.hero.linux}
+          </div>
         </div>
       </div>
 
@@ -159,7 +169,8 @@ const { t } = Astro.props;
 </style>
 
 <script>
-  const btn = document.getElementById('download-btn');
+  // Platform-aware download button label
+  const btn = document.getElementById('hero-download-btn');
   const label = document.getElementById('download-label');
   if (btn && label) {
     const ua = navigator.userAgent;
@@ -169,6 +180,26 @@ const { t } = Astro.props;
       label.textContent = btn.dataset.labelLinux || label.textContent;
     }
   }
+
+  // Platform-aware store button label
+  const storeBtn = document.getElementById('hero-store-btn');
+  const storeLabel = document.getElementById('store-label');
+  if (storeBtn && storeLabel) {
+    const ua = navigator.userAgent;
+    if (/Macintosh|iPhone|iPad|iPod/.test(ua)) {
+      storeLabel.textContent = storeBtn.dataset.labelApple || storeLabel.textContent;
+    }
+  }
+
+  // Wire both hero buttons to open the download modal
+  document.getElementById('hero-download-btn')?.addEventListener('click', () => {
+    const fn = (window as any).openDownloadModal;
+    if (typeof fn === 'function') fn();
+  });
+  document.getElementById('hero-store-btn')?.addEventListener('click', () => {
+    const fn = (window as any).openDownloadModal;
+    if (typeof fn === 'function') fn();
+  });
 
   // Pause orb animations when Hero is out of viewport
   const orbs = document.getElementById('hero-orbs');

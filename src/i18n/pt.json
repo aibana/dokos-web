@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Baixar Agora",
     "downloadForFree": "Baixar Grátis",
-    "viewOnGithub": "Ver no GitHub",
+    "getOnWindowsStore": "Obter na Microsoft Store",
+    "getOnAppStore": "Obter na App Store",
     "skipToContent": "Ir para o conteúdo"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "O leitor de alto desempenho para desenvolvedores. Edite Markdown, visualize JSON e compare código instantaneamente sem a pesadez de uma IDE.",
     "downloadForMac": "Baixar para Mac",
     "downloadForWindows": "Baixar para Windows",
-    "downloadForLinux": "Baixar para Linux"
+    "downloadForLinux": "Baixar para Linux",
+    "allDownloads": "Todas as opções de download",
+    "downloadsModalTitle": "Baixar Dokos",
+    "directDownload": "Download Direto",
+    "store": "Loja",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Pare de pular entre ferramentas.",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Tabela formatada com timestamps",
     "summaryWithout": "apps que você precisa abrir, instalar e manter atualizados",
     "summaryWith": "app nativo, leve, tudo integrado, zero plugins"
+  },
+  "downloadModal": {
+    "title": "Baixar Dokos",
+    "chooseOS": "Escolha sua plataforma",
+    "detected": "Detectado",
+    "back": "Voltar",
+    "standaloneDownload": "Download Standalone",
+    "microsoftStore": "Obter na Microsoft Store",
+    "appStore": "Obter na App Store",
+    "comingSoon": "Em breve",
+    "dontWantToWait": "Não quer esperar?",
+    "downloadStandalone": "Baixar versão standalone",
+    "macWarning": "Esta versão não é certificada pela Apple. Você precisará autorizá-la manualmente em Ajustes do Sistema > Privacidade e Segurança após a primeira execução.",
+    "installViaTerminal": "Instalar pelo terminal",
+    "copyCommand": "Copiar",
+    "copied": "Copiado!"
   },
   "footer": {
     "privacy": "Privacidade",

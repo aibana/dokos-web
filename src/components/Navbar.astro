@@ -73,9 +73,9 @@ const homePath = `${getLocalePath(locale)}/`;
             </div>
           </div>
 
-          <a class="hidden sm:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all" href="#">
-            {t.common.downloadNow}
-          </a>
+          <button class="nav-download-btn hidden sm:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all cursor-pointer">
+            {t.common.downloadForFree}
+          </button>
 
           <button
             id="mobile-menu-btn"
@@ -122,9 +122,9 @@ const homePath = `${getLocalePath(locale)}/`;
         </div>
 
         <div class="pt-3 border-t border-slate-200 dark:border-slate-700 space-y-3">
-          <a class="block w-full text-center px-4 py-2 text-sm font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all" href="#">
-            {t.common.downloadNow}
-          </a>
+          <button class="nav-download-btn block w-full text-center px-4 py-2 text-sm font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all cursor-pointer">
+            {t.common.downloadForFree}
+          </button>
         </div>
       </div>
     </div>
@@ -268,4 +268,27 @@ const homePath = `${getLocalePath(locale)}/`;
   menu?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeMenu);
   });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll<HTMLAnchorElement>('nav a[href*="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const hash = new URL(link.href).hash;
+      if (!hash) return;
+      const target = document.querySelector(hash);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+      history.pushState(null, '', hash);
+    });
+  });
+
+  // Wire download buttons to modal
+  document.querySelectorAll('.nav-download-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      closeMenu();
+      const fn = (window as any).openDownloadModal;
+      if (typeof fn === 'function') fn();
+    });
+  });
+
 </script>

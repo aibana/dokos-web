@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "立即下载",
     "downloadForFree": "免费下载",
-    "viewOnGithub": "在 GitHub 上查看",
+    "getOnWindowsStore": "从Microsoft Store获取",
+    "getOnAppStore": "从App Store获取",
     "skipToContent": "跳转到内容"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "面向开发者的高性能阅读器。即时编辑 Markdown、可视化 JSON、比较代码差异，无需 IDE 的臃肿。",
     "downloadForMac": "下载 Mac 版",
     "downloadForWindows": "下载 Windows 版",
-    "downloadForLinux": "下载 Linux 版"
+    "downloadForLinux": "下载 Linux 版",
+    "allDownloads": "所有下载选项",
+    "downloadsModalTitle": "下载 Dokos",
+    "directDownload": "直接下载",
+    "store": "商店",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "不再在工具间跳转。",
@@ -239,6 +247,22 @@
     "subtitleDokos": "带时间戳的解析表格",
     "summaryWithout": "个应用需要打开、安装和保持更新",
     "summaryWith": "个原生应用，轻量级，全部内置，零插件"
+  },
+  "downloadModal": {
+    "title": "下载 Dokos",
+    "chooseOS": "选择你的平台",
+    "detected": "已检测",
+    "back": "返回",
+    "standaloneDownload": "独立版下载",
+    "microsoftStore": "从 Microsoft Store 获取",
+    "appStore": "从 App Store 获取",
+    "comingSoon": "即将推出",
+    "dontWantToWait": "不想等待？",
+    "downloadStandalone": "下载独立版",
+    "macWarning": "此版本未经 Apple 认证。首次启动后，您需要在系统设置 > 隐私与安全中手动允许。",
+    "installViaTerminal": "通过终端安装",
+    "copyCommand": "复制",
+    "copied": "已复制！"
   },
   "footer": {
     "privacy": "隐私政策",

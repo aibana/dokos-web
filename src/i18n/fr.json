@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Télécharger",
     "downloadForFree": "Télécharger Gratuitement",
-    "viewOnGithub": "Voir sur GitHub",
+    "getOnWindowsStore": "Obtenir sur le Microsoft Store",
+    "getOnAppStore": "Obtenir sur l'App Store",
     "skipToContent": "Aller au contenu"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "Le lecteur haute performance pour les développeurs. Éditez du Markdown, visualisez du JSON et comparez du code instantanément sans la lourdeur d'un IDE.",
     "downloadForMac": "Télécharger pour Mac",
     "downloadForWindows": "Télécharger pour Windows",
-    "downloadForLinux": "Télécharger pour Linux"
+    "downloadForLinux": "Télécharger pour Linux",
+    "allDownloads": "Toutes les options de téléchargement",
+    "downloadsModalTitle": "Télécharger Dokos",
+    "directDownload": "Téléchargement Direct",
+    "store": "Boutique",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Arrêtez de jongler entre les outils.",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Tableau formate avec horodatages",
     "summaryWithout": "applications à ouvrir, installer et maintenir à jour",
     "summaryWith": "application native, légère, tout intégré, zéro plugin"
+  },
+  "downloadModal": {
+    "title": "Télécharger Dokos",
+    "chooseOS": "Choisissez votre plateforme",
+    "detected": "Détecté",
+    "back": "Retour",
+    "standaloneDownload": "Téléchargement Standalone",
+    "microsoftStore": "Obtenir sur le Microsoft Store",
+    "appStore": "Obtenir sur l’App Store",
+    "comingSoon": "Bientôt disponible",
+    "dontWantToWait": "Vous ne voulez pas attendre ?",
+    "downloadStandalone": "Télécharger la version standalone",
+    "macWarning": "Cette version n’est pas certifiée par Apple. Vous devrez l’autoriser manuellement dans Réglages Système > Confidentialité et Sécurité après le premier lancement.",
+    "installViaTerminal": "Installer via le terminal",
+    "copyCommand": "Copier",
+    "copied": "Copié !"
   },
   "footer": {
     "privacy": "Confidentialité",

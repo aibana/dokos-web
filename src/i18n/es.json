@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Descargar Ahora",
     "downloadForFree": "Descargar Gratis",
-    "viewOnGithub": "Ver en GitHub",
+    "getOnWindowsStore": "Obtener en Microsoft Store",
+    "getOnAppStore": "Obtener en App Store",
     "skipToContent": "Ir al contenido"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "El lector de alto rendimiento para desarrolladores. Edita Markdown, visualiza JSON y compara código al instante sin la pesadez de un IDE.",
     "downloadForMac": "Descargar para Mac",
     "downloadForWindows": "Descargar para Windows",
-    "downloadForLinux": "Descargar para Linux"
+    "downloadForLinux": "Descargar para Linux",
+    "allDownloads": "Todas las descargas",
+    "downloadsModalTitle": "Descargar Dokos",
+    "directDownload": "Descarga Directa",
+    "store": "Tienda",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Deja de saltar entre herramientas.",
@@ -197,7 +205,7 @@
     "monacoTitle": "Editor Monaco (VS Code)",
     "monacoDesc": "El mismo motor de edicion que usa VS Code: resaltado de sintaxis, atajos de teclado, autocompletado, minimap, numeros de linea y autoguardado inteligente.",
     "monacoWhy": "Edita tus archivos con la misma potencia y familiaridad de VS Code, pero sin la sobrecarga de un IDE completo. Perfecto para cambios rapidos en configs o documentacion.",
-"searchTitle": "Busqueda Global",
+    "searchTitle": "Busqueda Global",
     "searchDesc": "Busca cualquier texto en todo tu proyecto con Ctrl+Shift+F. Soporta expresiones regulares, filtros por extension y por carpeta para resultados precisos.",
     "searchWhy": "Encuentra lo que necesitas al instante, sin importar en cuantos archivos este distribuido. Ahorra minutos de navegacion manual en proyectos grandes.",
     "archivesTitle": "Archivos Comprimidos",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Tabla parseada con timestamps",
     "summaryWithout": "apps que necesitas abrir, instalar y mantener actualizadas",
     "summaryWith": "app nativa, ligera, con todo integrado y sin plugins"
+  },
+  "downloadModal": {
+    "title": "Descargar Dokos",
+    "chooseOS": "Elige tu plataforma",
+    "detected": "Detectado",
+    "back": "Volver",
+    "standaloneDownload": "Descarga Standalone",
+    "microsoftStore": "Obtener en Microsoft Store",
+    "appStore": "Obtener en App Store",
+    "comingSoon": "Próximamente",
+    "dontWantToWait": "¿No quieres esperar?",
+    "downloadStandalone": "Descargar versión standalone",
+    "macWarning": "Esta versión no está certificada por Apple. Necesitarás permitirla manualmente en Ajustes del Sistema > Privacidad y Seguridad después del primer inicio.",
+    "installViaTerminal": "Instalar por terminal",
+    "copyCommand": "Copiar",
+    "copied": "¡Copiado!"
   },
   "footer": {
     "privacy": "Privacidad",

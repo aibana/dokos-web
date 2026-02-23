@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "अभी डाउनलोड करें",
     "downloadForFree": "मुफ्त डाउनलोड करें",
-    "viewOnGithub": "GitHub पर देखें",
+    "getOnWindowsStore": "Microsoft Store से पाएं",
+    "getOnAppStore": "App Store से पाएं",
     "skipToContent": "सामग्री पर जाएं"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "डेवलपर्स के लिए हाई-परफॉर्मेंस रीडर। IDE की भारीपन के बिना तुरंत Markdown एडिट करें, JSON विज़ुअलाइज़ करें और कोड डिफ करें।",
     "downloadForMac": "Mac के लिए डाउनलोड करें",
     "downloadForWindows": "Windows के लिए डाउनलोड करें",
-    "downloadForLinux": "Linux के लिए डाउनलोड करें"
+    "downloadForLinux": "Linux के लिए डाउनलोड करें",
+    "allDownloads": "सभी डाउनलोड विकल्प",
+    "downloadsModalTitle": "Dokos डाउनलोड करें",
+    "directDownload": "सीधा डाउनलोड",
+    "store": "स्टोर",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "टूल्स के बीच कूदना बंद करें।",
@@ -239,6 +247,22 @@
     "subtitleDokos": "टाइमस्टैम्प के साथ पार्स्ड टेबल",
     "summaryWithout": "ऐप्स जो आपको खोलने, इंस्टॉल करने और अपडेट रखने होते हैं",
     "summaryWith": "नेटिव ऐप, हल्का, सब बिल्ट-इन, ज़ीरो प्लगइन"
+  },
+  "downloadModal": {
+    "title": "Dokos डाउनलोड करें",
+    "chooseOS": "अपना प्लेटफ़ॉर्म चुनें",
+    "detected": "पहचाना गया",
+    "back": "वापस",
+    "standaloneDownload": "स्टैंडअलोन डाउनलोड",
+    "microsoftStore": "Microsoft Store से पाएं",
+    "appStore": "App Store से पाएं",
+    "comingSoon": "जल्द आ रहा है",
+    "dontWantToWait": "इंतज़ार नहीं करना चाहते?",
+    "downloadStandalone": "स्टैंडअलोन वर्शन डाउनलोड करें",
+    "macWarning": "यह वर्शन Apple द्वारा प्रमाणित नहीं है। पहले लॉन्च के बाद आपको इसे सिस्टम सेटिंग्स > प्राइवेसी और सिक्योरिटी में मैन्युअली अनुमति देनी होगी।",
+    "installViaTerminal": "टर्मिनल से इंस्टॉल करें",
+    "copyCommand": "कॉपी",
+    "copied": "कॉपी हो गया!"
   },
   "footer": {
     "privacy": "गोपनीयता",

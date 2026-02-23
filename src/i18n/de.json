@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Jetzt Herunterladen",
     "downloadForFree": "Kostenlos Herunterladen",
-    "viewOnGithub": "Auf GitHub ansehen",
+    "getOnWindowsStore": "Im Microsoft Store holen",
+    "getOnAppStore": "Im App Store holen",
     "skipToContent": "Zum Inhalt springen"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "Der Hochleistungs-Reader für Entwickler. Bearbeiten Sie Markdown, visualisieren Sie JSON und vergleichen Sie Code sofort – ohne den Ballast einer IDE.",
     "downloadForMac": "Für Mac herunterladen",
     "downloadForWindows": "Für Windows herunterladen",
-    "downloadForLinux": "Für Linux herunterladen"
+    "downloadForLinux": "Für Linux herunterladen",
+    "allDownloads": "Alle Download-Optionen",
+    "downloadsModalTitle": "Dokos herunterladen",
+    "directDownload": "Direkter Download",
+    "store": "Store",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Schluss mit dem Wechseln zwischen Tools.",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Formatierte Tabelle mit Zeitstempeln",
     "summaryWithout": "Apps, die Sie öffnen, installieren und aktuell halten müssen",
     "summaryWith": "native App, leichtgewichtig, alles integriert, null Plugins"
+  },
+  "downloadModal": {
+    "title": "Dokos herunterladen",
+    "chooseOS": "Wählen Sie Ihre Plattform",
+    "detected": "Erkannt",
+    "back": "Zurück",
+    "standaloneDownload": "Standalone-Download",
+    "microsoftStore": "Im Microsoft Store holen",
+    "appStore": "Im App Store holen",
+    "comingSoon": "Demnächst verfügbar",
+    "dontWantToWait": "Nicht warten wollen?",
+    "downloadStandalone": "Standalone-Version herunterladen",
+    "macWarning": "Diese Version ist nicht von Apple zertifiziert. Sie müssen sie nach dem ersten Start manuell in Systemeinstellungen > Datenschutz & Sicherheit zulassen.",
+    "installViaTerminal": "Über Terminal installieren",
+    "copyCommand": "Kopieren",
+    "copied": "Kopiert!"
   },
   "footer": {
     "privacy": "Datenschutz",

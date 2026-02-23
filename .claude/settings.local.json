@@ -5,7 +5,8 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:commons.wikimedia.org)",
       "WebFetch(domain:cdn.worldvectorlogo.com)",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "WebFetch(domain:api.iconify.design)"
     ],
     "additionalDirectories": [
       "c:\\Users\\fzald\\Desarrollos\\Propios\\dokos-web\\example\\assets"

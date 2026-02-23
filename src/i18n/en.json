@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Download Now",
     "downloadForFree": "Download for Free",
-    "viewOnGithub": "View on GitHub",
+    "getOnWindowsStore": "Get on Microsoft Store",
+    "getOnAppStore": "Get on App Store",
     "skipToContent": "Skip to content"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "The high-performance reader for developers. Edit Markdown, visualize JSON, and diff code instantly without the bloat of an IDE.",
     "downloadForMac": "Download for Mac",
     "downloadForWindows": "Download for Windows",
-    "downloadForLinux": "Download for Linux"
+    "downloadForLinux": "Download for Linux",
+    "allDownloads": "All download options",
+    "downloadsModalTitle": "Download Dokos",
+    "directDownload": "Direct Download",
+    "store": "Store",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Stop jumping between tools.",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Parsed table with timestamps",
     "summaryWithout": "apps you need to open, install, and keep updated",
     "summaryWith": "native app, lightweight, all built-in, zero plugins"
+  },
+  "downloadModal": {
+    "title": "Download Dokos",
+    "chooseOS": "Choose your platform",
+    "detected": "Detected",
+    "back": "Back",
+    "standaloneDownload": "Standalone Download",
+    "microsoftStore": "Get on Microsoft Store",
+    "appStore": "Get on App Store",
+    "comingSoon": "Coming soon",
+    "dontWantToWait": "Don't want to wait?",
+    "downloadStandalone": "Download standalone version",
+    "macWarning": "This version is not certified by Apple. You'll need to allow it manually in System Settings > Privacy & Security after the first launch.",
+    "installViaTerminal": "Install via terminal",
+    "copyCommand": "Copy",
+    "copied": "Copied!"
   },
   "footer": {
     "privacy": "Privacy",

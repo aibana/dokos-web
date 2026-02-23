@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "今すぐダウンロード",
     "downloadForFree": "無料ダウンロード",
-    "viewOnGithub": "GitHub で見る",
+    "getOnWindowsStore": "Microsoft Storeで入手",
+    "getOnAppStore": "App Storeで入手",
     "skipToContent": "コンテンツへスキップ"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "開発者向け高性能リーダー。IDE の重さなしに、Markdown の編集、JSON の可視化、コードの差分比較を瞬時に。",
     "downloadForMac": "Mac 版をダウンロード",
     "downloadForWindows": "Windows 版をダウンロード",
-    "downloadForLinux": "Linux 版をダウンロード"
+    "downloadForLinux": "Linux 版をダウンロード",
+    "allDownloads": "すべてのダウンロード",
+    "downloadsModalTitle": "Dokosをダウンロード",
+    "directDownload": "直接ダウンロード",
+    "store": "ストア",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "ツール間の切り替えはもう不要。",
@@ -239,6 +247,22 @@
     "subtitleDokos": "タイムスタンプ付きパーステーブル",
     "summaryWithout": "個のアプリを開き、インストールし、更新し続ける必要があります",
     "summaryWith": "つのネイティブアプリ、軽量、すべて組み込み、プラグインゼロ"
+  },
+  "downloadModal": {
+    "title": "Dokos をダウンロード",
+    "chooseOS": "プラットフォームを選択",
+    "detected": "検出済み",
+    "back": "戻る",
+    "standaloneDownload": "スタンドアロン ダウンロード",
+    "microsoftStore": "Microsoft Storeで入手",
+    "appStore": "App Storeで入手",
+    "comingSoon": "近日公開",
+    "dontWantToWait": "待てませんか？",
+    "downloadStandalone": "スタンドアロン版をダウンロード",
+    "macWarning": "このバージョンはAppleの認証を受けていません。初回起動後、システム設定 > プライバシーとセキュリティで手動で許可する必要があります。",
+    "installViaTerminal": "ターミナルからインストール",
+    "copyCommand": "コピー",
+    "copied": "コピーしました！"
   },
   "footer": {
     "privacy": "プライバシー",

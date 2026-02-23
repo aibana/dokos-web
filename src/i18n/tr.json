@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Şimdi İndir",
     "downloadForFree": "Ücretsiz İndir",
-    "viewOnGithub": "GitHub'da Görüntüle",
+    "getOnWindowsStore": "Microsoft Store'dan Edin",
+    "getOnAppStore": "App Store'dan Edin",
     "skipToContent": "İçeriğe geç"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "Geliştiriciler için yüksek performanslı okuyucu. Markdown düzenleyin, JSON görselleştirin ve kodu anında karşılaştırın — IDE'nin ağırlığı olmadan.",
     "downloadForMac": "Mac için İndir",
     "downloadForWindows": "Windows için İndir",
-    "downloadForLinux": "Linux için İndir"
+    "downloadForLinux": "Linux için İndir",
+    "allDownloads": "Tüm indirme seçenekleri",
+    "downloadsModalTitle": "Dokos'u İndir",
+    "directDownload": "Doğrudan İndirme",
+    "store": "Mağaza",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Araçlar arasında geçiş yapmayı bırakın.",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Zaman damgalı ayrıştırılmış tablo",
     "summaryWithout": "açmanız, kurmanız ve güncel tutmanız gereken uygulama",
     "summaryWith": "yerel uygulama, hafif, hepsi dahili, sıfır eklenti"
+  },
+  "downloadModal": {
+    "title": "Dokos’u İndir",
+    "chooseOS": "Platformunuzu seçin",
+    "detected": "Algılandı",
+    "back": "Geri",
+    "standaloneDownload": "Bağımsız İndirme",
+    "microsoftStore": "Microsoft Store’dan Edin",
+    "appStore": "App Store’dan Edin",
+    "comingSoon": "Yakında",
+    "dontWantToWait": "Beklemek istemiyor musunuz?",
+    "downloadStandalone": "Bağımsız sürümü indirin",
+    "macWarning": "Bu sürüm Apple tarafından onaylanmamıştır. İlk başlatmadan sonra Sistem Ayarları > Gizlilik ve Güvenlik bölümünden manuel olarak izin vermeniz gerekecektir.",
+    "installViaTerminal": "Terminal ile kur",
+    "copyCommand": "Kopyala",
+    "copied": "Kopyalandı!"
   },
   "footer": {
     "privacy": "Gizlilik",

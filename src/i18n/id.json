@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Unduh Sekarang",
     "downloadForFree": "Unduh Gratis",
-    "viewOnGithub": "Lihat di GitHub",
+    "getOnWindowsStore": "Dapatkan di Microsoft Store",
+    "getOnAppStore": "Dapatkan di App Store",
     "skipToContent": "Langsung ke konten"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "Pembaca berperforma tinggi untuk developer. Edit Markdown, visualisasi JSON, dan bandingkan kode secara instan tanpa beban IDE.",
     "downloadForMac": "Unduh untuk Mac",
     "downloadForWindows": "Unduh untuk Windows",
-    "downloadForLinux": "Unduh untuk Linux"
+    "downloadForLinux": "Unduh untuk Linux",
+    "allDownloads": "Semua opsi unduhan",
+    "downloadsModalTitle": "Unduh Dokos",
+    "directDownload": "Unduh Langsung",
+    "store": "Toko",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Berhenti berpindah antar alat.",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Tabel terparse dengan timestamp",
     "summaryWithout": "aplikasi yang perlu Anda buka, instal, dan perbarui",
     "summaryWith": "aplikasi native, ringan, semua bawaan, tanpa plugin"
+  },
+  "downloadModal": {
+    "title": "Unduh Dokos",
+    "chooseOS": "Pilih platform Anda",
+    "detected": "Terdeteksi",
+    "back": "Kembali",
+    "standaloneDownload": "Unduhan Standalone",
+    "microsoftStore": "Dapatkan di Microsoft Store",
+    "appStore": "Dapatkan di App Store",
+    "comingSoon": "Segera hadir",
+    "dontWantToWait": "Tidak mau menunggu?",
+    "downloadStandalone": "Unduh versi standalone",
+    "macWarning": "Versi ini tidak disertifikasi oleh Apple. Anda perlu mengizinkannya secara manual di Pengaturan Sistem > Privasi & Keamanan setelah peluncuran pertama.",
+    "installViaTerminal": "Instal melalui terminal",
+    "copyCommand": "Salin",
+    "copied": "Tersalin!"
   },
   "footer": {
     "privacy": "Privasi",

@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "Scarica Ora",
     "downloadForFree": "Scarica Gratis",
-    "viewOnGithub": "Vedi su GitHub",
+    "getOnWindowsStore": "Scarica dal Microsoft Store",
+    "getOnAppStore": "Scarica dall'App Store",
     "skipToContent": "Vai al contenuto"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "Il lettore ad alte prestazioni per sviluppatori. Modifica Markdown, visualizza JSON e confronta codice istantaneamente senza la pesantezza di un IDE.",
     "downloadForMac": "Scarica per Mac",
     "downloadForWindows": "Scarica per Windows",
-    "downloadForLinux": "Scarica per Linux"
+    "downloadForLinux": "Scarica per Linux",
+    "allDownloads": "Tutte le opzioni di download",
+    "downloadsModalTitle": "Scarica Dokos",
+    "directDownload": "Download Diretto",
+    "store": "Store",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "Smetti di saltare tra strumenti.",
@@ -239,6 +247,22 @@
     "subtitleDokos": "Tabella con timestamp analizzati",
     "summaryWithout": "app da aprire, installare e mantenere aggiornate",
     "summaryWith": "app nativa, leggera, tutto integrato, zero plugin"
+  },
+  "downloadModal": {
+    "title": "Scarica Dokos",
+    "chooseOS": "Scegli la tua piattaforma",
+    "detected": "Rilevato",
+    "back": "Indietro",
+    "standaloneDownload": "Download Standalone",
+    "microsoftStore": "Scarica dal Microsoft Store",
+    "appStore": "Scarica dall’App Store",
+    "comingSoon": "In arrivo",
+    "dontWantToWait": "Non vuoi aspettare?",
+    "downloadStandalone": "Scarica la versione standalone",
+    "macWarning": "Questa versione non è certificata da Apple. Dovrai autorizzarla manualmente in Impostazioni di Sistema > Privacy e Sicurezza dopo il primo avvio.",
+    "installViaTerminal": "Installa tramite terminale",
+    "copyCommand": "Copia",
+    "copied": "Copiato!"
   },
   "footer": {
     "privacy": "Privacy",

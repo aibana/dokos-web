@@ -1,0 +1,241 @@
+---
+import Icon from './Icon.astro';
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+---
+
+<!-- Download Modal (2-step) -->
+<div id="download-modal" class="fixed inset-0 z-[100] hidden items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="dm-title">
+  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" data-modal-backdrop></div>
+  <div class="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 flex flex-col max-h-[90vh]">
+    <!-- Header -->
+    <div class="flex items-center justify-between p-6 border-b border-slate-200 dark:border-slate-700">
+      <div class="flex items-center gap-3">
+        <button id="dm-back-btn" class="hidden text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Back">
+          <Icon name="arrow_back" size="text-xl" />
+        </button>
+        <h3 id="dm-title" class="text-xl font-bold text-slate-900 dark:text-white">{t.downloadModal.title}</h3>
+      </div>
+      <button data-modal-close class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Close">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div class="p-6 overflow-y-auto">
+      <!-- Step 1: Choose OS -->
+      <div id="dm-step-1">
+        <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 text-center">{t.downloadModal.chooseOS}</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <!-- Windows -->
+          <button data-os="windows" class="dm-os-card group relative flex flex-col items-center gap-3 p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all cursor-pointer bg-white dark:bg-slate-800/50">
+            <span class="detected-badge hidden absolute top-2 right-2 text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full font-semibold">{t.downloadModal.detected}</span>
+            <svg class="w-12 h-12 text-slate-600 dark:text-slate-300 group-hover:text-primary transition-colors" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 12V6.75l8-1.25V12H3zm0 .5h8v6.5L3 17.75V12.5zM11.5 12V5.35l9.5-1.6V12h-9.5zm0 .5H21v8.25l-9.5-1.6V12.5z"/>
+            </svg>
+            <span class="font-semibold text-slate-900 dark:text-white">{t.hero.windows}</span>
+          </button>
+
+          <!-- macOS -->
+          <button data-os="macos" class="dm-os-card group relative flex flex-col items-center gap-3 p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all cursor-pointer bg-white dark:bg-slate-800/50">
+            <span class="detected-badge hidden absolute top-2 right-2 text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full font-semibold">{t.downloadModal.detected}</span>
+            <svg class="w-12 h-12 text-slate-600 dark:text-slate-300 group-hover:text-primary transition-colors" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span class="font-semibold text-slate-900 dark:text-white">{t.hero.macOS}</span>
+          </button>
+
+          <!-- Linux -->
+          <button data-os="linux" class="dm-os-card group relative flex flex-col items-center gap-3 p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all cursor-pointer bg-white dark:bg-slate-800/50">
+            <span class="detected-badge hidden absolute top-2 right-2 text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full font-semibold">{t.downloadModal.detected}</span>
+            <svg class="w-12 h-12 text-slate-600 dark:text-slate-300 group-hover:text-primary transition-colors" viewBox="0 0 448 512" fill="currentColor">
+              <path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7c1.1 0 2.8-.4 2.9-1.5c.2-1.4-1.9-2.3-3.2-2.9c-1.7-.7-3.9-1-5.5-.1c-.4.2-.8.7-.6 1.1c.3 1.3 2.3 1.1 3.4 1.7m-21.9 1.7c1.2 0 2-1.2 3-1.7c1.1-.6 3.1-.4 3.5-1.6c.2-.4-.2-.9-.6-1.1c-1.6-.9-3.8-.6-5.5.1c-1.3.6-3.4 1.5-3.2 2.9c.1 1 1.8 1.5 2.8 1.4M420 403.8c-3.6-4-5.3-11.6-7.2-19.7c-1.8-8.1-3.9-16.8-10.5-22.4c-1.3-1.1-2.6-2.1-4-2.9c-1.3-.8-2.7-1.5-4.1-2c9.2-27.3 5.6-54.5-3.7-79.1c-11.4-30.1-31.3-56.4-46.5-74.4c-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0C132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7c-18.9 22.5-45.5 58.8-58.1 96.7c-6 17.9-8.8 36.1-6.2 53.3c-6.5 5.8-11.4 14.7-16.6 20.2c-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4c0 3.9.6 7.9 1.2 11.8c1.2 8.1 2.5 15.7.8 20.8c-5.2 14.4-5.9 24.4-2.2 31.7c3.8 7.3 11.4 10.5 20.1 12.3c17.3 3.6 40.8 2.7 59.3 12.5c19.8 10.4 39.9 14.1 55.9 10.4c11.6-2.6 21.1-9.6 25.9-20.2c12.5-.1 26.3-5.4 48.3-6.6c14.9-1.2 33.6 5.3 55.1 4.1c.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23c16.6-1.3 34.1-11 48.3-27.9c13.6-16.4 36-23.2 50.9-32.2c7.4-4.5 13.4-10.1 13.9-18.3c.4-8.2-4.4-17.3-15.5-29.7M223.7 87.3c9.8-22.2 34.2-21.8 44-.4c6.5 14.2 3.6 30.9-4.3 40.4c-1.6-.8-5.9-2.6-12.6-4.9c1.1-1.2 3.1-2.7 3.9-4.6c4.8-11.8-.2-27-9.1-27.3c-7.3-.5-13.9 10.8-11.8 23c-4.1-2-9.4-3.5-13-4.4c-1-6.9-.3-14.6 2.9-21.8M183 75.8c10.1 0 20.8 14.2 19.1 33.5c-3.5 1-7.1 2.5-10.2 4.6c1.2-8.9-3.3-20.1-9.6-19.6c-8.4.7-9.8 21.2-1.8 28.1c1 .8 1.9-.2-5.9 5.5c-15.6-14.6-10.5-52.1 8.4-52.1m-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5c4.7-4.4 13.5-14.2 27.9-14.2c7.1 0 15.6 2.3 25.9 8.9c6.3 4.1 11.3 4.4 22.6 9.3c8.4 3.5 13.7 9.7 10.5 18.2c-2.6 7.1-11 14.4-22.7 18.1c-11.1 3.6-19.8 16-38.2 14.9c-3.9-.2-7-1-9.6-2.1c-8-3.5-12.2-10.4-20-15c-8.6-4.8-13.2-10.4-14.7-15.3q-2.1-7.35 4.2-12.3m3.3 334c-2.7 35.1-43.9 34.4-75.3 18c-29.9-15.8-68.6-6.5-76.5-21.9c-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9c-1.2-7.8-1.8-15 .9-20c3.5-6.7 8.5-9.1 14.8-11.3c10.3-3.7 11.8-3.4 19.6-9.9c5.5-5.7 9.5-12.9 14.3-18c5.1-5.5 10-8.1 17.7-6.9c8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9m-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6c7.1 0 14.2-2.2 16.7-8.9c2.3-6.2 0-14.9-7.4-24.9c-13.5-18.2-38.3-32.5-38.3-32.5c-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2c2.3-1.7.8 3.2-8.7 20.8c-8.5 16.1-24.4 53.3-2.6 82.4c.6-20.7 5.5-41.8 13.8-61.5c12-27.4 37.3-74.9 39.3-112.7c1.1.8 4.6 3.2 6.2 4.1c4.6 2.7 8.1 6.7 12.6 10.3c12.4 10 28.5 9.2 42.4 1.2c6.2-3.5 11.2-7.5 15.9-9c9.9-3.1 17.8-8.6 22.3-15c7.7 30.4 25.7 74.3 37.2 95.7c6.1 11.4 18.3 35.5 23.6 64.6c3.3-.1 7 .4 10.9 1.4c13.8-35.7-11.7-74.2-23.3-84.9c-4.7-4.6-4.9-6.6-2.6-6.5c12.6 11.2 29.2 33.7 35.2 59c2.8 11.6 3.3 23.7.4 35.7c16.4 6.8 35.9 17.9 30.7 34.8c-2.2-.1-3.2 0-4.2 0c3.2-10.1-3.9-17.6-22.8-26.1c-19.6-8.6-36-8.6-38.3 12.5c-12.1 4.2-18.3 14.7-21.4 27.3c-2.8 11.2-3.6 24.7-4.4 39.9c-.5 7.7-3.6 18-6.8 29c-32.1 22.9-76.7 32.9-114.3 7.2m257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5c-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3c3.7-14.2 9.2-28.8 9.9-40.6c.8-15.2 1.7-28.5 4.2-38.7c2.6-10.3 6.6-17.2 13.7-21.1c.3-.2.7-.3 1-.5c.8 13.2 7.3 26.6 18.8 29.5c12.6 3.3 30.7-7.5 38.4-16.3c9-.3 15.7-.9 22.6 5.1c9.9 8.5 7.1 30.3 17.1 41.6c10.6 11.6 14 19.5 13.7 24.6M173.3 148.7c2 1.9 4.7 4.5 8 7.1c6.6 5.2 15.8 10.6 27.3 10.6c11.6 0 22.5-5.9 31.8-10.8c4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6s-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8c-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9c-1.5-1.4-1.9-4.6-4.3-4.9c-1.4-.1-1.8 3.7 1.7 6.5"/>
+            </svg>
+            <span class="font-semibold text-slate-900 dark:text-white">{t.hero.linux}</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Windows -->
+      <div id="dm-step-2-windows" class="hidden space-y-4">
+        <div class="flex items-center gap-3 mb-2">
+          <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 12V6.75l8-1.25V12H3zm0 .5h8v6.5L3 17.75V12.5zM11.5 12V5.35l9.5-1.6V12h-9.5zm0 .5H21v8.25l-9.5-1.6V12.5z"/>
+          </svg>
+          <span class="text-lg font-bold text-slate-900 dark:text-white">{t.hero.windows}</span>
+        </div>
+        <a href="#" class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all">
+          <Icon name="download" size="text-xl" />
+          {t.downloadModal.standaloneDownload}
+        </a>
+        <a href="https://apps.microsoft.com/detail/dokos" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+          <Icon name="storefront" size="text-xl" />
+          {t.downloadModal.microsoftStore}
+        </a>
+      </div>
+
+      <!-- Step 2: macOS -->
+      <div id="dm-step-2-macos" class="hidden space-y-4">
+        <div class="flex items-center gap-3 mb-2">
+          <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <span class="text-lg font-bold text-slate-900 dark:text-white">{t.hero.macOS}</span>
+        </div>
+
+        <!-- App Store (disabled) -->
+        <div class="relative">
+          <button disabled class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg border border-slate-200 dark:border-slate-700 text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-800/50 cursor-not-allowed opacity-60">
+            <Icon name="storefront" size="text-xl" />
+            {t.downloadModal.appStore}
+            <span class="ml-2 text-xs bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 px-2 py-0.5 rounded-full font-semibold">{t.downloadModal.comingSoon}</span>
+          </button>
+        </div>
+
+        <!-- Divider -->
+        <div class="flex items-center gap-3 pt-2">
+          <div class="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>
+          <span class="text-sm text-slate-500 dark:text-slate-400 font-medium">{t.downloadModal.dontWantToWait}</span>
+          <div class="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>
+        </div>
+
+        <!-- Standalone download -->
+        <a href="#" class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all">
+          <Icon name="download" size="text-xl" />
+          {t.downloadModal.downloadStandalone}
+        </a>
+
+        <!-- Warning -->
+        <div class="flex gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
+          <Icon name="warning" size="text-xl" class="text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+          <p class="text-sm text-amber-800 dark:text-amber-200 leading-relaxed">{t.downloadModal.macWarning}</p>
+        </div>
+      </div>
+
+      <!-- Step 2: Linux -->
+      <div id="dm-step-2-linux" class="hidden space-y-4">
+        <div class="flex items-center gap-3 mb-2">
+          <svg class="w-8 h-8 text-primary" viewBox="0 0 448 512" fill="currentColor">
+            <path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-12.3 45.2-30.1 68.1s-43 61.2-48.4 97.3c-5.8 38.9 4.6 78.3 14.1 93.6-3.3 2-6.2 4.6-8.4 7.8-4.1 5.7-6 12.5-7.8 19.3-1.8 6.8-3.5 13.4-8.4 17.1-4.3 3.2-6.1 3.8-10.5 8-4.5 4.1-7 11-7 17.5 0 .7.1 1.4.2 2.1.7 5.3 3.9 9.4 7.6 12.8 3.8 3.5 8.4 6.2 13.3 8.2 10 4 21 5.2 30 3.3 1.2-.3 2.3-.5 3.4-.9 5.4-1.6 10-4.8 14.4-9.7 3.1-3.5 6-7.7 8.6-12 2.7-4.5 5.3-9.4 6.2-13.4.9-4 0-7.6-2.4-10.1-.9-1-2-1.8-3.4-2.3 1-3.6 2.7-7 4.5-10 1.8-3.1 4-5.8 6.5-7.8 9.4 3.7 22.8 5.4 36.5 5.4 17.9 0 36.4-2.8 49.2-9.8 6.1 4 16.3 14.4 20 18.3 3.8 4.1 7.9 7.3 12.9 8.8 2.5.8 5.3 1.2 8.7 1.2 7.4 0 17-2.3 26.8-5.8 4.9-1.7 9.7-3.8 13.7-6.4 4.1-2.7 7.3-5.8 8.7-10 .3-.8.4-1.7.4-2.5 0-3.8-1.6-8.1-4-11.5z"/>
+          </svg>
+          <span class="text-lg font-bold text-slate-900 dark:text-white">{t.hero.linux}</span>
+        </div>
+
+        <!-- Standalone download -->
+        <a href="#" class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all">
+          <Icon name="download" size="text-xl" />
+          {t.downloadModal.standaloneDownload}
+        </a>
+
+        <!-- Divider -->
+        <div class="flex items-center gap-3 pt-2">
+          <div class="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>
+          <span class="text-sm text-slate-500 dark:text-slate-400 font-medium">{t.downloadModal.installViaTerminal}</span>
+          <div class="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>
+        </div>
+
+        <!-- Terminal command -->
+        <div class="relative group">
+          <div class="bg-slate-900 dark:bg-slate-950 rounded-lg p-4 font-mono text-sm text-green-400 overflow-x-auto">
+            <span class="text-slate-500 select-none">$ </span><span id="dm-terminal-cmd">snap install dokos</span>
+          </div>
+          <button id="dm-copy-btn" class="absolute top-2 right-2 px-2.5 py-1 text-xs font-medium rounded-md bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white transition-colors opacity-0 group-hover:opacity-100">
+            <span id="dm-copy-label">{t.downloadModal.copyCommand}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ copiedText: t.downloadModal.copied, copyText: t.downloadModal.copyCommand }}>
+  // State
+  const modal = document.getElementById('download-modal');
+  const step1 = document.getElementById('dm-step-1');
+  const step2Panels = {
+    windows: document.getElementById('dm-step-2-windows'),
+    macos: document.getElementById('dm-step-2-macos'),
+    linux: document.getElementById('dm-step-2-linux'),
+  };
+  const backBtn = document.getElementById('dm-back-btn');
+  const copyBtn = document.getElementById('dm-copy-btn');
+  const copyLabel = document.getElementById('dm-copy-label');
+  const terminalCmd = document.getElementById('dm-terminal-cmd');
+
+  // OS detection
+  function detectOS() {
+    const ua = navigator.userAgent;
+    if (/Macintosh|Mac OS/.test(ua)) return 'macos';
+    if (/Windows/.test(ua)) return 'windows';
+    if (/Linux/.test(ua) && !/Android/.test(ua)) return 'linux';
+    return null;
+  }
+
+  // Mark detected OS
+  const detectedOS = detectOS();
+  if (detectedOS && modal) {
+    const card = modal.querySelector(`[data-os="${detectedOS}"]`);
+    if (card) {
+      card.querySelector('.detected-badge')?.classList.remove('hidden');
+      card.classList.add('ring-2', 'ring-primary', 'ring-offset-2', 'dark:ring-offset-slate-900');
+    }
+  }
+
+  // Open modal (global)
+  window.openDownloadModal = function () {
+    goToStep1();
+    modal?.classList.remove('hidden');
+    modal?.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  };
+
+  // Close modal
+  function closeModal() {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+
+  // Step navigation
+  function goToStep1() {
+    step1?.classList.remove('hidden');
+    Object.values(step2Panels).forEach(p => p?.classList.add('hidden'));
+    backBtn?.classList.add('hidden');
+  }
+
+  function goToStep2(os) {
+    step1?.classList.add('hidden');
+    Object.values(step2Panels).forEach(p => p?.classList.add('hidden'));
+    step2Panels[os]?.classList.remove('hidden');
+    backBtn?.classList.remove('hidden');
+  }
+
+  // Event listeners
+  if (modal) {
+    modal.querySelectorAll('[data-os]').forEach(card => {
+      card.addEventListener('click', () => goToStep2(card.dataset.os));
+    });
+    backBtn?.addEventListener('click', goToStep1);
+    modal.querySelector('[data-modal-backdrop]')?.addEventListener('click', closeModal);
+    modal.querySelector('[data-modal-close]')?.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+    });
+  }
+
+  // Copy terminal command
+  copyBtn?.addEventListener('click', () => {
+    const cmd = terminalCmd?.textContent || '';
+    navigator.clipboard.writeText(cmd).then(() => {
+      if (copyLabel) {
+        copyLabel.textContent = copiedText;
+        setTimeout(() => { copyLabel.textContent = copyText; }, 2000);
+      }
+    });
+  });
+</script>

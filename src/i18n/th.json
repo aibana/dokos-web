@@ -6,7 +6,8 @@
   "common": {
     "downloadNow": "ดาวน์โหลดเลย",
     "downloadForFree": "ดาวน์โหลดฟรี",
-    "viewOnGithub": "ดูบน GitHub",
+    "getOnWindowsStore": "ดาวน์โหลดจาก Microsoft Store",
+    "getOnAppStore": "ดาวน์โหลดจาก App Store",
     "skipToContent": "ข้ามไปที่เนื้อหา"
   },
   "navbar": {
@@ -24,7 +25,14 @@
     "subtitle": "โปรแกรมอ่านประสิทธิภาพสูงสำหรับนักพัฒนา แก้ไข Markdown, แสดงผล JSON และเปรียบเทียบโค้ดได้ทันทีโดยไม่ต้องใช้ IDE ที่หนัก",
     "downloadForMac": "ดาวน์โหลดสำหรับ Mac",
     "downloadForWindows": "ดาวน์โหลดสำหรับ Windows",
-    "downloadForLinux": "ดาวน์โหลดสำหรับ Linux"
+    "downloadForLinux": "ดาวน์โหลดสำหรับ Linux",
+    "allDownloads": "ตัวเลือกดาวน์โหลดทั้งหมด",
+    "downloadsModalTitle": "ดาวน์โหลด Dokos",
+    "directDownload": "ดาวน์โหลดโดยตรง",
+    "store": "สโตร์",
+    "macOS": "macOS",
+    "windows": "Windows",
+    "linux": "Linux"
   },
   "toolConvergence": {
     "heading": "หยุดสลับไปมาระหว่างเครื่องมือ",
@@ -239,6 +247,22 @@
     "subtitleDokos": "ตารางที่แยกวิเคราะห์แล้วพร้อมเวลา",
     "summaryWithout": "แอปที่คุณต้องเปิด ติดตั้ง และอัปเดต",
     "summaryWith": "แอปเนทีฟ เบา ทุกอย่างในตัว ไม่ต้องใช้ปลั๊กอิน"
+  },
+  "downloadModal": {
+    "title": "ดาวน์โหลด Dokos",
+    "chooseOS": "เลือกแพลตฟอร์มของคุณ",
+    "detected": "ตรวจพบ",
+    "back": "กลับ",
+    "standaloneDownload": "ดาวน์โหลด Standalone",
+    "microsoftStore": "ดาวน์โหลดจาก Microsoft Store",
+    "appStore": "ดาวน์โหลดจาก App Store",
+    "comingSoon": "เร็วๆ นี้",
+    "dontWantToWait": "ไม่อยากรอ?",
+    "downloadStandalone": "ดาวน์โหลดเวอร์ชัน standalone",
+    "macWarning": "เวอร์ชันนี้ไม่ได้รับการรับรองจาก Apple คุณจะต้องอนุญาตด้วยตนเองในการตั้งค่าระบบ > ความเป็นส่วนตัวและความปลอดภัย หลังจากเปิดใช้งานครั้งแรก",
+    "installViaTerminal": "ติดตั้งผ่านเทอร์มินัล",
+    "copyCommand": "คัดลอก",
+    "copied": "คัดลอกแล้ว!"
   },
   "footer": {
     "privacy": "ความเป็นส่วนตัว",
