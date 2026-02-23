@@ -264,6 +264,11 @@
     "copyCommand": "コピー",
     "copied": "コピーしました！"
   },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "subtitle": "お探しのページは存在しないか、移動されました。",
+    "goHome": "ホームに戻る"
+  },
   "footer": {
     "privacy": "プライバシー",
     "terms": "利用規約",

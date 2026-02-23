@@ -264,6 +264,11 @@
     "copyCommand": "Kopyala",
     "copied": "Kopyalandı!"
   },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "subtitle": "Aradığınız sayfa mevcut değil veya taşındı.",
+    "goHome": "Ana sayfaya git"
+  },
   "footer": {
     "privacy": "Gizlilik",
     "terms": "Koşullar",

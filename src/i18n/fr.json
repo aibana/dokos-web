@@ -264,6 +264,11 @@
     "copyCommand": "Copier",
     "copied": "Copié !"
   },
+  "notFound": {
+    "title": "Page introuvable",
+    "subtitle": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "goHome": "Retour à l'accueil"
+  },
   "footer": {
     "privacy": "Confidentialité",
     "terms": "Conditions",

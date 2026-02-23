@@ -264,6 +264,11 @@
     "copyCommand": "Sao chép",
     "copied": "Đã sao chép!"
   },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "subtitle": "Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.",
+    "goHome": "Về trang chủ"
+  },
   "footer": {
     "privacy": "Quyền riêng tư",
     "terms": "Điều khoản",

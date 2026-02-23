@@ -264,6 +264,11 @@
     "copyCommand": "Salin",
     "copied": "Tersalin!"
   },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "subtitle": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+    "goHome": "Ke beranda"
+  },
   "footer": {
     "privacy": "Privasi",
     "terms": "Ketentuan",

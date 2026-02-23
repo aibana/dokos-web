@@ -264,6 +264,11 @@
     "copyCommand": "Copiar",
     "copied": "¡Copiado!"
   },
+  "notFound": {
+    "title": "Página no encontrada",
+    "subtitle": "La página que buscás no existe o fue movida.",
+    "goHome": "Ir al inicio"
+  },
   "footer": {
     "privacy": "Privacidad",
     "terms": "Términos",
