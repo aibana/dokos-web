@@ -1,7 +1,7 @@
 ---
-import logoDark from '../assets/logo-dark.svg';
-import type { Locale, Translations } from '../i18n/utils';
-import { getLocalePath } from '../i18n/utils';
+import logoDark from "../assets/logo-dark.svg";
+import type { Locale, Translations } from "../i18n/utils";
+import { getLocalePath } from "../i18n/utils";
 
 interface Props {
   t: Translations;
@@ -13,44 +13,114 @@ const currentYear = new Date().getFullYear();
 const homePath = `${getLocalePath(locale)}/`;
 ---
 
-<footer class="bg-background-dark border-t border-slate-800 py-12" role="contentinfo">
+<footer
+  class="bg-background-dark border-t border-slate-800 py-12"
+  role="contentinfo"
+>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col md:flex-row justify-between items-center">
-      <a href={homePath} class="flex items-center gap-2 mb-4 md:mb-0" aria-label="Dokos - Home">
-        <img src={logoDark.src} alt="Dokos" width="24" height="24" class="h-6 w-6" />
+      <a
+        href={homePath}
+        class="flex items-center gap-2 mb-4 md:mb-0"
+        aria-label="Dokos - Home"
+      >
+        <img
+          src={logoDark.src}
+          alt="Dokos"
+          width="24"
+          height="24"
+          class="h-6 w-6"
+        />
         <span class="font-bold text-white tracking-tight">Dokos</span>
       </a>
 
       <nav class="flex space-x-6" aria-label="Footer navigation">
-        <a href="/privacy" class="text-slate-400 hover:text-white transition-colors">{t.footer.privacy}</a>
-        <button id="terms-btn" class="text-slate-400 hover:text-white transition-colors" type="button">{t.footer.terms}</button>
-        <a class="text-slate-400 hover:text-white transition-colors" href="mailto:dokos@aibana.studio">{t.footer.contact}</a>
+        <a
+          href="/privacy"
+          class="text-slate-400 hover:text-white transition-colors"
+          >{t.footer.privacy}</a
+        >
+        <button
+          id="terms-btn"
+          class="text-slate-400 hover:text-white transition-colors"
+          type="button">{t.footer.terms}</button
+        >
+        <a
+          class="text-slate-400 hover:text-white transition-colors"
+          href="mailto:dokos@aibana.studio">{t.footer.contact}</a
+        >
       </nav>
 
       <div class="mt-4 md:mt-0 text-slate-500 text-sm">
-        &copy; {currentYear} Dokos Inc.
+        &copy; {currentYear}
+        <a
+          href="https://aibana.studio"
+          class="text-slate-400 hover:text-white transition-colors"
+          >Aibana Studio</a
+        >.
       </div>
     </div>
   </div>
 </footer>
 
 <!-- Terms Modal -->
-<div id="terms-modal" class="fixed inset-0 z-[100] hidden items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title">
-  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" data-modal-backdrop></div>
-  <div class="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 max-h-[80vh] flex flex-col">
-    <div class="flex items-center justify-between p-6 border-b border-slate-200 dark:border-slate-700">
-      <h3 id="terms-modal-title" class="text-xl font-bold text-slate-900 dark:text-white">{t.footer.terms}</h3>
-      <button data-modal-close class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors" aria-label="Close">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+<div
+  id="terms-modal"
+  class="fixed inset-0 z-[100] hidden items-center justify-center"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="terms-modal-title"
+>
+  <div
+    class="absolute inset-0 bg-black/60 backdrop-blur-sm"
+    data-modal-backdrop
+  >
+  </div>
+  <div
+    class="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 max-h-[80vh] flex flex-col"
+  >
+    <div
+      class="flex items-center justify-between p-6 border-b border-slate-200 dark:border-slate-700"
+    >
+      <h3
+        id="terms-modal-title"
+        class="text-xl font-bold text-slate-900 dark:text-white"
+      >
+        {t.footer.terms}
+      </h3>
+      <button
+        data-modal-close
+        class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors"
+        aria-label="Close"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path></svg
+        >
       </button>
     </div>
-    <div class="p-6 overflow-y-auto text-slate-600 dark:text-slate-300 text-sm leading-relaxed space-y-4">
+    <div
+      class="p-6 overflow-y-auto text-slate-600 dark:text-slate-300 text-sm leading-relaxed space-y-4"
+    >
       <p>{t.footer.termsIntro}</p>
-      <h4 class="font-semibold text-slate-900 dark:text-white">{t.footer.termsUsageTitle}</h4>
+      <h4 class="font-semibold text-slate-900 dark:text-white">
+        {t.footer.termsUsageTitle}
+      </h4>
       <p>{t.footer.termsUsageContent}</p>
-      <h4 class="font-semibold text-slate-900 dark:text-white">{t.footer.termsLiabilityTitle}</h4>
+      <h4 class="font-semibold text-slate-900 dark:text-white">
+        {t.footer.termsLiabilityTitle}
+      </h4>
       <p>{t.footer.termsLiabilityContent}</p>
-      <h4 class="font-semibold text-slate-900 dark:text-white">{t.footer.termsChangesTitle}</h4>
+      <h4 class="font-semibold text-slate-900 dark:text-white">
+        {t.footer.termsChangesTitle}
+      </h4>
       <p>{t.footer.termsChangesContent}</p>
     </div>
   </div>
@@ -62,23 +132,25 @@ const homePath = `${getLocalePath(locale)}/`;
     const modal = document.getElementById(modalId);
     if (!btn || !modal) return;
 
-    btn.addEventListener('click', () => {
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
+    btn.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
     });
 
     const close = () => {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
     };
 
-    modal.querySelector('[data-modal-backdrop]')?.addEventListener('click', close);
-    modal.querySelector('[data-modal-close]')?.addEventListener('click', close);
+    modal
+      .querySelector("[data-modal-backdrop]")
+      ?.addEventListener("click", close);
+    modal.querySelector("[data-modal-close]")?.addEventListener("click", close);
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !modal.classList.contains('hidden')) close();
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !modal.classList.contains("hidden")) close();
     });
   }
 
-  setupModal('terms-btn', 'terms-modal');
+  setupModal("terms-btn", "terms-modal");
 </script>
