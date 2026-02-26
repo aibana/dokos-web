@@ -1,0 +1,177 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getTranslations } from "../i18n/utils";
+
+const locale = "en";
+const t = getTranslations(locale);
+const canonicalUrl = "https://dokos.app/privacy";
+const lastUpdated = "February 26, 2026";
+---
+
+<BaseLayout locale={locale} t={t}>
+  <Fragment slot="head">
+    <title>Privacy Policy — Dokos</title>
+    <meta name="description" content="Privacy Policy for Dokos — a local-first document reader. We do not collect, transmit, or store any of your documents or personal data." />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="robots" content="index, follow" />
+  </Fragment>
+
+  <div class="min-h-screen bg-background-light dark:bg-background-dark py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto">
+
+      <div class="mb-10">
+        <a href="/" class="inline-flex items-center gap-2 text-primary hover:underline text-sm font-medium mb-8">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to Dokos
+        </a>
+
+        <h1 class="text-4xl font-bold text-slate-900 dark:text-white mt-6 mb-2">Privacy Policy</h1>
+        <p class="text-slate-500 dark:text-slate-400 text-sm">Last updated: {lastUpdated}</p>
+      </div>
+
+      <div class="prose prose-slate dark:prose-invert max-w-none space-y-8 text-slate-700 dark:text-slate-300 leading-relaxed">
+
+        <section>
+          <p class="text-lg">
+            At <strong>Dokos</strong> ("we", "our", or "us"), your privacy is a top priority.
+            This Privacy Policy explains how we handle information when you use the Dokos desktop application
+            and visit our website at <a href="https://dokos.app" class="text-primary hover:underline">https://dokos.app</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-3">1. Data Collection</h2>
+          <p>
+            Dokos is a <strong>local-first application</strong>. All file processing happens entirely on your device.
+            We do <strong>not</strong> collect, transmit, or store any of your documents, files, or personal data on our servers.
+          </p>
+          <p class="mt-3">
+            We do not collect:
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 text-slate-600 dark:text-slate-400">
+            <li>The contents of any files you open or edit</li>
+            <li>Your name, email address, or any personally identifiable information</li>
+            <li>Location data</li>
+          </ul>
+          <p class="mt-3">
+            The application does collect <strong>anonymous usage telemetry</strong> to help us improve Dokos.
+            See Section 4 for details on how telemetry works and how to disable it.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-3">2. Local Storage</h2>
+          <p>
+            Any preferences and application settings (such as theme selection or window size) are stored
+            <strong>locally on your device</strong> using standard OS mechanisms. This data never leaves your machine.
+            We do not use cookies or tracking technologies within the application.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-3">3. Website Analytics</h2>
+          <p>
+            Our website (<a href="https://dokos.app" class="text-primary hover:underline">dokos.app</a>) uses
+            <strong>Umami Analytics</strong>, a privacy-focused, open-source analytics solution. Umami does not
+            use cookies and does not collect any personally identifiable information. It only collects
+            aggregated, anonymous page view statistics to help us understand which content is most useful.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-3">4. App Telemetry (Aptabase)</h2>
+          <p>
+            Dokos uses <strong>Aptabase</strong>, a privacy-first, open-source analytics platform, to collect
+            anonymous usage telemetry. This helps us understand which features are most used and improve the
+            application over time.
+          </p>
+          <p class="mt-3">What Aptabase collects:</p>
+          <ul class="list-disc list-inside mt-2 space-y-1 text-slate-600 dark:text-slate-400">
+            <li>Anonymous event names (e.g., which viewers are opened)</li>
+            <li>Operating system and app version</li>
+            <li>Country-level location (derived from IP, not stored)</li>
+          </ul>
+          <p class="mt-3">What Aptabase does <strong>not</strong> collect:</p>
+          <ul class="list-disc list-inside mt-2 space-y-1 text-slate-600 dark:text-slate-400">
+            <li>The contents of any files you open</li>
+            <li>Any personally identifiable information</li>
+            <li>Persistent device identifiers or fingerprints</li>
+          </ul>
+          <p class="mt-3">
+            Aptabase is designed to be <strong>GDPR-compliant</strong> and does not build user profiles or
+            share data with third parties. You can learn more at
+            <a href="https://aptabase.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">aptabase.com</a>.
+          </p>
+          <h3 class="text-lg font-semibold text-slate-900 dark:text-white mt-4 mb-2">Opting Out</h3>
+          <p>
+            Telemetry is <strong>opt-out</strong>. You can disable it at any time in two ways:
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 text-slate-600 dark:text-slate-400">
+            <li><strong>On first launch</strong> — a prompt lets you enable or disable telemetry before any data is sent</li>
+            <li><strong>At any time</strong> — go to <em>Settings → Privacy</em> and toggle telemetry off</li>
+          </ul>
+          <p class="mt-3">
+            When telemetry is disabled, no data is sent to Aptabase or any other service.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-3">5. Distribution Channels</h2>
+          <p>
+            The Dokos application is distributed through:
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 text-slate-600 dark:text-slate-400">
+            <li><strong>Microsoft Store</strong> — subject to Microsoft's own privacy policy</li>
+            <li><strong>Direct download</strong> from dokos.app — no account required</li>
+          </ul>
+          <p class="mt-3">
+            When you download via the Microsoft Store, Microsoft may collect data as per their
+            <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Privacy Statement</a>.
+            We do not control or have access to any such data.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-3">6. Children's Privacy</h2>
+          <p>
+            Dokos is not directed at children under the age of 13. We do not knowingly collect any personal
+            information from children. Since we collect no personal data at all, Dokos is safe for users of all ages.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-3">7. Data Security</h2>
+          <p>
+            Because we do not collect or store your data, there is no personal data at risk on our end.
+            Your files and preferences remain on your device and are protected by your operating system's
+            own security mechanisms.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-3">8. Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. Any changes will be posted on this page
+            with an updated "Last updated" date. We encourage you to review this policy periodically.
+            Continued use of the application after changes constitutes acceptance of the updated policy.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-3">9. Contact Us</h2>
+          <p>
+            If you have any questions or concerns about this Privacy Policy, please contact us at:
+          </p>
+          <p class="mt-3">
+            <strong>Dokos</strong><br />
+            Email: <a href="mailto:dokos@aibana.studio" class="text-primary hover:underline [unicode-bidi:bidi-override] [direction:rtl]"><span aria-hidden="true" class="absolute opacity-0 pointer-events-none select-none">oitneves</span>oiduts.anab<span aria-hidden="true" class="absolute opacity-0 pointer-events-none select-none">xzq</span>ia@sokod</a><br />
+            Website: <a href="https://dokos.app" class="text-primary hover:underline">https://dokos.app</a>
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</BaseLayout>
