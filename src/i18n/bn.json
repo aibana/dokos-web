@@ -262,7 +262,14 @@
     "macWarning": "এই ভার্সনটি Apple দ্বারা প্রমাণিত নয়। প্রথম চালু করার পর আপনাকে সিস্টেম সেটিংস > প্রাইভেসী ও সিকিউরিটিতে ম্যানুয়ালি অনুমতি দিতে হবে।",
     "installViaTerminal": "টার্মিনাল থেকে ইনস্টল করুন",
     "copyCommand": "কপি",
-    "copied": "কপি হয়েছে!"
+    "copied": "কপি হয়েছে!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "অন্যান্য ফরম্যাট"
   },
   "notFound": {
     "title": "পৃষ্ঠা পাওয়া যায়নি",

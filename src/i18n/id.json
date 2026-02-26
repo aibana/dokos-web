@@ -262,7 +262,14 @@
     "macWarning": "Versi ini tidak disertifikasi oleh Apple. Anda perlu mengizinkannya secara manual di Pengaturan Sistem > Privasi & Keamanan setelah peluncuran pertama.",
     "installViaTerminal": "Instal melalui terminal",
     "copyCommand": "Salin",
-    "copied": "Tersalin!"
+    "copied": "Tersalin!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "Format lainnya"
   },
   "notFound": {
     "title": "Halaman tidak ditemukan",

@@ -262,7 +262,14 @@
     "macWarning": "Эта версия не сертифицирована Apple. После первого запуска вам потребуется разрешить её вручную в Системных настройках > Конфиденциальность и безопасность.",
     "installViaTerminal": "Установить через терминал",
     "copyCommand": "Копировать",
-    "copied": "Скопировано!"
+    "copied": "Скопировано!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "Другие форматы"
   },
   "notFound": {
     "title": "Страница не найдена",

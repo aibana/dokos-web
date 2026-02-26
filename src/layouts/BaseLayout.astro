@@ -1,6 +1,6 @@
 ---
-import '../styles/global.css';
-import type { Locale, Translations } from '../i18n/utils';
+import "../styles/global.css";
+import type { Locale, Translations } from "../i18n/utils";
 
 interface Props {
   locale: Locale;
@@ -14,13 +14,28 @@ const { locale, t } = Astro.props;
 <html lang={locale} class="dark">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
 
+    <meta
+      name="theme-color"
+      content="#0f172a"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="http://umami-ucg44sc48oogcokccsoog8gc.72.61.70.121.sslip.io"
+    />
     <!-- Preload Inter (critical font) -->
     <link
       rel="preload"
@@ -38,7 +53,12 @@ const { locale, t } = Astro.props;
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" /></noscript>
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+      /></noscript
+    >
     <!-- Defer Material Symbols (non-critical) -->
     <link
       rel="preload"
@@ -46,12 +66,27 @@ const { locale, t } = Astro.props;
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" /></noscript>
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      /></noscript
+    >
 
     <slot name="head" />
+    <script
+      is:inline
+      defer
+      src="https://umami.aibana.studio/script.js"
+      data-website-id="479b9702-3074-45f9-aab9-e42d71fa7dda"></script>
   </head>
-  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-white antialiased">
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg">
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-white antialiased"
+  >
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg"
+    >
       {t.common.skipToContent}
     </a>
 

@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import type { Translations } from '../i18n/utils';
+import releases from '../config/releases.json';
 
 interface Props {
   t: Translations;
@@ -62,17 +63,32 @@ const { t } = Astro.props;
       </div>
 
       <!-- Step 2: Windows -->
-      <div id="dm-step-2-windows" class="hidden space-y-4">
+      <div id="dm-step-2-windows" class="hidden space-y-3">
         <div class="flex items-center gap-3 mb-2">
           <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor">
             <path d="M3 12V6.75l8-1.25V12H3zm0 .5h8v6.5L3 17.75V12.5zM11.5 12V5.35l9.5-1.6V12h-9.5zm0 .5H21v8.25l-9.5-1.6V12.5z"/>
           </svg>
           <span class="text-lg font-bold text-slate-900 dark:text-white">{t.hero.windows}</span>
         </div>
-        <a href="#" class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all">
-          <Icon name="download" size="text-xl" />
-          {t.downloadModal.standaloneDownload}
+        <!-- EXE (primary) -->
+        <a href={releases.windows.exe} class="flex items-center justify-between w-full px-4 py-3 text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all">
+          <span class="flex items-center gap-2">
+            <Icon name="download" size="text-xl" />
+            {t.downloadModal.installer}
+          </span>
+          <span class="text-xs opacity-75 font-mono">.exe</span>
         </a>
+        <!-- MSI (secondary) -->
+        {releases.windows.msi && (
+          <a href={releases.windows.msi} class="flex items-center justify-between w-full px-4 py-3 text-base font-medium rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+            <span class="flex items-center gap-2">
+              <Icon name="download" size="text-xl" />
+              {t.downloadModal.msi}
+            </span>
+            <span class="text-xs text-slate-400 font-mono">.msi</span>
+          </a>
+        )}
+        <!-- Microsoft Store -->
         <a href="https://apps.microsoft.com/detail/dokos" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
           <Icon name="storefront" size="text-xl" />
           {t.downloadModal.microsoftStore}
@@ -80,7 +96,7 @@ const { t } = Astro.props;
       </div>
 
       <!-- Step 2: macOS -->
-      <div id="dm-step-2-macos" class="hidden space-y-4">
+      <div id="dm-step-2-macos" class="hidden space-y-3">
         <div class="flex items-center gap-3 mb-2">
           <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor">
             <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -89,26 +105,38 @@ const { t } = Astro.props;
         </div>
 
         <!-- App Store (disabled) -->
-        <div class="relative">
-          <button disabled class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg border border-slate-200 dark:border-slate-700 text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-800/50 cursor-not-allowed opacity-60">
-            <Icon name="storefront" size="text-xl" />
-            {t.downloadModal.appStore}
-            <span class="ml-2 text-xs bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 px-2 py-0.5 rounded-full font-semibold">{t.downloadModal.comingSoon}</span>
-          </button>
-        </div>
+        <button disabled class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg border border-slate-200 dark:border-slate-700 text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-800/50 cursor-not-allowed opacity-60">
+          <Icon name="storefront" size="text-xl" />
+          {t.downloadModal.appStore}
+          <span class="ml-2 text-xs bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 px-2 py-0.5 rounded-full font-semibold">{t.downloadModal.comingSoon}</span>
+        </button>
 
         <!-- Divider -->
-        <div class="flex items-center gap-3 pt-2">
+        <div class="flex items-center gap-3 py-1">
           <div class="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>
           <span class="text-sm text-slate-500 dark:text-slate-400 font-medium">{t.downloadModal.dontWantToWait}</span>
           <div class="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>
         </div>
 
-        <!-- Standalone download -->
-        <a href="#" class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all">
-          <Icon name="download" size="text-xl" />
-          {t.downloadModal.downloadStandalone}
+        <!-- DMG (primary) -->
+        <a href={releases.macos.dmg} class="flex items-center justify-between w-full px-4 py-3 text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all">
+          <span class="flex items-center gap-2">
+            <Icon name="download" size="text-xl" />
+            {t.downloadModal.downloadStandalone}
+          </span>
+          <span class="text-xs opacity-75 font-mono">.dmg</span>
         </a>
+
+        <!-- Tarball (secondary) -->
+        {releases.macos.tarball && (
+          <a href={releases.macos.tarball} class="flex items-center justify-between w-full px-4 py-3 text-base font-medium rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+            <span class="flex items-center gap-2">
+              <Icon name="download" size="text-xl" />
+              {t.downloadModal.tarball}
+            </span>
+            <span class="text-xs text-slate-400 font-mono">.tar.gz</span>
+          </a>
+        )}
 
         <!-- Warning -->
         <div class="flex gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
@@ -118,7 +146,7 @@ const { t } = Astro.props;
       </div>
 
       <!-- Step 2: Linux -->
-      <div id="dm-step-2-linux" class="hidden space-y-4">
+      <div id="dm-step-2-linux" class="hidden space-y-3">
         <div class="flex items-center gap-3 mb-2">
           <svg class="w-8 h-8 text-primary" viewBox="0 0 448 512" fill="currentColor">
             <path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-12.3 45.2-30.1 68.1s-43 61.2-48.4 97.3c-5.8 38.9 4.6 78.3 14.1 93.6-3.3 2-6.2 4.6-8.4 7.8-4.1 5.7-6 12.5-7.8 19.3-1.8 6.8-3.5 13.4-8.4 17.1-4.3 3.2-6.1 3.8-10.5 8-4.5 4.1-7 11-7 17.5 0 .7.1 1.4.2 2.1.7 5.3 3.9 9.4 7.6 12.8 3.8 3.5 8.4 6.2 13.3 8.2 10 4 21 5.2 30 3.3 1.2-.3 2.3-.5 3.4-.9 5.4-1.6 10-4.8 14.4-9.7 3.1-3.5 6-7.7 8.6-12 2.7-4.5 5.3-9.4 6.2-13.4.9-4 0-7.6-2.4-10.1-.9-1-2-1.8-3.4-2.3 1-3.6 2.7-7 4.5-10 1.8-3.1 4-5.8 6.5-7.8 9.4 3.7 22.8 5.4 36.5 5.4 17.9 0 36.4-2.8 49.2-9.8 6.1 4 16.3 14.4 20 18.3 3.8 4.1 7.9 7.3 12.9 8.8 2.5.8 5.3 1.2 8.7 1.2 7.4 0 17-2.3 26.8-5.8 4.9-1.7 9.7-3.8 13.7-6.4 4.1-2.7 7.3-5.8 8.7-10 .3-.8.4-1.7.4-2.5 0-3.8-1.6-8.1-4-11.5z"/>
@@ -126,14 +154,42 @@ const { t } = Astro.props;
           <span class="text-lg font-bold text-slate-900 dark:text-white">{t.hero.linux}</span>
         </div>
 
-        <!-- Standalone download -->
-        <a href="#" class="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all">
-          <Icon name="download" size="text-xl" />
-          {t.downloadModal.standaloneDownload}
+        <!-- AppImage (primary) -->
+        <a href={releases.linux.appimage} class="flex items-center justify-between w-full px-4 py-3 text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all">
+          <span class="flex items-center gap-2">
+            <Icon name="download" size="text-xl" />
+            {t.downloadModal.appimage}
+          </span>
+          <span class="text-xs opacity-75 font-mono">.AppImage</span>
         </a>
 
+        <!-- DEB / RPM (secondary) -->
+        {(releases.linux.deb || releases.linux.rpm) && (
+          <div class="space-y-2">
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium px-1">{t.downloadModal.otherFormats}</p>
+            {releases.linux.deb && (
+              <a href={releases.linux.deb} class="flex items-center justify-between w-full px-4 py-2.5 text-sm font-medium rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+                <span class="flex items-center gap-2">
+                  <Icon name="download" size="text-base" />
+                  {t.downloadModal.deb}
+                </span>
+                <span class="text-xs text-slate-400 font-mono">.deb</span>
+              </a>
+            )}
+            {releases.linux.rpm && (
+              <a href={releases.linux.rpm} class="flex items-center justify-between w-full px-4 py-2.5 text-sm font-medium rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+                <span class="flex items-center gap-2">
+                  <Icon name="download" size="text-base" />
+                  {t.downloadModal.rpm}
+                </span>
+                <span class="text-xs text-slate-400 font-mono">.rpm</span>
+              </a>
+            )}
+          </div>
+        )}
+
         <!-- Divider -->
-        <div class="flex items-center gap-3 pt-2">
+        <div class="flex items-center gap-3 pt-1">
           <div class="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>
           <span class="text-sm text-slate-500 dark:text-slate-400 font-medium">{t.downloadModal.installViaTerminal}</span>
           <div class="flex-1 h-px bg-slate-200 dark:bg-slate-700"></div>

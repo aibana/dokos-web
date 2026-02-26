@@ -262,7 +262,14 @@
     "macWarning": "เวอร์ชันนี้ไม่ได้รับการรับรองจาก Apple คุณจะต้องอนุญาตด้วยตนเองในการตั้งค่าระบบ > ความเป็นส่วนตัวและความปลอดภัย หลังจากเปิดใช้งานครั้งแรก",
     "installViaTerminal": "ติดตั้งผ่านเทอร์มินัล",
     "copyCommand": "คัดลอก",
-    "copied": "คัดลอกแล้ว!"
+    "copied": "คัดลอกแล้ว!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "รูปแบบอื่นๆ"
   },
   "notFound": {
     "title": "ไม่พบหน้า",

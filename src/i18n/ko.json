@@ -262,7 +262,14 @@
     "macWarning": "이 버전은 Apple 인증을 받지 않았습니다. 첫 실행 후 시스템 설정 > 개인 정보 보호 및 보안에서 수동으로 허용해야 합니다.",
     "installViaTerminal": "터미널로 설치",
     "copyCommand": "복사",
-    "copied": "복사됨!"
+    "copied": "복사됨!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "다른 형식"
   },
   "notFound": {
     "title": "페이지를 찾을 수 없습니다",

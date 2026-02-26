@@ -262,7 +262,14 @@
     "macWarning": "This version is not certified by Apple. You'll need to allow it manually in System Settings > Privacy & Security after the first launch.",
     "installViaTerminal": "Install via terminal",
     "copyCommand": "Copy",
-    "copied": "Copied!"
+    "copied": "Copied!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "Other formats"
   },
   "notFound": {
     "title": "Page not found",

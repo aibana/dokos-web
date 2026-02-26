@@ -1,6 +1,7 @@
 ---
 import { SEO } from 'astro-seo';
 import type { Locale } from '../i18n/utils';
+import pkg from '../../package.json';
 
 interface AlternateLink {
   locale: Locale;
@@ -18,6 +19,7 @@ interface Props {
 }
 
 const { title, description, canonicalUrl, ogImage, ogLocale, alternateLinks, locale } = Astro.props;
+const softwareVersion = pkg.version;
 ---
 
 <SEO
@@ -29,18 +31,19 @@ const { title, description, canonicalUrl, ogImage, ogLocale, alternateLinks, loc
       title: title,
       type: 'website',
       image: ogImage,
+      url: canonicalUrl,
     },
     optional: {
       description: description,
       locale: ogLocale,
       siteName: 'Dokos',
     },
-  }}
-  twitter={{
-    card: 'summary_large_image',
-    title: title,
-    description: description,
-    image: ogImage,
+    image: {
+      url: ogImage,
+      width: 1200,
+      height: 630,
+      alt: title,
+    },
   }}
 />
 
@@ -51,21 +54,37 @@ const { title, description, canonicalUrl, ogImage, ogLocale, alternateLinks, loc
 
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Dokos",
-  "description": description,
-  "applicationCategory": "DeveloperApplication",
-  "operatingSystem": "Windows, macOS, Linux",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "softwareVersion": "2.0",
-  "author": {
-    "@type": "Organization",
-    "name": "Dokos"
-  },
-  "url": "https://dokos.app",
-  "inLanguage": locale
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Dokos",
+      "description": description,
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Windows, macOS, Linux",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "softwareVersion": softwareVersion,
+      "author": {
+        "@type": "Organization",
+        "name": "Dokos",
+        "url": "https://dokos.app"
+      },
+      "url": "https://dokos.app",
+      "inLanguage": locale
+    },
+    {
+      "@type": "Organization",
+      "name": "Dokos",
+      "url": "https://dokos.app",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dokos.app/favicon.svg"
+      },
+      "description": description,
+      "sameAs": []
+    }
+  ]
 })} />

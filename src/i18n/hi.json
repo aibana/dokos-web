@@ -262,7 +262,14 @@
     "macWarning": "यह वर्शन Apple द्वारा प्रमाणित नहीं है। पहले लॉन्च के बाद आपको इसे सिस्टम सेटिंग्स > प्राइवेसी और सिक्योरिटी में मैन्युअली अनुमति देनी होगी।",
     "installViaTerminal": "टर्मिनल से इंस्टॉल करें",
     "copyCommand": "कॉपी",
-    "copied": "कॉपी हो गया!"
+    "copied": "कॉपी हो गया!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "अन्य प्रारूप"
   },
   "notFound": {
     "title": "पृष्ठ नहीं मिला",

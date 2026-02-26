@@ -262,7 +262,14 @@
     "macWarning": "Diese Version ist nicht von Apple zertifiziert. Sie müssen sie nach dem ersten Start manuell in Systemeinstellungen > Datenschutz & Sicherheit zulassen.",
     "installViaTerminal": "Über Terminal installieren",
     "copyCommand": "Kopieren",
-    "copied": "Kopiert!"
+    "copied": "Kopiert!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "Weitere Formate"
   },
   "notFound": {
     "title": "Seite nicht gefunden",

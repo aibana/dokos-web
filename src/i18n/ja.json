@@ -262,7 +262,14 @@
     "macWarning": "このバージョンはAppleの認証を受けていません。初回起動後、システム設定 > プライバシーとセキュリティで手動で許可する必要があります。",
     "installViaTerminal": "ターミナルからインストール",
     "copyCommand": "コピー",
-    "copied": "コピーしました！"
+    "copied": "コピーしました！",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "その他の形式"
   },
   "notFound": {
     "title": "ページが見つかりません",

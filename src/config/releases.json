@@ -1,0 +1,18 @@
+{
+  "version": "v1.0.0",
+  "releaseDate": "2026-02-24",
+  "minVersion": "v1.0.0",
+  "windows": {
+    "exe": "",
+    "msi": ""
+  },
+  "macos": {
+    "dmg": "",
+    "tarball": ""
+  },
+  "linux": {
+    "appimage": "",
+    "deb": "",
+    "rpm": ""
+  }
+}

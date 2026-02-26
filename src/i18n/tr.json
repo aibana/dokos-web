@@ -262,7 +262,14 @@
     "macWarning": "Bu sürüm Apple tarafından onaylanmamıştır. İlk başlatmadan sonra Sistem Ayarları > Gizlilik ve Güvenlik bölümünden manuel olarak izin vermeniz gerekecektir.",
     "installViaTerminal": "Terminal ile kur",
     "copyCommand": "Kopyala",
-    "copied": "Kopyalandı!"
+    "copied": "Kopyalandı!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "Diğer formatlar"
   },
   "notFound": {
     "title": "Sayfa bulunamadı",

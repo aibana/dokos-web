@@ -262,7 +262,14 @@
     "macWarning": "Phiên bản này chưa được Apple chứng nhận. Bạn cần cho phép thủ công trong Cài đặt Hệ thống > Quyền riêng tư & Bảo mật sau lần khởi chạy đầu tiên.",
     "installViaTerminal": "Cài đặt qua terminal",
     "copyCommand": "Sao chép",
-    "copied": "Đã sao chép!"
+    "copied": "Đã sao chép!",
+    "installer": "Installer (.exe)",
+    "msi": "MSI Package",
+    "tarball": "App Bundle (.tar.gz)",
+    "appimage": "AppImage",
+    "deb": "Debian / Ubuntu (.deb)",
+    "rpm": "Fedora / RHEL (.rpm)",
+    "otherFormats": "Định dạng khác"
   },
   "notFound": {
     "title": "Không tìm thấy trang",

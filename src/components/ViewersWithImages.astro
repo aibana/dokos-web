@@ -146,6 +146,8 @@ const tabs = [
                   data-src={v.img}
                   data-load-priority={v.img.includes('/app-') ? 'post-load' : 'on-scroll'}
                   alt={`${v.name} preview`}
+                  width="400"
+                  height="280"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-surface-dark/80" />
@@ -352,11 +354,39 @@ const tabs = [
       return { x: offsetX, y: offsetY };
     }
 
+    // Preload all lightbox images into browser cache
+    const preloadCache = new Map<string, boolean>();
+    function preloadImage(src: string) {
+      if (preloadCache.has(src)) return;
+      preloadCache.set(src, false);
+      const img = new Image();
+      img.onload = () => preloadCache.set(src, true);
+      img.src = src;
+    }
+
     function openLightbox(card: HTMLElement, src: string, title: string, desc: string, formats: string) {
       const origin = calcOrigin(card);
       lightboxContent.style.setProperty('--vimg-origin-x', `${origin.x}px`);
       lightboxContent.style.setProperty('--vimg-origin-y', `${origin.y}px`);
-      lightboxImg.src = src;
+
+      // Only update src if different to avoid flicker with cached images
+      if (lightboxImg.dataset.currentSrc !== src) {
+        lightboxImg.dataset.currentSrc = src;
+
+        if (preloadCache.get(src)) {
+          // Already in cache — assign directly, no flash
+          lightboxImg.src = src;
+        } else {
+          // Not cached yet — hide until loaded to avoid showing stale image
+          lightboxImg.style.opacity = '0';
+          lightboxImg.onload = () => {
+            lightboxImg.style.opacity = '';
+            lightboxImg.onload = null;
+          };
+          lightboxImg.src = src;
+        }
+      }
+
       lightboxImg.alt = title;
       lightboxTitle.textContent = title;
       lightboxDesc.textContent = desc;
@@ -384,8 +414,10 @@ const tabs = [
     }
 
     document.querySelectorAll<HTMLElement>('[data-vimg-open]').forEach((card) => {
+      const src = card.dataset.vimgOpen!;
+      // Preload this image into browser cache immediately
+      preloadImage(src);
       card.addEventListener('click', () => {
-        const src = card.dataset.vimgOpen!;
         const title = card.dataset.vimgTitle || '';
         const desc = card.dataset.vimgDesc || '';
         const formats = card.dataset.vimgFormats || '';
