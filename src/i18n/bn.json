@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "অন্যান্য ফরম্যাট"
+    "otherFormats": "অন্যান্য ফরম্যাট",
+    "downloadAppleSilicon": "Apple Silicon-এর জন্য ডাউনলোড করুন (M1/M2/M3)",
+    "downloadIntel": "Intel Mac-এর জন্য ডাউনলোড করুন",
+    "windowsWarningTitle": "Windows নিরাপত্তা সতর্কতা",
+    "windowsWarningBody": "এই অ্যাপটিতে Microsoft সার্টিফিকেট নেই। Windows SmartScreen একটি সতর্কতা দেখাতে পারে। তবুও ইনস্টল করতে:",
+    "windowsStep1": "SmartScreen সতর্কতায় \"আরও তথ্য\" ক্লিক করুন",
+    "windowsStep2": "\"যাই হোক চালান\" ক্লিক করুন",
+    "windowsStep3": "স্বাভাবিক ইনস্টলেশন ধাপগুলো অনুসরণ করুন"
   },
   "notFound": {
     "title": "পৃষ্ঠা পাওয়া যায়নি",

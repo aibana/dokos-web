@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "Định dạng khác"
+    "otherFormats": "Định dạng khác",
+    "downloadAppleSilicon": "Tải cho Apple Silicon (M1/M2/M3)",
+    "downloadIntel": "Tải cho Mac Intel",
+    "windowsWarningTitle": "Cảnh báo bảo mật Windows",
+    "windowsWarningBody": "Ứng dụng này không có chứng chỉ Microsoft. Windows SmartScreen có thể hiển thị cảnh báo. Để cài đặt dù vậy:",
+    "windowsStep1": "Nhấp \"Thêm thông tin\" trong cảnh báo SmartScreen",
+    "windowsStep2": "Nhấp \"Chạy dù sao\"",
+    "windowsStep3": "Làm theo các bước cài đặt thông thường"
   },
   "notFound": {
     "title": "Không tìm thấy trang",

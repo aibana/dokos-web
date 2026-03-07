@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "其他格式"
+    "otherFormats": "其他格式",
+    "downloadAppleSilicon": "下载 Apple Silicon 版 (M1/M2/M3)",
+    "downloadIntel": "下载 Intel Mac 版",
+    "windowsWarningTitle": "Windows 安全警告",
+    "windowsWarningBody": "此应用未获得 Microsoft 证书。Windows SmartScreen 可能会显示警告。要继续安装：",
+    "windowsStep1": "在 SmartScreen 警告中点击「更多信息」",
+    "windowsStep2": "点击「仍要运行」",
+    "windowsStep3": "按照正常安装步骤操作"
   },
   "notFound": {
     "title": "页面未找到",

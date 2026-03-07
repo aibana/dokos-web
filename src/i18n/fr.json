@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "Autres formats"
+    "otherFormats": "Autres formats",
+    "downloadAppleSilicon": "Télécharger pour Apple Silicon (M1/M2/M3)",
+    "downloadIntel": "Télécharger pour Mac Intel",
+    "windowsWarningTitle": "Avertissement de sécurité Windows",
+    "windowsWarningBody": "Cette app n'est pas signée par Microsoft. Windows SmartScreen peut afficher un avertissement. Pour l'installer quand même :",
+    "windowsStep1": "Cliquez sur « Plus d'informations » dans l'avertissement SmartScreen",
+    "windowsStep2": "Cliquez sur « Exécuter quand même »",
+    "windowsStep3": "Suivez les étapes d'installation normales"
   },
   "notFound": {
     "title": "Page introuvable",

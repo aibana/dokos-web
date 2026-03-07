@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "Altri formati"
+    "otherFormats": "Altri formati",
+    "downloadAppleSilicon": "Scarica per Apple Silicon (M1/M2/M3)",
+    "downloadIntel": "Scarica per Mac Intel",
+    "windowsWarningTitle": "Avviso di sicurezza Windows",
+    "windowsWarningBody": "Questa app non ha un certificato Microsoft. Windows SmartScreen potrebbe mostrare un avviso. Per installarla comunque:",
+    "windowsStep1": "Clicca su \"Ulteriori informazioni\" nell'avviso SmartScreen",
+    "windowsStep2": "Clicca su \"Esegui comunque\"",
+    "windowsStep3": "Segui i normali passaggi di installazione"
   },
   "notFound": {
     "title": "Pagina non trovata",

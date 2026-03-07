@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "Diğer formatlar"
+    "otherFormats": "Diğer formatlar",
+    "downloadAppleSilicon": "Apple Silicon için İndir (M1/M2/M3)",
+    "downloadIntel": "Intel Mac için İndir",
+    "windowsWarningTitle": "Windows güvenlik uyarısı",
+    "windowsWarningBody": "Bu uygulama Microsoft sertifikasına sahip değil. Windows SmartScreen bir uyarı gösterebilir. Yine de yüklemek için:",
+    "windowsStep1": "SmartScreen uyarısında \"Daha fazla bilgi\"ye tıklayın",
+    "windowsStep2": "\"Yine de çalıştır\"a tıklayın",
+    "windowsStep3": "Normal kurulum adımlarını izleyin"
   },
   "notFound": {
     "title": "Sayfa bulunamadı",

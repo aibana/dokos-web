@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "その他の形式"
+    "otherFormats": "その他の形式",
+    "downloadAppleSilicon": "Apple Silicon用をダウンロード (M1/M2/M3)",
+    "downloadIntel": "Intel Mac用をダウンロード",
+    "windowsWarningTitle": "Windowsセキュリティ警告",
+    "windowsWarningBody": "このアプリはMicrosoftの証明書がありません。Windows SmartScreenが警告を表示する場合があります。インストールするには：",
+    "windowsStep1": "SmartScreen警告で「詳細情報」をクリック",
+    "windowsStep2": "「実行」をクリック",
+    "windowsStep3": "通常のインストール手順に従う"
   },
   "notFound": {
     "title": "ページが見つかりません",

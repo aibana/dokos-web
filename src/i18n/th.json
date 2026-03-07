@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "รูปแบบอื่นๆ"
+    "otherFormats": "รูปแบบอื่นๆ",
+    "downloadAppleSilicon": "ดาวน์โหลดสำหรับ Apple Silicon (M1/M2/M3)",
+    "downloadIntel": "ดาวน์โหลดสำหรับ Mac Intel",
+    "windowsWarningTitle": "คำเตือนความปลอดภัย Windows",
+    "windowsWarningBody": "แอปนี้ไม่มีใบรับรองจาก Microsoft Windows SmartScreen อาจแสดงคำเตือน เพื่อติดตั้งต่อไป:",
+    "windowsStep1": "คลิก \"ข้อมูลเพิ่มเติม\" ในคำเตือน SmartScreen",
+    "windowsStep2": "คลิก \"เรียกใช้ต่อไป\"",
+    "windowsStep3": "ทำตามขั้นตอนการติดตั้งปกติ"
   },
   "notFound": {
     "title": "ไม่พบหน้า",

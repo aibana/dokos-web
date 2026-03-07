@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "अन्य प्रारूप"
+    "otherFormats": "अन्य प्रारूप",
+    "downloadAppleSilicon": "Apple Silicon के लिए डाउनलोड करें (M1/M2/M3)",
+    "downloadIntel": "Intel Mac के लिए डाउनलोड करें",
+    "windowsWarningTitle": "Windows सुरक्षा चेतावनी",
+    "windowsWarningBody": "इस ऐप में Microsoft प्रमाणपत्र नहीं है। Windows SmartScreen एक चेतावनी दिखा सकता है। फिर भी इंस्टॉल करने के लिए:",
+    "windowsStep1": "SmartScreen चेतावनी में \"अधिक जानकारी\" पर क्लिक करें",
+    "windowsStep2": "\"फिर भी चलाएं\" पर क्लिक करें",
+    "windowsStep3": "सामान्य इंस्टॉलेशन चरणों का पालन करें"
   },
   "notFound": {
     "title": "पृष्ठ नहीं मिला",

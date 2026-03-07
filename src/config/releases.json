@@ -1,18 +1,21 @@
 {
-  "version": "v1.0.0",
-  "releaseDate": "2026-02-24",
-  "minVersion": "v1.0.0",
+  "version": "v1.0.2",
+  "releaseDate": "2026-03-07",
+  "minVersion": "v1.0.2",
+  "baseUrl": "https://download.dokos.app/dokos-releases/releases/v1.0.2",
   "windows": {
-    "exe": "",
-    "msi": ""
+    "exe": "https://download.dokos.app/dokos-releases/releases/v1.0.2/dokos_1.0.2_x64-setup.exe",
+    "msi": "https://download.dokos.app/dokos-releases/releases/v1.0.2/dokos_1.0.2_x64_en-US.msi"
   },
   "macos": {
+    "dmg_x64": "https://download.dokos.app/dokos-releases/releases/v1.0.2/dokos_1.0.2_x64.dmg",
+    "dmg_aarch64": "https://download.dokos.app/dokos-releases/releases/v1.0.2/dokos_1.0.2_aarch64.dmg",
     "dmg": "",
     "tarball": ""
   },
   "linux": {
-    "appimage": "",
-    "deb": "",
-    "rpm": ""
+    "appimage": "https://download.dokos.app/dokos-releases/releases/v1.0.2/dokos_1.0.2_amd64.AppImage",
+    "deb": "https://download.dokos.app/dokos-releases/releases/v1.0.2/dokos_1.0.2_amd64.deb",
+    "rpm": "https://download.dokos.app/dokos-releases/releases/v1.0.2/dokos-1.0.2-1.x86_64.rpm"
   }
 }

@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "Format lainnya"
+    "otherFormats": "Format lainnya",
+    "downloadAppleSilicon": "Unduh untuk Apple Silicon (M1/M2/M3)",
+    "downloadIntel": "Unduh untuk Mac Intel",
+    "windowsWarningTitle": "Peringatan keamanan Windows",
+    "windowsWarningBody": "Aplikasi ini tidak memiliki sertifikat Microsoft. Windows SmartScreen mungkin menampilkan peringatan. Untuk tetap menginstal:",
+    "windowsStep1": "Klik \"Info selengkapnya\" pada peringatan SmartScreen",
+    "windowsStep2": "Klik \"Tetap jalankan\"",
+    "windowsStep3": "Ikuti langkah instalasi normal"
   },
   "notFound": {
     "title": "Halaman tidak ditemukan",

@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "다른 형식"
+    "otherFormats": "다른 형식",
+    "downloadAppleSilicon": "Apple Silicon용 다운로드 (M1/M2/M3)",
+    "downloadIntel": "Intel Mac용 다운로드",
+    "windowsWarningTitle": "Windows 보안 경고",
+    "windowsWarningBody": "이 앱은 Microsoft 인증서가 없습니다. Windows SmartScreen이 경고를 표시할 수 있습니다. 그래도 설치하려면:",
+    "windowsStep1": "SmartScreen 경고에서 \"추가 정보\"를 클릭",
+    "windowsStep2": "\"그래도 실행\"을 클릭",
+    "windowsStep3": "일반 설치 단계를 따르세요"
   },
   "notFound": {
     "title": "페이지를 찾을 수 없습니다",

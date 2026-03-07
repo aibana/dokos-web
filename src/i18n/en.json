@@ -269,7 +269,14 @@
     "appimage": "AppImage",
     "deb": "Debian / Ubuntu (.deb)",
     "rpm": "Fedora / RHEL (.rpm)",
-    "otherFormats": "Other formats"
+    "otherFormats": "Other formats",
+    "downloadAppleSilicon": "Download for Apple Silicon (M1/M2/M3)",
+    "downloadIntel": "Download for Intel Mac",
+    "windowsWarningTitle": "Windows security warning",
+    "windowsWarningBody": "This app is not signed with a Microsoft certificate. Windows SmartScreen may show a warning. To install it anyway:",
+    "windowsStep1": "Click \"More info\" on the SmartScreen warning",
+    "windowsStep2": "Click \"Run anyway\"",
+    "windowsStep3": "Follow the normal installation steps"
   },
   "notFound": {
     "title": "Page not found",
